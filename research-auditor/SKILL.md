@@ -8,6 +8,9 @@ description: >-
   submit", "verify my references", or "check my chapter for inconsistencies". Not
   for improving the argument, not for language editing, and not for deciding whether
   the work is good. Searching for new papers belongs to research-paper-finder.
+compatibility: >-
+  Needs web search to verify references. Without it, the skill says so and reports
+  the reference check as not run rather than guessing.
 ---
 
 # The check before you hand it in
@@ -49,7 +52,8 @@ usually looks like.
    **Check 1: numbers.** Every number in the running text that also appears in a table
    or figure. Report matches and mismatches with the page or section of each. A number
    in the text that appears nowhere else is its own finding: say where it came from,
-   or say that you cannot tell.
+   or say that you cannot tell. Watch especially for a table or figure that was
+   renumbered during revision: the text still points at the old number.
 
    **Check 2: references.** Count the entries in the reference list and confirm
    the count with me before you start checking. For every citation in the text
@@ -62,7 +66,15 @@ usually looks like.
    confirmed with an error in a named field, or not found, and for anything not
    found, say which searches you ran, never softened to "possibly correct."
    Check that every citation in the text has an entry in the list, and that
-   every entry in the list is cited somewhere in the text.
+   every entry in the list is cited somewhere in the text. If you can reach a
+   scholarly index such as Crossref or OpenAlex, check entries there first; it
+   is more reliable than a page a web search happens to find. Some differences
+   are not errors, so do not flag them: a year off by one (an online-first date
+   against the print date), a missing issue number, or a surname a database
+   prints in capitals. Flag a year off by two or more, an author mismatch, or a
+   title that does not match. Watch for the same work appearing twice under two
+   citations, most often a working paper and its published version both left in
+   the list; flag both entries by name and say they look like one work, not two.
 
    **Check 3: consistency.** Terms used in more than one sense, variables named
    differently in different chapters, a hypothesis stated one way in the introduction and
@@ -103,6 +115,10 @@ usually looks like.
   Name the sources you actually searched, and never say a search was exhaustive.
 - **Do not soften.** This is the last moment anything can be caught. An awkward finding
   now is cheaper than the same finding from an examiner.
+- **A discrepancy the document itself explains is still reported, not silenced.** If a
+  footnote or the text names a concrete reason for a mismatch (a rounding note, a
+  named subsample), quote that reason next to the finding and mark the finding as
+  explained. A mismatch with no named reason stays a plain finding.
 - **A second look judges the fixes, and it is the last one.** If I come back with a
   revision, check only whether each earlier finding was resolved, raise a new
   finding only if a fix itself created it, and treat a change no finding

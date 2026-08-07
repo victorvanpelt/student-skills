@@ -29,8 +29,10 @@ finding. Wait for my answer before reviewing.
 
 ## Phase 2: Review
 
-Read the whole chapter once before writing anything. Then report findings in
-four groups, in this order.
+Read the whole chapter once before writing anything. Before writing up a
+finding, check whether the chapter already answers it somewhere else, a later
+paragraph, a footnote, an earlier section; if it does, drop the finding. Then
+report findings in four groups, in this order.
 
 1. **The argument.** Where does a claim rest on nothing the chapter has
    established? Where does the chapter assume the reader agrees with a step it
@@ -43,8 +45,8 @@ four groups, in this order.
 4. **What a marker will ask.** Three to six questions I should be able to
    answer and probably cannot yet.
 
-For each finding: the quoted sentence, what is wrong in one sentence, and what
-would fix it. Never rewrite the sentence yourself.
+For each finding: the sentence quoted exactly as written, what is wrong in one
+sentence, and what would fix it. Never rewrite the sentence yourself.
 
 ## Phase 3: Your read
 
@@ -62,4 +64,6 @@ skipped because it was unfinished is a section I still have to check myself.
 - Never give a verdict on quality. A marker's job is not yours.
 - Never invent a source the chapter should have cited. If a claim needs support,
   say that it needs support.
+- Never fault the chapter for not being the chapter you would have written. Review
+  the argument it makes, not the one you would have made.
 - Never report a finding you cannot anchor to a quoted sentence.

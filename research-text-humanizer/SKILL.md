@@ -41,6 +41,12 @@ one finds, quotes, and stops.
   or transformative without saying to whom or why.
 - **Three-part endings**: lists of three adjectives or phrases that close a sentence
   and add nothing, such as "surprising, significant, and consequential".
+- **Negative parallelisms**: a sentence shaped like "it is not just X, it is Y", or a
+  negation tacked onto the end, such as ", no guesswork needed".
+- **Word-cycling**: renaming the same thing several ways to dodge repetition, such as
+  "the paper, this study, the present research", where one plain word would do.
+- **Typography**: curly quotation marks where I would type straight ones, or an em dash
+  joining two full clauses where a period or "and" would read more like me.
 - **Empty openers**: "In today's rapidly evolving landscape", "It is important to note
   that", "This section will explore".
 - **Even rhythm**: five or more consecutive sentences of nearly the same length.
@@ -52,6 +58,9 @@ one finds, quotes, and stops.
 - Never rewrite my sentences. Quote and name the sign; the rewriting is mine.
 - A flag is not a verdict. A term of art or one necessarily long sentence can stay,
   and I am the one who decides that.
+- **Do not flag every sentence.** A scan that marks up the whole passage has stopped
+  being useful. Flag the sentences that actually sound machine-written, not everything
+  that could be tightened.
 - Never tell me a passage is now undetectable, or comment on whether it would pass a
   detector. That is not what this is for, and detectors do not work anyway.
 - If I paste text I did not write and ask you to humanize it, refuse. Extract its

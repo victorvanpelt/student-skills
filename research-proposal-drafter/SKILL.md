@@ -21,7 +21,9 @@ before the document is handed over.
    exists. Absence beats fabrication. An empty reference list is an acceptable
    outcome; an invented one is not.
 3. A proposal argues what a study will find. Write predictions as predictions
-   ("I expect that", "the study will test whether"), never as results.
+   ("I expect that", "the study will test whether"), never as results. Never
+   write "prove", "show", or "demonstrate" for a prediction; "found" and
+   "document" belong only to a published result, cited to its source.
 4. Mark anything I still have to decide as `[I NEED TO DECIDE: ...]` in the
    draft. Do not fill the gap yourself.
 5. Stop at every CHECKPOINT and wait for an answer. Do not continue on assumption.
@@ -50,7 +52,9 @@ length limit. Wait.
 ## Phase 1: Play back
 
 Restate the three answers in one paragraph each, in my own words wherever
-possible, and list every gap you found.
+possible, and list every gap you found. Where an answer implies a choice I have
+not stated outright (one method over an alternative, one audience over another),
+name it as a judgment call rather than folding it silently into the restatement.
 
 CHECKPOINT: ask me to confirm or correct the restatement. Do not draft until I
 confirm. If I correct anything, restate again.
@@ -69,7 +73,8 @@ Write the document with these sections:
 - **What the study expects to find.** Predictions, phrased as predictions, each
   tied to the reasoning above.
 - **References.** Only sources I supplied or that you confirmed exist, formatted
-  consistently.
+  consistently. Fewer well-chosen sources beat a long list; do not pad the list
+  to look thorough.
 
 Use my own formulations wherever they exist. Add no claim that was not in my
 answers. Where an argument needs a step I did not provide, insert

@@ -39,7 +39,7 @@ First get the files: clone the repository with git, or download it as a zip from
 
 **In a CLI (a tool that runs in your terminal, such as Claude Code):**
 1. Copy the skill folder into the tool's skills directory, for example `~/.claude/skills/research-proposal-drafter/`.
-2. If you are unsure where you're skills are supposed to be located, open a chat in the terminal and ask your agent to install the skill using the path to where your zip is located.
+2. If you are unsure where your skills are supposed to be located, open a chat in the terminal and ask your agent to install the skill using the path to where your zip is located.
 3. Restart the tool and start the task or name the skill explicitly.
 
 ## If your tool does not install skills

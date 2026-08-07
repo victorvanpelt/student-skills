@@ -7,6 +7,9 @@ description: >-
   literature review, not for summarizing what the papers say, and not for deciding
   which ones matter. Checking references already in a document belongs to
   research-auditor.
+compatibility: >-
+  Needs web search or page-fetch access to find and confirm papers. Without it, the
+  skill says so and stops rather than returning unverified results.
 ---
 
 # Paper finder
@@ -43,7 +46,11 @@ Run at least three separate searches with different wording for the same idea.
 Run one of them restricted to the strongest journals in the field, so a search
 that would otherwise return whatever is easiest to find has to return the best
 work too. Ask me which journals those are if you do not know the field; do not
-guess a ranking.
+guess a ranking. If you can reach a scholarly index such as Crossref or OpenAlex,
+use it before a plain web search: it returns exact metadata (full author list,
+DOI, year) instead of you reading them off a page. Once you have one strong hit,
+run one more search on what cites it and what it cites; that finds what a
+keyword search misses.
 
 For each hit, record: exact title, all authors, venue, year, DOI if visible, and
 the link to the result you read it in. A candidate without that link is not a
@@ -78,7 +85,9 @@ not whether it matters, which I decide.
 
 VERIFY: in three lines, how many candidates you found, how many you dropped and
 why, and what the search did not cover. If the topic has an angle you did not
-search, say so. A list that hides its own limits cannot be judged.
+search, say so. If the count came back thin, name one way I could broaden the
+search: a broader term, a neighboring field, or the papers that cite the
+strongest hit. A list that hides its own limits cannot be judged.
 
 ## What you never do
 

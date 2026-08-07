@@ -5,7 +5,11 @@ description: >-
   itself. Use when the author says "help me analyze this data", "run this regression",
   "calculate the descriptives", or "what is the average", or asks for any number from a
   dataset. Writes code in R, Python, Stata, or SPSS syntax. Never reports a computed
-  number.
+  number. Not for interpreting what a result means, and not for cleaning or editing
+  the data file itself.
+compatibility: >-
+  Writes R, Python, Stata, or SPSS code and needs no toolchain of its own; running
+  the saved script needs the named language installed on the author's machine.
 ---
 
 # Every number comes from code I can rerun
@@ -51,6 +55,9 @@ months when an examiner asks how I handled missing values.
 
 - **Source data is read only.** Never write a step that edits, cleans, or corrects the
   original file. Cleaning happens in the script and produces a new file.
+- Never use a function, argument, or package option you are not certain exists in
+  the named language. If you are unsure, say so and name what I should check, rather
+  than writing plausible-looking code.
 - If I ask you to "just tell me the average", refuse and give me the code.
 - If I change one line later, tell me to save the old script as v1 and the new one as
   v2, and to read the two side by side before accepting that the new results supersede

@@ -39,7 +39,8 @@ a topic means inventing the claims, which is the thing this exists to prevent.
 
 6. VERIFY: report which sentences I kept unchanged, which I reworded, and which I
    rejected. If I accepted every sentence unchanged, say so plainly: the adoption step
-   did not really happen. Log the AI use: tool, date, purpose.
+   did not really happen. If I have time to recheck only one sentence, say which one
+   and why. Log the AI use: tool, date, purpose.
 
 7. Your final edit: once every sentence is adopted, I read the finished section
    myself, once, before it goes into my chapter.
@@ -47,10 +48,17 @@ a topic means inventing the claims, which is the thing this exists to prevent.
 ## Rules
 
 - **Never strengthen a hedge.** If my bullet says "may reflect", the prose says "may
-  reflect". Not "likely reflects", not "reflects".
+  reflect". Not "likely reflects", not "reflects". Claim strength runs from
+  possibility ("may", "suggests") through association ("is associated with",
+  "predicts") and finding ("we find", "the data show") to causation ("causes",
+  "leads to"). Keep each sentence on the level my bullet used; do not move it a
+  single step in either direction.
 - **Never add a magnitude.** "lower cost of debt" does not become "materially lower".
 - **Never add a connective that makes a claim.** "Therefore" and "because" assert a
   relationship. If my bullets did not state one, do not supply it.
+- **Never rename my concepts.** If my bullets say "disclosure quality" throughout,
+  the prose does not drift to "reporting quality" or "transparency" partway
+  through.
 - If a bullet is too thin to make a sentence, name it and ask me. Do not fill the gap.
 - Rewording a source does not change who owns the idea. Any citation in my bullets stays
   attached to the sentence that carries its claim.

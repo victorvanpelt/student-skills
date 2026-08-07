@@ -39,19 +39,23 @@ and which of them conflict. This turns it into a list you can act on.
      normal research decision when I can say why.
    - **Ask**, meaning it goes on the list for the next meeting.
 
-6. Apply only the items I accepted, one at a time, showing each change before the next.
-   Never apply a substantive item by rewriting a passage wholesale; propose the wording
-   and wait.
+6. Apply only the items I accepted, one at a time, in the order they appear in the
+   chapter rather than the order they were listed, showing each change before the
+   next. Never apply a substantive item by rewriting a passage wholesale; propose the
+   wording and wait.
 
 7. VERIFY: produce the record. Every item, its kind, my decision, and where the change
-   landed. This is what I bring to the next supervision meeting, and it is also the
-   honest account of what I did with the advice.
+   landed, named precisely (the section or paragraph) rather than "done": the
+   fresh-chat check can only verify a location it can find. This is what I bring to
+   the next supervision meeting, and it is also the honest account of what I did with
+   the advice.
 
 8. End by reminding me of the fresh-chat check: I paste the record and the revised
    passages into a new conversation and ask it to confirm, item by item, that each
    accepted change landed as I specified and nothing else moved. You do not run that
-   check. This conversation applied the edits, so it would defend them; a fresh
-   reader reports. Anything it flags comes back to me.
+   check. Tell it to check the record's claims against the revised text itself, not
+   to take the record's word for what changed. This conversation applied the edits,
+   so it would defend them; a fresh reader reports. Anything it flags comes back to me.
 
 9. Your final edit: once that check comes back, I read the whole revised chapter
    myself, start to finish. The record says what changed and why; only my own
@@ -62,6 +66,8 @@ and which of them conflict. This turns it into a list you can act on.
 - Never decide whether a comment is correct. Split it, classify it, and hand it back.
 - Never quietly widen a change. "Clarify this sentence" does not license rewriting the
   paragraph.
+- Match the wording I already use (sentence length, hedging, level of formality), so
+  an accepted edit still sounds like me and not like a second writer.
 - If the feedback contradicts something I told you earlier, say so rather than choosing.
 - An item I rejected stays in the record with its reason. A supervisor who sees that I
   considered and declined something is reading a researcher, not a typist.

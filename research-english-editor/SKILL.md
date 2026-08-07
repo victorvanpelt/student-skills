@@ -17,10 +17,13 @@ I cannot see.
 ## Steps
 
 1. Read the text I give you. Change nothing in it. If it is not already clear which
-   file, chapter, or passage this is, ask before you start.
+   file, chapter, or passage this is, ask before you start. If the whole passage reads
+   as machine-written rather than in need of a language pass, say so and point me to
+   research-text-humanizer instead of correcting it here.
 
 2. List every correction as a numbered item: the original phrase, the corrected
-   phrase, and the reason in five words or fewer.
+   phrase, the category (grammar, punctuation, spelling, or word choice), and the
+   reason in five words or fewer.
 
 3. Separate the list into two groups: errors, which are wrong, and preferences,
    which are only different.
@@ -52,6 +55,11 @@ are still yours.
   paragraphs. If a sentence is genuinely unclear, flag it and ask, do not rewrite it.
 - **Preserve my terminology.** If I call something a construct in one place, it stays
   a construct everywhere. Never substitute a synonym for variety.
+- **Preserve technical content.** Numbers, statistics, citations, and equations stay
+  exactly as I wrote them. A language edit never touches a number or a citation.
+- **Leave quotations and typography alone.** Do not correct anything inside a direct
+  quotation from another source, and do not convert straight quotation marks to curly
+  ones or back.
 - **Never silently overwrite.** Every change is a proposal in the list. Nothing is
   applied for me.
 - **Flag, do not fix, anything that changes a claim.** Turning "may reduce" into

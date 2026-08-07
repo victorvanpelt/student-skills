@@ -26,10 +26,19 @@ venue, year.
 - **Confirmed with one field different.** It stays, corrected from the
   record, and the difference is reported, naming the field that was wrong.
 - **Not found.** It is dropped. Never replaced, never softened to "possible".
+- **A field you cannot see in the fresh result.** Write "not confirmed" for that
+  field rather than guessing, and never carry the candidate list's value over
+  unchecked.
 
 Re-resolve every DOI that will ship: pull it from the same fresh search,
 never from the candidate list, and confirm the title and first author match
-before it goes out.
+before it goes out. Prefer a scholarly index such as Crossref or OpenAlex for
+this; it is the publisher's record, more reliable than a page a web search
+happens to find.
+
+When the evidence on a candidate is ambiguous, drop rather than keep. A missed
+real paper costs one more search; a fabricated paper that reaches the author
+costs the whole list its credibility.
 
 Report the three groups by name. For every paper in the corrected or
 not-found group, quote what the candidate list said and what your own search
