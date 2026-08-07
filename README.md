@@ -1,10 +1,10 @@
 # student-skills
 
-Skills for students writing a thesis or a research paper with the help of an AI tool. A skill is a written procedure your AI tool follows when your request matches it. Each skill here does a single job, stops to ask you something, and ends by reporting what it did and could not do. Each one is a single folder you can copy anywhere; the folders follow the [Agent Skills](https://agentskills.io) standard, so any capable tool can read them.
+Light-weight skills that students writing a thesis or a research paper can use and develop further into skill workflows. A skill is a written procedure your AI tool follows when your request matches it. Each skill here does a single job, stops to ask you something, and ends by reporting what it did and could not do. Each one is a single folder you can copy anywhere; the folders follow the [Agent Skills](https://agentskills.io) standard, so any capable tool can read them.
 
 ## Skills as workflows
 
-Each skill is a workflow, not a chat trick. It automates the careful, boring work (searching twice, checking every reference, listing every change it made) and hands the judgment calls back to you: the workflow stops where a decision is yours and reports what it could not verify. Some skills dispatch a second, independent helper to audit the result, because a tool checking its own work in the same conversation tends to approve it. Everything a skill needs is written in its folder; the only thing your AI tool has to do is read a `SKILL.md` file.
+Each skill in this repo captures a workflow. It tries to automate the careful, boring work (searching twice, checking every reference, listing every change it made), while handing the important decisions and judgments to you. Some skills dispatch a second, independent helper to improve quality of output, because a tool checking its own work in the same conversation tends to approve it. Everything a skill needs is written in its folder; the only thing your AI tool has to do is read a `SKILL.md` file.
 
 ## The skills
 
@@ -30,17 +30,17 @@ Each skill is a workflow, not a chat trick. It automates the careful, boring wor
 
 ## How to install them
 
-First get the files: clone the repository with git, or download it as a zip from GitHub (Code > Download ZIP) and unpack it. Every skill is one self-contained folder; take only the ones you want.
+First get the files: clone the repository with git, or download it as a zip from GitHub (Code > Download ZIP) and unpack it. Every skill is one self-contained folder. You can either copy all of them or only the ones you want.
 
 **In the Claude app (web or desktop):**
 1. Zip one skill folder, with the folder itself as the top level inside the zip.
-2. In Claude's settings, make sure code execution and file creation are turned on, then open the Skills section and upload the zip.
-3. Repeat for each skill you want. Then ask for the task in any chat; if Claude answers without using the skill, name it ("use research-paper-finder").
+2. In Claude's settings, you can upload the zip in the skills section.
+3. To use, start the task in any chat. If Claude answers without using the skill, name it explicitly (e.g., "use research-paper-finder").
 
 **In a CLI (a tool that runs in your terminal, such as Claude Code):**
 1. Copy the skill folder into the tool's skills directory, for example `~/.claude/skills/research-proposal-drafter/`.
-2. If the folder contains a second `.md` file, that is an agent definition; copy it into the agents directory, for example `~/.claude/agents/research-proposal-auditor.md`.
-3. Restart the tool and ask for the task.
+2. If you are unsure where you're skills are supposed to be located, open a chat in the terminal and ask your agent to install the skill using the path to where your zip is located.
+3. Restart the tool and start the task or name the skill explicitly.
 
 ## If your tool does not install skills
 
