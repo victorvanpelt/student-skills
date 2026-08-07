@@ -1,6 +1,6 @@
 # student-skills
 
-Light-weight skills that students writing a thesis or a research paper can use and develop further into skill workflows. A skill is a written procedure your AI tool follows when your request matches it. Each skill here does a single job, stops to ask you something, and ends by reporting what it did and could not do. Each one is a single folder you can copy anywhere; the folders follow the [Agent Skills](https://agentskills.io) standard, so any capable tool can read them.
+Light-weight skills that students writing a thesis or a research paper can use and develop further into skill workflows. A skill is a written procedure your AI tool follows when your request matches it. Each skill here does a single job, stops to ask you something, and ends by reporting what it did and could not do. Each one is a single folder you can copy anywhere; the folders follow the [Agent Skills](https://agentskills.io) standard, so any capable tool can read them. Please note that these skills are bare-bone "starter" skills that serve as examples. Students use them and tailor them to their own needs. The skills also follow WHU's principles for Responsible AI use.
 
 ## Skills as workflows
 
