@@ -1,29 +1,20 @@
 # student-skills
 
-Light-weight skills that students writing a thesis or a research paper can use and develop further into skill workflows. A skill is a written procedure your AI tool follows when your request matches it. Each skill here does a single job, stops to ask you something, and ends by reporting what it did and could not do. Each one is a single folder you can copy anywhere; the folders follow the [Agent Skills](https://agentskills.io) standard, so any capable tool can read them. Please note that these skills are bare-bone "starter" skills that serve as examples. Students use them and tailor them to their own needs. The skills also follow WHU's principles for Responsible AI use.
+Light-weight skills that students writing a thesis or a research paper can use and develop further into skill workflows. A skill is a written procedure your AI tool follows when your request matches it. Each skill here does a single job, stops to ask you something, and ends by reporting what it did and could not do. Each one is a single folder you can copy anywhere; the folders follow the [Agent Skills](https://agentskills.io) standard, so any capable tool can read them. Please note that these skills are bare-bone "starter" skills that serve as examples. Students can use them and tailor them to their own needs. The skills also follow WHU's principles for Responsible AI use.
 
 ## Skills as workflows
 
-Each skill in this repo captures a workflow. It tries to automate the careful, boring work (searching twice, checking every reference, listing every change it made), while handing the important decisions and judgments to you. Some skills dispatch a second, independent helper to improve quality of output, because a tool checking its own work in the same conversation tends to approve it. Everything a skill needs is written in its folder; the only thing your AI tool has to do is read a `SKILL.md` file.
+Each skill in this repo captures a particular workflow. It tries to automate the careful, boring work, while handing the important decisions and judgments to you. Some skills dispatch a second, independent auditor to improve quality of output, because a tool checking its own work in the same conversation tends to approve it or miss things. Everything a skill needs is written in its folder; the only thing your AI tool has to do is import the folder's contents.
 
 ## The skills
 
-**Start the project**
 - **research-proposal-drafter**: Asks the three questions every researcher has to answer, then builds a proposal from your answers alone. Ships with **research-proposal-auditor**, an independent check on the draft: unsupported claims, language, references, checkable facts.
-
-**Work with the literature**
 - **research-paper-finder**: Searches for papers on your topic, confirms every candidate against a second search, and drops what it cannot confirm rather than padding the list. Ships with **research-paper-auditor**, an independent field-by-field existence check on the results.
-
-**Analyze the data**
-- **research-analysis-coder**: Gives you the code that computes a result, never the result itself, so every number comes from a script you can run again.
-
-**Write**
-- **research-section-drafter**: Turns your own bullets into prose and reports every claim, hedge, and magnitude it added.
-- **research-english-editor**: Returns a numbered list of language corrections you accept or reject one by one; it never applies a change you have not accepted.
+- **research-analysis-coder**: Gives you the code that computes a result based on data, never the result itself, so every number comes from a script you can run again.
+- **research-section-drafter**: Turns your own bullets and outline into prose and reports every claim, hedge, and magnitude it added.
+- **research-english-editor**: Returns a numbered list of language corrections you accept or reject one by one.
 - **research-text-humanizer**: Quotes the phrasing in your text that reads as machine-written and leaves the rewriting to you.
-
-**Check and defend**
-- **research-reviewer**: Reads a chapter you wrote and reports where the argument does not hold, the way a marker would, without rewriting a word.
+- **research-reviewer**: Reads a chapter you wrote and reports where the argument does not hold, without rewriting a word.
 - **research-feedback-reviser**: Splits supervisor comments into separate items and applies only the ones you accept, recording your reasons for the ones you reject.
 - **research-auditor**: Audits the finished document against the rules you give it: numbers against tables, every reference checked and resolved, terms used consistently, claims against evidence.
 - **research-defense-questions**: Produces the questions your examiner will ask, grouped by research question, theory, design, data, results, limits, and contribution, then checks whether your own answers point at anything in your document.
