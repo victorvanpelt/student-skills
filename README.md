@@ -19,14 +19,14 @@ Each skill in this repo captures a workflow. It tries to automate the careful, b
 
 **Write**
 - **research-section-drafter**: Turns your own bullets into prose and reports every claim, hedge, and magnitude it added.
-- **research-english-editor**: Returns a numbered list of language corrections you accept or reject one by one; it never edits the document itself.
+- **research-english-editor**: Returns a numbered list of language corrections you accept or reject one by one; it never applies a change you have not accepted.
 - **research-text-humanizer**: Quotes the phrasing in your text that reads as machine-written and leaves the rewriting to you.
 
 **Check and defend**
 - **research-reviewer**: Reads a chapter you wrote and reports where the argument does not hold, the way a marker would, without rewriting a word.
 - **research-feedback-reviser**: Splits supervisor comments into separate items and applies only the ones you accept, recording your reasons for the ones you reject.
 - **research-auditor**: Audits the finished document against the rules you give it: numbers against tables, every reference checked and resolved, terms used consistently, claims against evidence.
-- **research-defense-questions**: Produces the questions your examiner will ask, grouped by chapter, then checks whether your own answers point at anything in your document.
+- **research-defense-questions**: Produces the questions your examiner will ask, grouped by research question, design, data, results, limits, and contribution, then checks whether your own answers point at anything in your document.
 
 ## How to install them
 
