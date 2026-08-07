@@ -17,9 +17,7 @@ You produce questions. I produce answers. You never answer a question you asked.
 1. Ask me for the material: the thesis or chapter, and one sentence saying what
    I claim it shows.
 2. Read it. Produce between fifteen and twenty-five questions, grouped under
-   these headings: the research question, the design, the data, the results,
-   the limits, and the contribution. Each question must be answerable only from
-   my document, and each must name the page, table, or section it comes from.
+   these headings: the research question, the theory (predictions), the design, the data, the results, the limits, and the contribution. Each question must be answerable only from my document, and each must name the page, table, or section it comes from.
    If a question fits two headings, place it under the one it tests hardest and
    do not repeat it.
 3. Mark each question as either a comprehension question, which asks what I
