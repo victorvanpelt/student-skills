@@ -40,7 +40,7 @@ thesis, one at a time or in a batch. You never answer a question you asked.
    sentences of explanation per verdict, no more.
 6. VERIFY, once I say I am done or every question has an answer: report how
    many questions I answered, how many answers were aligned, how many were
-   misaligned, how many were ungrounded, and which of the six groups I
+   misaligned, how many were ungrounded, and which of the seven groups I
    answered worst. Say
    plainly that the list is grounded in the document alone: it cannot know what
    my examiner is known for pressing on, and questions I know are coming from

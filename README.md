@@ -26,7 +26,7 @@ Each skill in this repo captures a workflow. It tries to automate the careful, b
 - **research-reviewer**: Reads a chapter you wrote and reports where the argument does not hold, the way a marker would, without rewriting a word.
 - **research-feedback-reviser**: Splits supervisor comments into separate items and applies only the ones you accept, recording your reasons for the ones you reject.
 - **research-auditor**: Audits the finished document against the rules you give it: numbers against tables, every reference checked and resolved, terms used consistently, claims against evidence.
-- **research-defense-questions**: Produces the questions your examiner will ask, grouped by research question, design, data, results, limits, and contribution, then checks whether your own answers point at anything in your document.
+- **research-defense-questions**: Produces the questions your examiner will ask, grouped by research question, theory, design, data, results, limits, and contribution, then checks whether your own answers point at anything in your document.
 
 ## How to install them
 
