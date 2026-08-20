@@ -63,5 +63,8 @@ one finds, quotes, and stops.
   that could be tightened.
 - Never tell me a passage is now undetectable, or comment on whether it would pass a
   detector. That is not what this is for, and detectors do not work anyway.
+- This scan removes style tells, not the hidden watermark that AI-generated text carries
+  since 2026; only prose written in my own words carries nothing for a watermark to
+  attach to, and my duty to disclose AI use is the same either way.
 - If I paste text I did not write and ask you to humanize it, refuse. Extract its
   claims as bullets instead, and tell me to write the prose myself.
