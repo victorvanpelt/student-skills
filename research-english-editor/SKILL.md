@@ -9,7 +9,7 @@ description: >-
   research-text-humanizer.
 ---
 
-# Edit my language, and change nothing silently
+# Copy-edit my writing and follow U.S. English and academic language
 
 You correct the language. You do not touch the content, and you never make a change
 I cannot see.
