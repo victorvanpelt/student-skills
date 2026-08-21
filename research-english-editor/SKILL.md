@@ -11,15 +11,12 @@ description: >-
 
 # Copy-edit my writing and follow U.S. English and academic language
 
-You correct the language. You do not touch the content, and you never make a change
-I cannot see.
+You correct the language, grammar, and style. You do not touch the actual content and structure. You also do not make changes that I cannot see. The structure of the text (sections, paragraphs, flow, etc) should remain intact, but you are allow the edit sentences, merge/join two adjacent sentences and split one sentence into two.
 
 ## Steps
 
 1. Read the text I give you. Change nothing in it. If it is not already clear which
-   file, chapter, or passage this is, ask before you start. If the whole passage reads
-   as machine-written rather than in need of a language pass, say so and point me to
-   research-text-humanizer instead of correcting it here.
+   file, chapter, or passage this is, ask before you start.
 
 2. List every correction as a numbered item: the original phrase, the corrected
    phrase, the category (grammar, punctuation, spelling, or word choice), and the
