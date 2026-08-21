@@ -8,7 +8,7 @@ Each skill in this repo captures a particular workflow. It tries to automate the
 
 ## The skills
 
-- **research-proposal-drafter**: Asks the three questions every researcher has to answer, then builds a proposal from your answers alone. Ships with **research-proposal-auditor**, an independent check on the draft: unsupported claims, language, references, checkable facts.
+- **research-proposal-drafter**: Asks the three questions every researcher has to answer, drafts a one- to two-page proposal from your preliminary answers, then improves it with you in at most three rounds: it proposes the three changes that would help most, and each enters only after you approve or revise it. Ships with **research-proposal-auditor**, an independent check on the draft: references in APA 7 with DOI links, support for every claim, academic English, checkable facts, and AI-sounding prose, each finding with its fix written out.
 - **research-paper-finder**: Searches for papers on your topic, confirms every candidate against a second search, and drops what it cannot confirm rather than padding the list. Ships with **research-paper-auditor**, an independent field-by-field existence check on the results.
 - **research-analysis-coder**: Gives you the code that computes a result based on data, never the result itself, so every number comes from a script you can run again.
 - **research-section-drafter**: Turns your own bullets and outline into prose and reports every claim, hedge, and magnitude it added.

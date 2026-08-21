@@ -1,136 +1,148 @@
 ---
 name: research-proposal-drafter
 description: >-
-  Turns a shaped research idea into a written thesis proposal, built only from what
-  its author supplies. Use when the author says "draft my thesis proposal", "help me
-  write my proposal", or "turn my research idea into a proposal". Refuses to invent a
+  Builds a one- to two-page thesis proposal from its author's preliminary answers to
+  three questions (what the study tries to find out, why an answer matters and to whom,
+  how it will be found) and improves it with the author in up to three rounds. Use when
+  the author says "draft my thesis proposal", "help me write my proposal", "sharpen my
+  research question", or "turn my research idea into a proposal". Refuses to invent a
   research question.
 ---
 
 # Thesis proposal drafter
 
-Produce a short thesis proposal (two to four pages) in which every intellectual
-claim comes from me, every reference is real, and an independent audit runs
-before the document is handed over.
+Produce a thesis proposal of 700 to 1,000 words (one to two A4 pages at 12 point with
+one-inch margins), counted without the reference list, in which the research question is
+mine, every addition you propose has my approval, every reference is real and in APA 7
+with its DOI link, and an independent audit runs before the document is handed over.
 
 ## Rules that hold in every phase
 
-1. Never invent a research question, a motivation, an audience, a method, or a
-   finding. If one is missing, ask for it and wait.
-2. Never add a reference I did not supply or that you have not confirmed
-   exists. Absence beats fabrication. An empty reference list is an acceptable
-   outcome; an invented one is not.
-3. A proposal argues what a study will find. Write predictions as predictions
-   ("I expect that", "the study will test whether"), never as results. Never
-   write "prove", "show", or "demonstrate" for a prediction; "found" and
-   "document" belong only to a published result, cited to its source.
-4. Mark anything I still have to decide as `[I NEED TO DECIDE: ...]` in the
-   draft. Do not fill the gap yourself.
+1. The research question is mine. If it is missing, ask for it and wait. Everything else
+   (audience, theory, design, sample, measures, contribution) you may propose, labeled as
+   your proposal, and it enters the proposal only after I approve or revise it.
+2. Never add a reference I did not supply or that you have not confirmed exists. Absence
+   beats fabrication. An empty reference list is an acceptable outcome; an invented one is
+   not.
+3. A proposal argues what a study will find. Write predictions as predictions ("I expect
+   that", "the study will test whether"), never as results. Never write "prove", "show",
+   or "demonstrate" for a prediction; "found" and "document" belong only to a published
+   result, cited to its source.
+4. Mark anything I still have to decide as `[I NEED TO DECIDE: ...]` in the draft. Do not
+   fill the gap yourself.
 5. Stop at every CHECKPOINT and wait for an answer. Do not continue on assumption.
+6. Write in US American English. Keep the body between 700 and 1,000 words; the reference
+   list does not count and is mandatory, in APA 7, each entry with its DOI link
+   (https://doi.org/...) where one exists.
 
-## Phase 0: Intake, in whatever form the answers arrive
+## Phase 0: Intake, preliminary answers in whatever form they arrive
 
-Ask me for the three answers. Accept them in any form: one at a time, all three
-in one message, or pasted out of notes I already wrote. If I give you all three
-at once, do not ask me again one by one. If I give you one, ask for the next.
+Ask me the three questions, with the bar for each in one line, and accept preliminary
+answers: one at a time, all three in one message, or pasted out of notes. Rough is fine;
+the rounds below are where they get better. Collect them; do not judge them yet.
 
-1. **What are you trying to find out?** The answer must be a question relating two
-   defined concepts, not a topic. If I give you a topic ("something about
-   sustainability reporting"), say so plainly, explain the difference in one
-   sentence, and ask again.
-2. **Why is an answer important, and to whom?** The answer must name a specific
-   audience (a literature, a regulator, a type of firm, a class of decision maker)
-   and what that audience would do differently knowing the answer. "It is an
-   important topic" names nobody; say so and ask again.
-3. **How will you find the answer?** The answer must name a method, a data source
-   I can realistically access, and roughly how those data speak to the question.
+1. **What are you trying to find out?** A complete answer relates two defined concepts.
+2. **Why is an answer important, and to whom?** A complete answer names a specific audience
+   and what that audience would do differently knowing the answer.
+3. **How will you find the answer?** A complete answer names a method, a data source I can
+   realistically access, and roughly how those data speak to the question.
 
-CHECKPOINT: after the third answer, ask for anything else I already have: key
-references, a data source, a supervisor's constraints, a required template or
-length limit. Wait.
+CHECKPOINT: after the third answer, ask for anything else I already have: key references,
+a data source, a supervisor's constraints, a required template or length limit. Wait.
 
-## Phase 1: Play back
+## Phase 1: Draft and improve, at most three rounds
 
-Restate the three answers in one paragraph each, in my own words wherever
-possible, and list every gap you found. Where an answer implies a choice I have
-not stated outright (one method over an alternative, one audience over another),
-name it as a judgment call rather than folding it silently into the restatement.
+No draft without a research question. If answer 1 names a topic ("something about
+sustainability reporting") rather than a relation between two defined concepts, reply
+with the three answers quoted word for word, one sentence saying why answer 1 is still a
+topic, and one question asking for the relation. Wait. Rounds count from the first draft.
 
-CHECKPOINT: ask me to confirm or correct the restatement. Do not draft until I
-confirm. If I correct anything, restate again.
+Open every round's message with its label: "Round 1 of 3", "Round 2 of 3", "Round 3 of 3".
 
-## Phase 2: Draft the proposal
+**Round 1.** Send three things in one message:
 
-Write the document with these sections:
+- My three answers, quoted word for word, so I can see what the draft rests on.
+- A first draft of 700 to 1,000 words, written only from my answers, with these sections:
+  title and one-paragraph summary; what the study tries to find out; why an answer
+  matters, and to whom; how the answer will be found (design, sample, data, measures, what
+  the analysis compares); what the study expects to find (predictions tied to the
+  reasoning above); references in APA 7 with DOI links, only sources I supplied or you
+  confirmed exist. Under the list, say which entries I supplied and which you found and
+  confirmed yourself, naming where you checked (Crossref, OpenAlex, or the publisher's
+  page). Where an argument needs a step my answers did not give, put
+  `[I NEED TO DECIDE: ...]` rather than inventing it.
+- The three comments: the three changes that would most improve this proposal, ranked by
+  how much they would improve it. A comment may be about anything a strong proposal needs
+  (the theory behind the prediction, the contribution, identification, the sample,
+  measures, feasibility, a hypothesis stated testably). An answer that misses its bar is
+  comment 1. Each comment gives: what is missing or weak, why it matters for a proposal,
+  and the concrete text you propose to add or change, labeled as your proposal.
 
-- **Title and one-paragraph summary.** The question, the audience, and the approach.
-- **What the study tries to find out.** The research question, the concepts it
-  relates, and the reasoning that connects them.
-- **Why an answer matters, and to whom.** The named audience and the stakes,
-  argued rather than asserted.
-- **How the answer will be found.** Design, sample, data source, measures, and
-  what the analysis compares.
-- **What the study expects to find.** Predictions, phrased as predictions, each
-  tied to the reasoning above.
-- **References.** Only sources I supplied or that you confirmed exist, formatted
-  consistently. Fewer well-chosen sources beat a long list; do not pad the list
-  to look thorough.
+CHECKPOINT: for each comment I approve, revise (I say how), or reject; and I may steer the
+draft in any other way ("shorten the method", "the audience is regulators, not
+investors"). Wait.
 
-Use my own formulations wherever they exist. Add no claim that was not in my
-answers. Where an argument needs a step I did not provide, insert
-`[I NEED TO DECIDE: ...]` rather than inventing it.
+**After each answer.** Apply exactly what I approved, revised, or instructed, and nothing
+else. A passage you proposed enters the proposal only after I approve or revise it; a
+steering instruction is me writing through you, so apply it as given. Show the updated
+draft with every changed passage in bold. Under it, state for each round-1 comment:
+resolved, or still open with the one thing still missing. Raise no new comment in round 2
+or 3: later rounds check the first round's comments and carry out my steering.
 
-CHECKPOINT: show the assembled draft and wait for my go before any audit is
-dispatched. I read it once first, because assembly can smuggle in a claim I
-never made.
+CHECKPOINT: I steer again, or I say the draft stands. Wait.
 
-## Phase 3: Audit
+**Closing.** The loop ends when I say the draft stands, or after round 3. Either way, list
+every comment still open in the closing message; an early close drops nothing silently.
+Do not declare the draft finished yourself, and do not ask again once I have closed it.
 
-Dispatch the auditor defined in `research-proposal-auditor.md` in a fresh context, giving it
-only the drafted proposal and my original three answers, never this drafting
-conversation's reasoning.
+## Phase 2: Audit
+
+Dispatch the auditor defined in `research-proposal-auditor.md` in a fresh context, giving
+it only the closed draft and my original three answers, never this drafting
+conversation's reasoning or its rounds.
 
 If you are running inside a single browser conversation and have no way to start a
-separate, context-free instance, stop here. Tell me to open a brand new chat,
-outside this project, and paste three things into it: the auditor file, the drafted
-proposal, and my three original answers. The audit runs there, not here. Do not
-attempt to audit the proposal inside this conversation. You wrote it, so you cannot
-check it independently, and a check that is not independent is worse than none,
-because it reads like reassurance.
+separate, context-free instance, stop here. Tell me to open a brand new chat, outside this
+project, and paste three things into it: the auditor file, the closed draft, and my three
+original answers. The audit runs there, not here. Do not attempt to audit the proposal
+inside this conversation. You wrote it, so you cannot check it independently, and a check
+that is not independent is worse than none, because it reads like reassurance.
 
-The auditor must return findings with evidence, not a verdict, covering:
+The auditor runs five checks and returns findings with evidence and the fix written out
+for each, never a verdict and never a repaired document:
 
-- every claim in the draft that does not trace back to my answers;
-- language, style, and grammar problems;
-- every reference: does it exist, are author, year, title, and venue correct, is
-  the formatting consistent;
-- any factual claim that can be checked, with the check's result.
+1. references: each entry exists, its fields are right, entry and in-text citation are in
+   APA 7, the DOI link is present, every citation has an entry and every entry a citation;
+2. substantiation: every claim that needs support has a reference;
+3. academic English in US American spelling: grammar, punctuation, word choice,
+   consistent terms, predictions phrased as predictions;
+4. facts: every checkable claim, with the check's result;
+5. human language: AI-writing tells, each with a plain rewrite.
 
-Repeat this phase at most twice. If findings remain unresolved after the second
+The auditor changes nothing. A fix it writes out is applied only after I accept it in
+Phase 3. Repeat this phase at most twice. If findings remain unresolved after the second
 round, report them as open rather than continuing.
 
-## Phase 4: Your read
+## Phase 3: Your read
 
-Present the audit findings grouped as: added claims to remove or approve,
-language corrections, reference problems, and factual corrections.
+Present the audit findings grouped by the five checks, each with its fix.
 
-CHECKPOINT: I decide on each group. Apply only what I approve.
+CHECKPOINT: I accept, reject with a reason, or answer each finding. Apply only what I
+accept, and show the changed passages in bold.
 
-## Phase 5: Your final edit
+## Phase 4: Your final edit
 
 VERIFY, before you hand anything back:
 
-- which sections rest entirely on my own answers, and which contain your
-  formulations that I should read line by line;
+- which passages are your proposals that I approved, so I read them once more;
 - every `[I NEED TO DECIDE]` marker still open;
-- every audit finding that was not resolved;
-- the AI-use log line for my records: tool, date, purpose ("drafting a thesis
-  proposal from my own answers to three questions, with an audit pass").
+- every round comment and every audit finding still open;
+- the word count without the reference list, against the 700 to 1,000 target;
+- the AI-use log line for my records: tool, date, purpose ("drafting a thesis proposal from
+  my own answers to three questions, improved in rounds I approved, with an audit pass").
 
-State plainly what you could not verify. "It should work" is not an acceptable
-report.
+State plainly what you could not verify. "It should work" is not an acceptable report.
 
-Hand back the finished document and stop. Say, in one line: this is mine to
-read in full and edit before it counts. Do not offer to polish it, do not
-suggest further improvements, and do not ask whether I want another pass.
-The last read belongs to me.
+Hand back the finished document and stop. Say, in one line: this is mine to read in full
+and edit before it counts. Do not offer to polish it, do not suggest further improvements,
+and do not ask whether I want another pass. The last read belongs to me.
