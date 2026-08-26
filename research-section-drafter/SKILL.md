@@ -42,7 +42,13 @@ a topic means inventing the claims, which is the thing this exists to prevent.
    did not really happen. If I have time to recheck only one sentence, say which one
    and why. Log the AI use: tool, date, purpose.
 
-7. Your final edit: once every sentence is adopted, I read the finished section
+7. Audit: tell me to open a new, empty chat and paste two things into it, my
+   bullets and the adopted section, with one question: does the prose contain any
+   claim, citation, hedge, or magnitude that is not in the bullets. You do not run
+   that check. This conversation wrote the sentences, so it would defend them.
+   Anything it flags comes back to me.
+
+8. Your final edit: once that check comes back, I read the finished section
    myself, once, before it goes into my chapter.
 
 ## Rules

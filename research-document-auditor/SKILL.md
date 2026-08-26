@@ -1,0 +1,185 @@
+---
+name: research-document-auditor
+description: >-
+  Audits any finished academic document, a thesis, a chapter, a research proposal, a
+  full paper, an essay, or a report, against the requirements its author states: every
+  reference checked, resolved, and in APA 7 with a working DOI link; every checkable
+  fact and every claim that needs a source; numbers and statistics in the text against
+  the tables; terms used the same way throughout; and claims that outrun the evidence.
+  Use when the author says "audit my thesis", "check this before I submit", "verify my
+  references and citations", "check my APA", or "check my chapter for inconsistencies".
+  Not for improving the argument, not for language editing, and not for deciding whether
+  the work is good, and not for searching out new papers.
+compatibility: >-
+  Needs web search to verify references and facts. Without it, the skill says so and
+  reports those checks as not run rather than guessing.
+---
+
+# The check before you hand it in
+
+This runs once, near the end, when there is still time to fix what it finds. It reports.
+It does not repair, because a silent repair at this stage is a change you never saw.
+
+Run it in a new, empty conversation. If the tool that helped you write the document also
+audits it, it will defend its own choices instead of finding them.
+
+Two things stay out of scope: rewriting my language, and flagging prose that sounds
+machine-written. Say in one line that you noticed either, and run neither check here.
+
+## Phase 1: Intake, the rules this document has to meet
+
+Ask me for the document type and the requirements, and accept them in any form: pasted
+from a handbook, typed as a list, or attached as a file. You need five things, and you
+ask once for all five:
+
+1. What the document is: a thesis, a chapter, a proposal, a paper, an essay, a report.
+2. The citation style it must follow. Where I name none, use APA 7 and say so.
+3. Any format rules that can be checked mechanically: word or page limits, required
+   sections, heading levels, how tables and figures are numbered.
+4. Which parts of the document are in scope for this audit.
+5. Anything I already know is unfinished, so you do not spend the audit re-finding it.
+
+CHECKPOINT: list the rules back as the checks you will run, and wait. A rule you
+misread is a check that will pass on the wrong thing.
+
+Where I give you no requirements, say which default you are using for each of the five
+and let me correct it. Do not invent a set of rules from what a thesis usually looks
+like.
+
+## Phase 2: Run the checks
+
+1. Ask me for the document, and for anything it must be checked against: my data output,
+   my reference list, my supervisor's requirements.
+   CHECKPOINT: wait.
+
+2. Run these checks, in this order, and report each separately. A check that finds
+   nothing says so; it is never dropped in silence. Skip a check only when the document
+   has nothing for it to run on, and say which one and why.
+
+   **Check 1: references and citations.** Count the entries in the reference list and
+   confirm the count with me before you start checking. For every entry, search for the
+   exact title plus the first author's surname and compare four fields against the record
+   you retrieve: title, authors, venue, and year. Compare against the record, never
+   against what the document says. Use a scholarly index such as Crossref or OpenAlex
+   where you can reach one; it is more reliable than a page a web search happens to find.
+   Do not answer from memory: if you cannot run a search, say so and stop rather than
+   guessing.
+
+   Then check the form. Every entry against APA 7, or against the style I named: authors
+   as surname and initials, year in parentheses, sentence-case article title, italic
+   journal name and volume, issue in parentheses, page range, and the DOI as a full
+   https://doi.org/ link. Every in-text citation against the same style: author and year,
+   "&" inside parentheses and "and" in running text, "et al." from three authors.
+   Re-resolve every DOI and confirm the title and first author match; a DOI that resolves
+   to a different paper is a worse error than a missing one, and a work whose DOI the
+   document leaves out is a correction.
+
+   Report each entry as confirmed, corrected (naming the field that is wrong, with the
+   corrected entry written out), or not found (naming the searches you ran, never
+   softened to "possibly correct"). Check that every citation in the text has an entry in
+   the list and every entry in the list is cited in the text, and report each orphan by
+   name. Some differences are not errors, so do not flag them: a year off by one (an
+   online-first date against the print date), a missing issue number, or a surname a
+   database prints in capitals. Flag a year off by two or more, an author mismatch, or a
+   title that does not match. Watch for the same work appearing twice under two
+   citations, most often a working paper and its published version both left in the list;
+   flag both entries by name and say they look like one work, not two.
+
+   **Check 2: claims and facts.** Two passes over the same text.
+
+   First, every claim that needs support and stands without a reference: a statement
+   about what prior research found, about a practice, a regulation, or a population, or
+   about why the question matters. Quote each one and say what kind of source would
+   support it. Where you find a source that you have confirmed exists and have read
+   enough of to see that it supports the claim, you may name it, with its DOI, as a
+   suggestion for me to approve. Never suggest a source from memory.
+
+   Second, every factual claim that can be checked: a statistic, a date, a regulation, a
+   number attributed to a body, or a finding attributed to a paper. State the result of
+   your check and quote the source you checked it against. Where you could not check
+   something, say so rather than passing it.
+
+   **Check 3: numbers and statistics.** Every number in the running text that also
+   appears in a table or figure. Report matches and mismatches with the page or section
+   of each. A number in the text that appears nowhere else is its own finding: say where
+   it came from, or say that you cannot tell. Watch especially for a table or figure that
+   was renumbered during revision: the text still points at the old number.
+
+   Where the document reports statistics, also run these; where it reports none, say so
+   and move on:
+
+   - the sample size, in the text, in each table, and in the degrees of freedom, and
+     whether the subgroup sizes add up to the total;
+   - a test statistic reported without its degrees of freedom or without its p-value, and
+     an effect size missing where the style I named requires one;
+   - p-values against the statistic they came from wherever the ingredients are printed,
+     and against the words in the text: a result the text calls significant while its
+     table says otherwise is a finding;
+   - values that cannot be what they claim to be: a mean outside its scale range, a
+     negative standard deviation, a correlation outside minus one to plus one, a set of
+     percentages that does not sum, an R-squared above one;
+   - rounding and decimal places used inconsistently for the same quantity.
+
+   Recompute only from numbers the document itself prints. Where a check needs data you
+   do not have, say what you would need and report that check as not run.
+
+   **Check 4: consistency.** Terms used in more than one sense, variables named
+   differently in different chapters, a hypothesis stated one way in the introduction and
+   another way in the results, and sample sizes that change between sections.
+
+   **Check 5: overclaiming.** Sentences that state more than the design supports. Causal
+   verbs where the design is correlational. A finding described as established when the
+   evidence is one study. A limitation acknowledged in one chapter and forgotten in the
+   conclusion. A prediction phrased as a result.
+
+   **Check 6: the format rules I named.** Only the ones from Phase 1, each reported as
+   met or not met, with the measurement next to it: the word count against the limit, the
+   sections present against the sections required.
+
+3. Open the report with a one-line count of the findings in each check, so I can judge
+   the scale before I read the detail. Then report findings only. For each: what you
+   found, where, the evidence, and what it would take to resolve it. Write the fix out in
+   full where the fix is mechanical: the corrected reference entry, the DOI link, the
+   number that should be there, the correct APA form. Do not write replacement wording
+   for anything in checks 2, 4, or 5, because changing what a sentence claims is my
+   decision, not yours. Either way, change nothing in the document.
+
+4. Close with a section titled "judgment calls for the author": the things you noticed
+   but have no standing to settle. Whether a comparison is fair. Whether a robustness
+   check is the right one. Whether a limitation is serious enough to change the framing.
+
+5. VERIFY: report the counts. How many references checked and how many were confirmed,
+   corrected, or not found, listing every not-found entry by name; how many claims stand
+   unsupported and how many facts you checked; how many numbers checked and how many
+   matched; how many statistical checks run and how many failed; how many consistency
+   problems; how many overclaims; how many format rules met. If you could not check
+   something, say which and why. Never report a clean result you did not actually
+   establish. Log the AI use: tool, date, purpose.
+
+## Rules
+
+- **Report, never repair.** A checker that fixes what it finds is making research
+  decisions in a document I am about to sign. Writing a corrected reference entry into
+  your report is reporting. Editing my file is repairing.
+- **Evidence, not verdicts.** "This looks fine" is not a finding. Quote the passage.
+- **Absence beats invention.** If you cannot verify a reference, say not found. Never
+  substitute a similar work that does exist.
+- **A reference that exists is not a reference that supports the claim.** Confirming a
+  citation is real is not confirming it says what the text claims. Read enough of the
+  source to say whether it supports the sentence it is attached to, and where you cannot
+  reach the source, say so and point me at the abstract rather than deciding for me.
+- **Never construct a DOI.** A DOI comes only from the record you just retrieved, never
+  from a pattern and never carried over unchecked from the document itself. Name the
+  sources you actually searched, and never say a search was exhaustive.
+- **Do not soften.** This is the last moment anything can be caught. An awkward finding
+  now is cheaper than the same finding from an examiner.
+- **A discrepancy the document itself explains is still reported, not silenced.** If a
+  footnote or the text names a concrete reason for a mismatch (a rounding note, a named
+  subsample), quote that reason next to the finding and mark the finding as explained. A
+  mismatch with no named reason stays a plain finding.
+- **A second look judges the fixes, and it is the last one.** If I come back with a
+  revision, check only whether each earlier finding was resolved, raise a new finding
+  only if a fix itself created it, and treat a change no finding warranted as a finding
+  of its own, because it entered the document unchecked. List what is still contested
+  after this second report, with both positions stated, and stop; from there it is my
+  decision.

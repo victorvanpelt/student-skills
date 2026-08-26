@@ -5,8 +5,7 @@ description: >-
   from memory. Use when the author says "find papers on", "what has been written
   about", "I need literature on", or "find me references for". Not for writing a
   literature review, not for summarizing what the papers say, and not for deciding
-  which ones matter. Checking references already in a document belongs to
-  research-auditor.
+  which ones matter, and not for checking references that are already in a document.
 compatibility: >-
   Needs web search or page-fetch access to find and confirm papers. Without it, the
   skill says so and stops rather than returning unverified results.
@@ -76,7 +75,13 @@ any coverage gap it noticed.
 
 ## Phase 4: Deliver
 
-Give the list with, for each paper: title, authors, venue, year, DOI or link,
+Give me the audit's findings first, grouped as confirmed, corrected, and not
+found, and stop.
+
+CHECKPOINT: I decide what happens to each corrected and each not-found paper
+before the list is written up. Wait.
+
+Then give the list with, for each paper: title, authors, venue, year, DOI or link,
 and one line saying what the paper is about, taken from its abstract and not
 from your own knowledge. Group the list by venue strength if I gave you a
 ranking, and say which group each paper is in. Grouping by venue is not ranking
@@ -87,7 +92,8 @@ VERIFY: in three lines, how many candidates you found, how many you dropped and
 why, and what the search did not cover. If the topic has an angle you did not
 search, say so. If the count came back thin, name one way I could broaden the
 search: a broader term, a neighboring field, or the papers that cite the
-strongest hit. A list that hides its own limits cannot be judged.
+strongest hit. A list that hides its own limits cannot be judged. Log the AI use:
+tool, date, purpose.
 
 ## What you never do
 

@@ -13,8 +13,8 @@ description: >-
 
 Produce a thesis proposal of 700 to 1,000 words (one to two A4 pages at 12 point with
 one-inch margins), counted without the reference list, in which the research question is
-mine, every addition you propose has my approval, every reference is real and in APA 7
-with its DOI link, and an independent audit runs before the document is handed over.
+mine, every addition you propose has my approval, and every reference is real and in APA 7
+with its DOI link.
 
 ## Rules that hold in every phase
 
@@ -95,54 +95,20 @@ CHECKPOINT: I steer again, or I say the draft stands. Wait.
 every comment still open in the closing message; an early close drops nothing silently.
 Do not declare the draft finished yourself, and do not ask again once I have closed it.
 
-## Phase 2: Audit
-
-Dispatch the auditor defined in `research-proposal-auditor.md` in a fresh context, giving
-it only the closed draft and my original three answers, never this drafting
-conversation's reasoning or its rounds.
-
-If you are running inside a single browser conversation and have no way to start a
-separate, context-free instance, stop here. Tell me to open a brand new chat, outside this
-project, and paste three things into it: the auditor file, the closed draft, and my three
-original answers. The audit runs there, not here. Do not attempt to audit the proposal
-inside this conversation. You wrote it, so you cannot check it independently, and a check
-that is not independent is worse than none, because it reads like reassurance.
-
-The auditor runs five checks and returns findings with evidence and the fix written out
-for each, never a verdict and never a repaired document:
-
-1. references: each entry exists, its fields are right, entry and in-text citation are in
-   APA 7, the DOI link is present, every citation has an entry and every entry a citation;
-2. substantiation: every claim that needs support has a reference;
-3. academic English in US American spelling: grammar, punctuation, word choice,
-   consistent terms, predictions phrased as predictions;
-4. facts: every checkable claim, with the check's result;
-5. human language: AI-writing tells, each with a plain rewrite.
-
-The auditor changes nothing. A fix it writes out is applied only after I accept it in
-Phase 3. Repeat this phase at most twice. If findings remain unresolved after the second
-round, report them as open rather than continuing.
-
-## Phase 3: Your read
-
-Present the audit findings grouped by the five checks, each with its fix.
-
-CHECKPOINT: I accept, reject with a reason, or answer each finding. Apply only what I
-accept, and show the changed passages in bold.
-
-## Phase 4: Your final edit
+## Phase 2: Your final edit
 
 VERIFY, before you hand anything back:
 
 - which passages are your proposals that I approved, so I read them once more;
 - every `[I NEED TO DECIDE]` marker still open;
-- every round comment and every audit finding still open;
+- every round comment still open;
 - the word count without the reference list, against the 700 to 1,000 target;
 - the AI-use log line for my records: tool, date, purpose ("drafting a thesis proposal from
-  my own answers to three questions, improved in rounds I approved, with an audit pass").
+  my own answers to three questions, improved in rounds I approved").
 
 State plainly what you could not verify. "It should work" is not an acceptable report.
 
 Hand back the finished document and stop. Say, in one line: this is mine to read in full
-and edit before it counts. Do not offer to polish it, do not suggest further improvements,
+and edit before it counts, and a check by a reader who did not write it is worth running in
+a fresh, empty chat. Do not offer to polish it, do not suggest further improvements,
 and do not ask whether I want another pass. The last read belongs to me.

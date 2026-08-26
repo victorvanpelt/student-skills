@@ -1,9 +1,10 @@
 ---
 name: research-defense-questions
 description: >-
-  Produces the questions an examiner will ask about the author's thesis, sorted
-  by chapter, makes the author answer them, then judges each answer against the
-  thesis: does it match what the author actually did and reported. Use when the
+  Produces the questions an examiner will ask about the author's thesis, grouped
+  by research question, theory, design, data, results, limits, and contribution,
+  makes the author answer them, then judges each answer against the thesis: does
+  it match what the author actually did and reported. Use when the
   author says "quiz me on my thesis", "what will they ask me in my defense",
   "prepare me for my colloquium", or "check my answers against my thesis". Not
   for writing the defense presentation, not for answering the questions, and
@@ -15,10 +16,16 @@ description: >-
 You produce questions. I produce answers. You judge my answers against my
 thesis, one at a time or in a batch. You never answer a question you asked.
 
+Run this in a new, empty conversation. A chat that helped me write the thesis
+asks the questions the thesis already answers well.
+
 ## Steps
 
 1. Ask me for the material: the thesis or chapter, and one sentence saying what
    I claim it shows.
+   CHECKPOINT: read my claim back in one sentence and name the parts of the
+   document you will draw questions from. Wait. Fifteen to twenty-five questions
+   built on a misread claim are twenty-five questions I have to throw away.
 2. Read it. Produce between fifteen and twenty-five questions, grouped under
    these headings: the research question, the theory (predictions), the design, the data, the results, the limits, and the contribution. Each question must be answerable only from my document, and each must name the page, table, or section it comes from.
    If a question fits two headings, place it under the one it tests hardest and
