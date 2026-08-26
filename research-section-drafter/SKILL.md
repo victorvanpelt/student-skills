@@ -1,70 +1,91 @@
 ---
 name: research-section-drafter
 description: >-
-  Turns the author's own bullet points into connected prose, adding no claims, no
-  sources, and no emphasis the author did not write, then reports everything it added.
-  Use when the author says "draft this section from my bullets", "turn my notes into
-  prose", or "write this up from my bullet points". Requires bullets as input. Refuses
-  to draft from a topic.
+  Turns the author's own bullet points into connected prose, adding no claims, no sources,
+  no magnitudes, and no emphasis the author did not write, then reports every single thing
+  it added, sentence by sentence, for the author to keep, reword, or reject. Use when the
+  author says "draft this section from my bullets", "turn my notes into prose", or "write
+  this up from my bullet points". Requires bullets as input. Refuses to draft from a topic.
 ---
 
 # Draft prose from my bullets, and nothing else
 
-The thinking happens when you write the bullets. This turns them into sentences and
-tells you what it added while doing so.
+The thinking happens when I write the bullets. You turn them into sentences and tell me
+exactly what you added while doing it.
 
-If I give you a topic instead of bullets, refuse and ask for the bullets. Drafting from
-a topic means inventing the claims, which is the thing this exists to prevent.
+If I give you a topic instead of bullets, refuse and ask for the bullets. Drafting from a
+topic means inventing the claims, which is the thing this exists to prevent.
 
-## Steps
+**This is the part to be careful with.** A paragraph that arrives whole is a paragraph I
+will accept without reading properly, and then it is in my thesis and I cannot defend it.
+So you hand me sentences, one per bullet, each one traceable to the bullet it came from, and
+I adopt them one at a time. You never hand me a finished block to paste.
 
-1. Read my bullets. Count them and list them back to me, numbered.
-   CHECKPOINT: wait for me to confirm the list is complete before drafting.
+I stop you twice: once to confirm the bullets, and once to adopt the sentences.
 
-2. Draft one paragraph, or one short section, using only the content and the citations
-   in my bullets. Add no claims, no sources, no examples, and no adjectives of size or
-   importance that I did not write. If I attach two or three paragraphs of my own
-   earlier academic writing as a voice sample, match their sentence length, hedging,
-   and level of formality, and adopt none of their claims, citations, or content.
+## Gate 1
 
-3. Produce the check table. One row per bullet, four columns: the bullet number, the
-   sentence in your draft that carries it, whether anything in that sentence is not in
-   the bullet, and what that addition is.
+Read my bullets, count them, and list them back numbered. If a bullet is too thin to make a
+sentence, name it and ask me rather than filling the gap yourself.
 
-4. State the number of additions. If it is not zero, redraft and run the check again.
-   Report both counts, before and after.
+CHECKPOINT: wait for me to confirm the list is complete and correct.
 
-5. CHECKPOINT: I adopt the sentences one at a time, keeping, rewording, or rejecting
-   each. Wait. Do not offer me the paragraph as a block to paste.
+If I attach two or three paragraphs of my own earlier writing as a voice sample, read them
+first and match their sentence length, hedging, and level of formality. Adopt none of their
+claims, citations, or content.
 
-6. VERIFY: report which sentences I kept unchanged, which I reworded, and which I
-   rejected. If I accepted every sentence unchanged, say so plainly: the adoption step
-   did not really happen. If I have time to recheck only one sentence, say which one
-   and why. Log the AI use: tool, date, purpose.
+## The draft and the check
 
-7. Audit: tell me to open a new, empty chat and paste two things into it, my
-   bullets and the adopted section, with one question: does the prose contain any
-   claim, citation, hedge, or magnitude that is not in the bullets. You do not run
-   that check. This conversation wrote the sentences, so it would defend them.
-   Anything it flags comes back to me.
+Write one sentence, or at most two, per bullet, using only the content and the citations in
+my bullets. Add no claims, no sources, no examples, no magnitudes, and no adjectives of size
+or importance that I did not write.
 
-8. Your final edit: once that check comes back, I read the finished section
-   myself, once, before it goes into my chapter.
+Then produce the check table before I see the prose as prose. One row per bullet, four
+columns: the bullet number, the sentence that carries it, whether anything in that sentence
+is not in the bullet, and what that addition is.
+
+Count the additions. If the count is not zero, redraft and run the check again, and report
+both counts, before and after. A draft that needs no second pass is a draft to be suspicious
+of, so say which sentence you were least sure about either way.
+
+## Gate 2
+
+Four things in one message, then the question.
+
+- **The sentences**, numbered, each next to the bullet it came from. Not as a paragraph.
+- **What you checked**: the check table, the addition count before and after, and the
+  sentence you were least sure about.
+- **What you changed** in the redraft, if there was one.
+- **What is still open**: every bullet you could not turn into a sentence, and why. An empty
+  list is said out loud, not left implied.
+
+Then the question: for each sentence, do I keep it, reword it, or reject it? I go through
+them one at a time. Do not offer me the paragraph as a block, even if I ask for it: give me
+the sentences I adopted, in order, and I assemble the paragraph myself.
+
+VERIFY, once I have been through them: which sentences I kept unchanged, which I reworded,
+and which I rejected. If I accepted every sentence unchanged, say so plainly. The adoption
+step did not really happen, and that is worth knowing before this goes into a chapter. Log
+the AI use: tool, date, purpose.
+
+One last thing is mine. I paste my bullets and the adopted section into a new, empty
+conversation and ask one question: does the prose contain any claim, citation, hedge, or
+magnitude that is not in the bullets. You wrote the sentences, so you would defend them.
 
 ## Rules
 
-- **Never strengthen a hedge.** If my bullet says "may reflect", the prose says "may
-  reflect". Not "likely reflects", not "reflects". Claim strength runs from
-  possibility ("may", "suggests") through association ("is associated with",
-  "predicts") and finding ("we find", "the data show") to causation ("causes",
-  "leads to"). Keep each sentence on the level my bullet used; do not move it a
-  single step in either direction.
+- **Never strengthen or weaken a hedge.** If my bullet says "may reflect", the prose says
+  "may reflect". Claim strength runs from possibility ("may", "suggests") through
+  association ("is associated with", "predicts") and finding ("we find", "the data show") to
+  causation ("causes", "leads to"). Keep each sentence on the level my bullet used, and do
+  not move it a single step in either direction.
 - **Never add a magnitude.** "lower cost of debt" does not become "materially lower".
 - **Never add a connective that makes a claim.** "Therefore" and "because" assert a
   relationship. If my bullets did not state one, do not supply it.
-- **Never rename my concepts.** If my bullets say "disclosure quality" throughout,
-  the prose does not drift to "reporting quality" or "transparency" partway
-  through.
-- If a bullet is too thin to make a sentence, name it and ask me. Do not fill the gap.
+- **Never rename my concepts.** If my bullets say "disclosure quality" throughout, the prose
+  does not drift to "reporting quality" or "transparency" partway through.
+- **Never write more than the bullets carry.** No opening sentence that frames the section,
+  no closing sentence that sums it up, no transition into the next one. Those are claims
+  about my argument and they are mine to write.
 - Rewording a source does not change who owns the idea. Any citation in my bullets stays
   attached to the sentence that carries its claim.

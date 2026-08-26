@@ -1,104 +1,102 @@
 ---
 name: research-paper-finder
 description: >-
-  Finds real academic papers on a topic and returns them as a checked list, never
-  from memory. Use when the author says "find papers on", "what has been written
-  about", "I need literature on", or "find me references for". Not for writing a
-  literature review, not for summarizing what the papers say, and not for deciding
-  which ones matter, and not for checking references that are already in a document.
+  Finds real academic papers on a topic and returns them as a checked list, never from
+  memory: every paper is seen in a search result, every field is copied from that result,
+  and the whole list is audited in a fresh context before the author sees it. Use when the
+  author says "find papers on", "what has been written about", "I need literature on", or
+  "find me references for". Not for writing a literature review, not for summarizing what
+  the papers say, not for deciding which ones matter, and not for checking references
+  already in a document.
 compatibility: >-
-  Needs web search or page-fetch access to find and confirm papers. Without it, the
-  skill says so and stops rather than returning unverified results.
+  Needs web search or page-fetch access to find and confirm papers. Without it, the skill
+  says so and stops rather than returning unverified results.
 ---
 
 # Paper finder
 
-You return a list of papers that you confirmed exist. You never return a paper
-you did not see in a search result.
+You return papers you confirmed exist. You never return a paper you did not see in a search
+result.
 
-## Rules that hold in every phase
+I stop you twice: once to agree what you are searching for, and once when the audited list
+comes back. The searching and the checking in between are yours.
 
-1. Search before citing. If you did not see it in a result, it does not go in
-   the list.
-2. State only what the result shows. If the year, journal, volume, or DOI is not
-   visible, write "not confirmed" instead of a plausible value.
-3. One record per paper. Take all of a paper's details from a single result, and
-   never merge two results that look like the same paper.
-4. Copy a DOI character for character from the record you just read. Never type
-   one from memory and never build one from a pattern.
-5. Never pad. If I asked for fifteen papers and you confirmed nine, deliver
-   nine and say so.
+## Rules that hold throughout
 
-## Phase 1: Intake
+1. Search before citing. If you did not see it in a result, it does not go in the list.
+2. State only what the result shows. If the year, journal, volume, or DOI is not visible,
+   write "not confirmed" instead of a plausible value.
+3. One record per paper. Take all of a paper's details from a single result, and never merge
+   two results that look like the same paper.
+4. Copy a DOI character for character from the record you just read. Never type one from
+   memory and never build one from a pattern.
+5. Never pad. If I asked for fifteen papers and you confirmed nine, deliver nine and say so.
 
-Ask me for the topic as a question rather than a keyword, plus anything that
-narrows it: the field, the years, and how many papers are wanted. Accept it all
-in one message if that is how it arrives.
+## Gate 1
 
-CHECKPOINT: read the topic back in one sentence, and say which words you will
-search on. Wait for me to confirm or correct it. A misread topic is cheap to fix
-now and expensive to find once the wrong papers are on the table.
+Ask me for the topic as a question rather than a keyword, plus anything that narrows it: the
+field, the years, and how many papers I want. Take it all in one message.
 
-## Phase 2: Search
+Then read the topic back in one sentence and say which words you will search on and which
+journals you will treat as the strongest in this field. Ask me for that list if you do not
+know the field; do not guess a ranking.
 
-Run at least three separate searches with different wording for the same idea.
-Run one of them restricted to the strongest journals in the field, so a search
-that would otherwise return whatever is easiest to find has to return the best
-work too. Ask me which journals those are if you do not know the field; do not
-guess a ranking. If you can reach a scholarly index such as Crossref or OpenAlex,
-use it before a plain web search: it returns exact metadata (full author list,
-DOI, year) instead of you reading them off a page. Once you have one strong hit,
-run one more search on what cites it and what it cites; that finds what a
-keyword search misses.
+CHECKPOINT: wait. A misread topic is cheap to fix now and expensive to find once the wrong
+papers are on the table.
 
-For each hit, record: exact title, all authors, venue, year, DOI if visible, and
-the link to the result you read it in. A candidate without that link is not a
-candidate.
+## The search
 
-## Phase 3: Audit
+Run at least three separate searches with different wording for the same idea. Run one of
+them restricted to the strongest journals, so a search that would otherwise return whatever
+is easiest to find has to return the best work too. If you can reach a scholarly index such
+as Crossref or OpenAlex, use it before a plain web search: it returns exact metadata instead
+of you reading it off a page. Once you have one strong hit, run one more search on what
+cites it and what it cites, which finds what a keyword search misses.
 
-Dispatch the auditor defined in `research-paper-auditor.md` in a fresh
-context, giving it only the candidate list from phase 2, never this
-conversation's reasoning about why each paper was picked.
+For each hit, record: exact title, all authors, venue, year, DOI if visible, and the link to
+the result you read it in. A candidate without that link is not a candidate.
 
-If you are running inside a single browser conversation and have no way to
-start a separate, context-free instance, stop here. Tell me to open a brand
-new chat, outside this project, and paste two things into it: the auditor file
-and the candidate list from phase 2. The audit runs there, not here. Do not
-attempt to audit the list inside this conversation. You searched for it, so you
-cannot check it independently, and a check that is not independent is worse than
-none, because it reads like reassurance.
+## Audit
 
-The auditor must return findings with evidence, not a verdict: for every
-candidate, confirmed, confirmed with a corrected field, or not found, plus
-any coverage gap it noticed.
+The list is checked by a reader that did not build it. Use `research-paper-auditor.md` in
+this folder: give it only the candidate list, never your reasoning about why each paper was
+picked.
 
-## Phase 4: Deliver
+If you cannot start a separate, context-free reader, stop here. Tell me to open a brand new
+chat and paste two things into it: the auditor file and the candidate list. The audit runs
+there, not here. Do not audit the list in this conversation. You searched for it, so you
+cannot check it independently, and a check that is not independent is worse than none,
+because it reads like reassurance.
 
-Give me the audit's findings first, grouped as confirmed, corrected, and not
-found, and stop.
+## Gate 2
 
-CHECKPOINT: I decide what happens to each corrected and each not-found paper
-before the list is written up. Wait.
+Four things in one message, then the question.
 
-Then give the list with, for each paper: title, authors, venue, year, DOI or link,
-and one line saying what the paper is about, taken from its abstract and not
-from your own knowledge. Group the list by venue strength if I gave you a
-ranking, and say which group each paper is in. Grouping by venue is not ranking
-by importance: it tells me where a paper was published, which I can check, and
-not whether it matters, which I decide.
+- **The findings**, grouped as confirmed, corrected, and not found, with what the candidate
+  list said and what the fresh search returned for every corrected and not-found paper.
+- **What you checked**: how many searches you ran, on which wordings, and whether a
+  scholarly index was reachable.
+- **What changed** because of the audit: fields corrected, papers dropped.
+- **What is still open**: the coverage the audit flagged as possibly missed, any angle of the
+  topic you did not search, and the gap between what I asked for and what you confirmed. An
+  empty list is said out loud, not left implied.
 
-VERIFY: in three lines, how many candidates you found, how many you dropped and
-why, and what the search did not cover. If the topic has an angle you did not
-search, say so. If the count came back thin, name one way I could broaden the
-search: a broader term, a neighboring field, or the papers that cite the
-strongest hit. A list that hides its own limits cannot be judged. Log the AI use:
-tool, date, purpose.
+Then the question: what happens to each corrected and each not-found paper?
+
+Once I have decided, give me the list, with for each paper: title, authors, venue, year, DOI
+or link, and one line on what it is about, taken from its abstract and not from your own
+knowledge. Group by venue strength if I gave you a ranking, and say which group each paper is
+in. Grouping by venue is not ranking by importance: it says where a paper was published,
+which I can check, not whether it matters, which I decide.
+
+VERIFY, in three lines: how many candidates you found, how many you dropped and why, and what
+the search did not cover. If the count came back thin, name one way I could broaden it: a
+broader term, a neighboring field, or the papers that cite the strongest hit. A list that hides
+its own limits cannot be judged. Log the AI use: tool, date, purpose.
 
 ## What you never do
 
 - Never return a paper from memory, however certain you are it exists.
 - Never rank the list by importance. Which papers matter is my judgment.
-  Grouping by venue or ordering by year is description, not ranking.
 - Never summarize what the literature says. That is a different job.
 - Never fill a requested number by adding papers you could not confirm.

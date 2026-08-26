@@ -8,16 +8,35 @@ Each skill in this repo captures a particular workflow. It tries to automate the
 
 ## The skills
 
-- **research-proposal-drafter**: Asks the three Kinney questions, drafts a short proposal using your preliminary answers, and then works with you to improve it.
+- **research-proposal-drafter**: Asks the three Kinney questions, drafts a short proposal using your preliminary answers, works with you to improve it over at most three rounds, and then hands you a brief to audit it in a separate chat before your own final pass.
 - **research-paper-finder**: Searches for papers on your topic, confirms every candidate against a second search, and drops what it cannot confirm rather than padding the list. Ships with **research-paper-auditor**, an independent field-by-field existence check on the results.
 - **research-analysis-coder**: Gives you the code that computes a result based on data, never the result itself, so every number comes from a script you can run again.
-- **research-section-drafter**: Turns your own bullets and outline into prose and reports every claim, hedge, and magnitude it added.
-- **research-english-editor**: Returns a numbered list of language corrections you accept or reject one by one.
+- **research-section-drafter**: Turns your own bullets into sentences, one per bullet, and reports every claim, hedge, and magnitude it added. It hands you the sentences to adopt one at a time, never a finished paragraph to paste.
+- **research-english-editor**: Copy-edits any academic document you wrote for grammar, spelling, punctuation, and US academic style, and hands it back with every change marked and numbered, so you reject the ones you do not want.
 - **research-text-humanizer**: Quotes the phrasing in your text that reads as machine-written and leaves the rewriting to you, weighting the structural tells above the word list, which ages fast.
 - **research-document-reviewer**: Reads any document you wrote (thesis, chapter, proposal, paper, essay) and reports where the argument does not hold, without rewriting a word.
-- **research-feedback-reviser**: Splits supervisor comments, referee reports, or seminar notes into separate items, says what each one asks of your document, talks through two or three ways of addressing it, and drafts a first version of the changes you chose, recording your reasons for the ones you reject.
+- **research-feedback-reviser**: Splits supervisor comments, referee reports, or seminar notes into separate items, says what each one asks of your document, and lays out two or three ways of addressing each. Once you have chosen, it drafts the smallest change that meets each item, lists anything it added, and records your reasons for the ones you reject.
 - **research-document-auditor**: Audits any finished document (thesis, chapter, proposal, paper, essay) against the rules you give it: every reference checked, resolved, and in APA 7 with a working DOI link, every claim and checkable fact against a source, numbers and statistics against the tables, terms used consistently, claims against evidence.
 - **research-defense-questions**: Produces the questions your examiner will ask, grouped by research question, theory, design, data, results, limits, and contribution, then checks whether your own answers point at anything in your document.
+
+## The shape they share
+
+Every skill stops twice and works on its own in between.
+
+- **Gate 1** comes before the work. The skill says what it is about to do and what it
+  understood from you, and waits. This is where a misread question is cheap to fix.
+- **Gate 2** comes when the work is done. The skill hands you four things in one message,
+  what it made, what it checked, what it changed, and what is still open, then asks you one
+  question. Nothing counts as finished until you answer it.
+
+Between the two gates the skill does not ask for confirmation, so you are not clicking
+"yes" through work you have not read. The point of the gates is the opposite: they put your
+judgment at the two places where it actually decides something.
+
+Two of these skills write prose for you, and both are built to hand it over in small pieces
+you have to accept one at a time. That is deliberate. A finished paragraph is a paragraph
+you will accept without reading it properly, and then it is in your thesis and you have to
+defend it.
 
 ## How to install them
 
