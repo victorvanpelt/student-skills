@@ -47,7 +47,7 @@ you have to accept one at a time. That is deliberate. A finished paragraph is a 
 you will accept without reading it properly, and then it is in your thesis and you have to
 defend it.
 
-## How to install them
+## Installation instructions
 
 First get the files: clone the repository with git, or download it as a zip from GitHub (Code > Download ZIP) and unpack it. Every skill is one self-contained folder. You can either copy all of them or only the ones you want.
 
