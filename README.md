@@ -19,26 +19,7 @@ Each skill in this repo captures a particular workflow. It tries to automate the
 - **research-document-auditor**: Audits any finished document (thesis, chapter, proposal, paper, essay) against the rules you give it: every reference checked, resolved, and in APA 7 with a working DOI link, every claim and checkable fact against a source, numbers and statistics against the tables, terms used consistently, claims against evidence.
 - **research-defense-questions**: Produces the questions your examiner will ask, grouped by research question, theory, design, data, results, limits, and contribution, then checks whether your own answers point at anything in your document.
 
-## The shape they share
-
-Every skill stops twice and works on its own in between.
-
-- **Gate 1** comes before the work. The skill says what it is about to do and what it
-  understood from you, and waits. This is where a misread question is cheap to fix.
-- **Gate 2** comes when the work is done. The skill hands you four things in one message,
-  what it made, what it checked, what it changed, and what is still open, then asks you one
-  question. Nothing counts as finished until you answer it.
-
-Between the two gates the skill does not ask for confirmation, so you are not clicking
-"yes" through work you have not read. The point of the gates is the opposite: they put your
-judgment at the two places where it actually decides something.
-
-Two of these skills write prose for you, and both are built to hand it over in small pieces
-you have to accept one at a time. That is deliberate. A finished paragraph is a paragraph
-you will accept without reading it properly, and then it is in your thesis and you have to
-defend it.
-
-## How to install them
+## Installation instructions
 
 First get the files: clone the repository with git, or download it as a zip from GitHub (Code > Download ZIP) and unpack it. Every skill is one self-contained folder. You can either copy all of them or only the ones you want.
 
