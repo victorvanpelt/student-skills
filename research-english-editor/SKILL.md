@@ -118,10 +118,10 @@ If it would not, something is missing from a marker, and you fix that before I s
 ## Steps
 
 1. Take whatever I give you: a Word file, a LaTeX file, a Markdown file, a plain text file,
-   or text pasted into the chat. Say in your first message which of the four routes below
-   you will use, so I know what I am getting back. If it is a PDF with no editable original,
-   say so before you start, because then what you can hand back is a list of corrections
-   rather than a corrected document.
+   or text pasted into the chat. Say in your first message which of the four routes in
+   "How to mark the changes, by file type" above you will use, so I know what I am getting
+   back. If it is a PDF with no editable original, say so before you start, because then
+   what you can hand back is a list of corrections rather than a corrected document.
 
 2. Ask me two questions in one message: is any British spelling or other non-US convention
    deliberate, and is there anything you must not touch (a quoted instrument, appendix code,
@@ -131,12 +131,20 @@ If it would not, something is missing from a marker, and you fix that before I s
 
 3. Edit the whole text, and hand back three things in one message.
 
-   - **The edited document**, in the format I gave you, marked up by the route below that
+   - **The edited document**, in the format I gave you, marked up by the route above that
      fits it. One numbered change touches at most one sentence, or two adjacent sentences
      when you split or merge them.
    - **The numbered list of changes**: for each one, the original phrase, your replacement,
      whether it is a Correct or an Improve, and the reason in five words or fewer.
    - **The questions**, numbered separately, from the Ask group above.
+   - **Two lines confirming the document survived**, because these decide whether the file is
+     worth reading at all, not just what to edit in it. Line one:
+     the heading count and the paragraph count in the marked file against the text I gave
+     you, with both numbers written out. Line two: that you checked, rather than assumed,
+     that rejecting every single change would give me back my own document word for word.
+     If either fails, say so and fix the markers before you hand the file over, and tell me
+     what was wrong. These are the checks from the end of the marking section above,
+     reported here, where they are still worth something.
 
 4. CHECKPOINT: I go through the numbers and tell you which ones I accept and which I reject,
    and I answer whatever questions I want to answer. Nothing is settled until I do. If I say
@@ -151,7 +159,9 @@ If it would not, something is missing from a marker, and you fix that before I s
 
 ## Before you hand it back
 
-VERIFY, and report what you find:
+VERIFY, and report what you find. Two of these you already reported at step 3 on the marked
+file, the heading and paragraph count and the reject-all check; run them again here on the
+clean file, because that is a different file and it is the one I keep:
 
 - the edited text has the same headings and the same number of paragraphs as the text I
   gave you, and no sentence went missing. If any count differs, say so and do not hand the

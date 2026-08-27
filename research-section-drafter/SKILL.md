@@ -52,9 +52,11 @@ of, so say which sentence you were least sure about either way.
 
 Four things in one message, then the question.
 
+- **What you checked**, first, before I read a single sentence as prose: the check table,
+  the addition count before and after, and the sentence you were least sure about. This one
+  comes first on purpose. Once I have read the sentences they sound finished, and then I
+  read the table as paperwork instead of as the thing that tells me what you put in.
 - **The sentences**, numbered, each next to the bullet it came from. Not as a paragraph.
-- **What you checked**: the check table, the addition count before and after, and the
-  sentence you were least sure about.
 - **What you changed** in the redraft, if there was one.
 - **What is still open**: every bullet you could not turn into a sentence, and why. An empty
   list is said out loud, not left implied.

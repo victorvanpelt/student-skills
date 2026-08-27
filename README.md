@@ -21,17 +21,26 @@ Each skill in this repo captures a particular workflow. It tries to automate the
 
 ## The shape they share
 
-Every skill stops twice and works on its own in between.
+Every skill stops for you before it starts and again when it is done, and works on its own
+in between.
 
-- **Gate 1** comes before the work. The skill says what it is about to do and what it
-  understood from you, and waits. This is where a misread question is cheap to fix.
-- **Gate 2** comes when the work is done. The skill hands you four things in one message,
-  what it made, what it checked, what it changed, and what is still open, then asks you one
-  question. Nothing counts as finished until you answer it.
+- **The first stop** comes before the work. The skill says what it is about to do and what
+  it understood from you, and waits. This is where a misread question is cheap to fix.
+- **The last stop** comes when the work is done. The skill hands you four things in one
+  message, what it made, what it checked, what it changed, and what is still open, then
+  asks you one question. Nothing counts as finished until you answer it.
 
-Between the two gates the skill does not ask for confirmation, so you are not clicking
-"yes" through work you have not read. The point of the gates is the opposite: they put your
-judgment at the two places where it actually decides something.
+Seven of the ten mark these as **Gate 1** and **Gate 2**. Three are shaped differently
+because the job is: **research-document-auditor** runs in two phases, one to agree the rules
+it will check against and one to run the checks; **research-english-editor** stops once, in
+the middle, because there is nothing to agree before it reads your text and everything to
+decide once it has marked it; **research-proposal-drafter** runs in four phases and stops
+after each, because it writes with you over up to three rounds rather than going away and
+coming back. Every one of them still waits before it starts and waits before it is finished.
+
+In between, a skill does not ask for confirmation, so you are not clicking "yes" through
+work you have not read. The point of the stops is the opposite: they put your judgment at
+the places where it actually decides something.
 
 Two of these skills write prose for you, and both are built to hand it over in small pieces
 you have to accept one at a time. That is deliberate. A finished paragraph is a paragraph
