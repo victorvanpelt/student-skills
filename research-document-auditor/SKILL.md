@@ -8,7 +8,7 @@ description: >-
   the tables; terms used the same way throughout; and claims that outrun the evidence.
   Use when the author says "audit my thesis", "check this before I submit", "verify my
   references and citations", "check my APA", or "check my chapter for inconsistencies".
-  Not for improving the argument, not for language editing, and not for deciding whether
+  Not for improving the argument, not for language editing, not for deciding whether
   the work is good, and not for searching out new papers.
 compatibility: >-
   Needs web search to verify references and facts. Without it, the skill says so and
@@ -57,9 +57,12 @@ like.
    has nothing for it to run on, and say which one and why.
 
    **Check 1: references and citations.** Count the entries in the reference list and
-   confirm the count with me before you start checking. For every entry, search for the
-   exact title plus the first author's surname and compare four fields against the record
-   you retrieve: title, authors, venue, and year. Compare against the record, never
+   state the count in your report, so I can see at once whether you found the same number
+   of entries I think I have. Do not stop and wait for me to confirm it: the two places
+   this audit waits are the two CHECKPOINTs above, and a third wait buried in a check
+   leaves me not knowing whether the audit is running or stalled. For every entry, search
+   for the exact title plus the first author's surname and compare four fields against the
+   record you retrieve: title, authors, venue, and year. Compare against the record, never
    against what the document says. Use a scholarly index such as Crossref or OpenAlex
    where you can reach one; it is more reliable than a page a web search happens to find.
    Do not answer from memory: if you cannot run a search, say so and stop rather than
@@ -140,9 +143,18 @@ like.
    the scale before I read the detail. Then report findings only. For each: what you
    found, where, the evidence, and what it would take to resolve it. Write the fix out in
    full where the fix is mechanical: the corrected reference entry, the DOI link, the
-   number that should be there, the correct APA form. Do not write replacement wording
+   number that should be there, the correct APA form. Write each one beside the finding it
+   belongs to, and never gather them into a corrected list, a corrected section, or a
+   corrected file. One fix next to its finding is something I have to read before I use it.
+   The same fixes collected into a block is something I will paste, and then a change I
+   never read is in a document I sign. Do not write replacement wording
    for anything in checks 2, 4, or 5, because changing what a sentence claims is my
    decision, not yours. Either way, change nothing in the document.
+
+   Then one line, headed "seen but not checked here", for the two things this audit keeps
+   out of scope: language errors, and prose that reads as machine-written. Say whether you
+   saw either and where, name the check that would cover it, and run neither here. Say so
+   plainly when you saw neither.
 
 4. Close with a section titled "judgment calls for the author": the things you noticed
    but have no standing to settle. Whether a comparison is fair. Whether a robustness

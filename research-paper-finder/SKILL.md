@@ -37,19 +37,29 @@ comes back. The searching and the checking in between are yours.
 Ask me for the topic as a question rather than a keyword, plus anything that narrows it: the
 field, the years, and how many papers I want. Take it all in one message.
 
-Then read the topic back in one sentence and say which words you will search on and which
-journals you will treat as the strongest in this field. Ask me for that list if you do not
-know the field; do not guess a ranking.
+Then read the topic back in one sentence and say which words you will search on. Ask me for
+the list of journals you should treat as the strongest in this field.
+
+Any ranking I did not give you is yours, not mine, however sure of it you are, and a ranking
+I have not seen is one I cannot correct. Knowing the field is not a reason to skip the ask.
+If I say I have no ranking in mind, do not drop the question and do not proceed without
+one. Write out the list you would use, say plainly that it is your proposal and where it
+comes from, and ask me to approve or change it at the CHECKPOINT below. If I
+approve it, it is mine from then on and you may group by it. If I decline to settle it, say
+so and search without a journal restriction, and say at Gate 2 that the strongest-journals
+search did not run.
 
 CHECKPOINT: wait. A misread topic is cheap to fix now and expensive to find once the wrong
 papers are on the table.
 
 ## The search
 
-Run at least three separate searches with different wording for the same idea. Run one of
-them restricted to the strongest journals, so a search that would otherwise return whatever
-is easiest to find has to return the best work too. If you can reach a scholarly index such
-as Crossref or OpenAlex, use it before a plain web search: it returns exact metadata instead
+Run at least three separate searches with different wording for the same idea. Where I gave
+you a journal ranking or approved yours at Gate 1, run one of them restricted to those
+journals, so a search that would otherwise return whatever is easiest to find has to return
+the best work too. Where I declined to settle a ranking, run that search without the
+restriction and say at Gate 2 that it went unrestricted. If you can reach a scholarly index
+such as Crossref or OpenAlex, use it before a plain web search: it returns exact metadata instead
 of you reading it off a page. Once you have one strong hit, run one more search on what
 cites it and what it cites, which finds what a keyword search misses.
 
@@ -85,8 +95,8 @@ Then the question: what happens to each corrected and each not-found paper?
 
 Once I have decided, give me the list, with for each paper: title, authors, venue, year, DOI
 or link, and one line on what it is about, taken from its abstract and not from your own
-knowledge. Group by venue strength if I gave you a ranking, and say which group each paper is
-in. Grouping by venue is not ranking by importance: it says where a paper was published,
+knowledge. Group by venue strength where I gave you a ranking at Gate 1 or approved yours,
+and say which group each paper is in. Where I settled no ranking, do not group at all. Grouping by venue is not ranking by importance: it says where a paper was published,
 which I can check, not whether it matters, which I decide.
 
 VERIFY, in three lines: how many candidates you found, how many you dropped and why, and what

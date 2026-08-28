@@ -153,7 +153,8 @@ VERIFY, before you hand anything back:
 - which passages are your proposals that I approved, so I read them once more;
 - which references you proposed and I approved, and where each was confirmed;
 - every `[I NEED TO DECIDE]` marker still open;
-- every round-2 comment and every audit finding still open;
+- every round-1 comment still open, the ones the closing message listed, and every audit
+  finding still open;
 - the word count without the reference list, against the 700 to 1,000 target;
 - the AI-use log line for my records: tool, date, purpose ("drafting a thesis proposal from
   my own answers to three questions, improved in rounds I approved, audited in a separate

@@ -19,45 +19,18 @@ Each skill in this repo captures a particular workflow. It tries to automate the
 - **research-document-auditor**: Audits any finished document (thesis, chapter, proposal, paper, essay) against the rules you give it: every reference checked, resolved, and in APA 7 with a working DOI link, every claim and checkable fact against a source, numbers and statistics against the tables, terms used consistently, claims against evidence.
 - **research-defense-questions**: Produces the questions your examiner will ask, grouped by research question, theory, design, data, results, limits, and contribution, then checks whether your own answers point at anything in your document.
 
-## The shape they share
-
-Most of these skills stop exactly twice and work on their own in between.
-
-- **Gate 1** comes before the work. The skill says what it is about to do and what it
-  understood from you, and waits. This is where a misread question is cheap to fix.
-- **Gate 2** comes when the work is done. The skill hands you four things in one message,
-  what it made, what it checked, what it changed, and what is still open, then asks you one
-  question. Nothing counts as finished until you answer it.
-
-Between the two gates the skill does not ask for confirmation, so you are not clicking
-"yes" through work you have not read. The point of the gates is the opposite: they put your
-judgment at the two places where it actually decides something.
-
-Three skills are built differently, on purpose. **research-proposal-drafter** runs four
-phases and stops after each one, because you and it improve the proposal together over up
-to three rounds, and every round is a decision you make. **research-english-editor** stops
-once, because every change it makes arrives unaccepted and you go through them at that one
-stop. **research-document-auditor** ends by handing you its report rather than asking you a
-question, because an audit is not something you approve. You act on it.
-
-Three of these skills write prose for you, and each one is built so you cannot accept it
-without reading it. The section drafter gives you one sentence per bullet. The feedback
-reviser drafts the smallest change that meets a comment. The proposal drafter writes a
-short whole proposal, but only out of answers you wrote yourself, and it marks what you
-still have to decide instead of filling the gap. A finished paragraph is a paragraph you
-will accept without reading it properly, and then it is in your thesis and you have to
-defend it.
-
-## How to install them
+## Installation instructions
 
 First get the files: clone the repository with git, or download it as a zip from GitHub (Code > Download ZIP) and unpack it. Every skill is one self-contained folder. You can either copy all of them or only the ones you want.
 
 **In the Claude app (web or desktop):**
+
 1. Zip one skill folder, with the folder itself as the top level inside the zip.
 2. In Claude's settings, you can upload the zip in the skills section.
 3. To use, start the task in any chat. If Claude answers without using the skill, name it explicitly (e.g., "use research-paper-finder").
 
 **In a CLI (a tool that runs in your terminal, such as Claude Code):**
+
 1. Copy the skill folder into the tool's skills directory, for example `~/.claude/skills/research-proposal-drafter/`.
 2. If you are unsure where your skills are supposed to be located, open a chat in the terminal and ask your agent to install the skill using the path to where your zip is located.
 3. Restart the tool and start the task or name the skill explicitly.

@@ -24,9 +24,13 @@ Everything in between you do on your own.
 
 Ask me all of this in one message, and wait for one answer.
 
-1. Does the file contain personal or confidential data? If it does, stop there and tell me
-   to use a tool my school has approved for that kind of data. Interview transcripts,
-   licensed extracts, and anything identifying a person do not go into a public chat.
+1. Does the file contain personal or confidential data? Interview transcripts, licensed
+   extracts, and anything identifying a person do not go into a public chat. Where what I
+   have already told you names one of those, or the file name or the file itself shows one,
+   do not ask me the question: say which one you saw, stop there, and tell me to use a tool
+   my school has approved for that kind of data. Ask me only where you cannot tell. The
+   point of this check is that it does not depend on my answer, because I am the person
+   with a reason to say it is fine.
 2. What do I want computed, in one sentence, and what do the columns mean?
 3. Which language: R, Python, Stata, or SPSS?
 4. What should the answer roughly look like: the expected range, the expected sign, the
