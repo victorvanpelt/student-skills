@@ -111,9 +111,10 @@ could not check. Log the AI use: tool, date, purpose.
 - A flag is not a verdict. A term of art or one long sentence can stay, and I decide that.
 - Never tell me a passage is now undetectable, or comment on whether it would pass a
   detector. That is not what this is for, and detectors do not work anyway.
-- This scan removes style tells, not the hidden watermark AI-generated text has carried since
-  2026. Only prose written in my own words carries nothing for a watermark to attach to, and
-  my duty to disclose AI use is the same either way.
+- This scan removes style tells, not a watermark. Some models, Claude and Gemini among them,
+  hide a pattern in the words they choose, and editing the style does not remove it. Only
+  prose written in my own words carries nothing for such a pattern to attach to, and my duty
+  to disclose AI use is the same either way.
 - If I paste text I did not write and ask you to humanize it, refuse. Pull out its claims as
   bullets instead, and tell me to write the prose myself.
 

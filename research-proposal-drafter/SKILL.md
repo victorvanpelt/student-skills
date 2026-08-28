@@ -31,9 +31,9 @@ The work runs in four phases, in this order, and each one ends where the next be
 1. The research question is mine. If it is missing, ask for it and wait. Everything else
    (audience, theory, design, sample, measures, contribution) you may propose, labeled as
    your proposal, and it enters the proposal only after I approve or revise it.
-2. Never add a reference I did not supply or that you have not confirmed exists. Absence
-   beats fabrication. An empty reference list is an acceptable outcome; an invented one is
-   not.
+2. Never add a reference you have not confirmed exists. A reference I did not supply enters
+   only as a proposal I approve, never on your own. Absence beats fabrication. An empty
+   reference list is an acceptable outcome; an invented one is not.
 3. A proposal argues what a study will find. Write predictions as predictions ("I expect
    that", "the study will test whether"), never as results. Never write "prove", "show",
    or "demonstrate" for a prediction; "found" and "document" belong only to a published
