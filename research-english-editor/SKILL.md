@@ -125,60 +125,61 @@ If it would not, something is missing from a marker, and you fix that before I s
 
 2. Ask me two questions in one message: is any British spelling or other non-US convention
    deliberate, and is there anything you must not touch (a quoted instrument, appendix code,
-   a coauthor's section, particular terminology)? If I answer, follow it. If I tell you to
-   go ahead without answering, use US English and follow the conventions the document
-   already uses, and say that is what you did.
+   a coauthor's section, particular terminology)? Where I already answered either one, do
+   not ask it again. If I answer, follow it. If I tell you to go ahead without answering,
+   use US English and follow the conventions the document already uses, and say that is
+   what you did.
 
-3. Edit the whole text, and hand back three things in one message.
+3. Edit the whole text. Before you hand it back, have the marked text read by a reader who
+   did not edit it. First try a separate helper: a subagent, a second assistant, or a
+   separate tool your host offers. Give it only my original and the marked text, and ask
+   it one question, answered by change number and fixed by nobody: did the meaning, the
+   content, or my terminology change anywhere? If your tool cannot start a helper, ask
+   yourself that question in a deliberately fresh pass, reading the changes as if you had
+   not made them, and say so in the hand-back.
+
+   Then hand back, in one message, the marked document and the change list first, and the
+   checks in a few lines.
 
    - **The edited document**, in the format I gave you, marked up by the route above that
-     fits it. One numbered change touches at most one sentence, or two adjacent sentences
-     when you split or merge them.
+     fits it, saved next to my original where your tool can write files, with its location
+     named; where it cannot, shown in the chat. One numbered change touches at most one
+     sentence, or two adjacent sentences when you split or merge them.
    - **The numbered list of changes**: for each one, the original phrase, your replacement,
-     whether it is a Correct or an Improve, and the reason in five words or fewer.
+     whether it is a Correct or an Improve, and the reason in five words or fewer. Mark the
+     numbers the audit flagged.
    - **The questions**, numbered separately, from the Ask group above.
-   - **Two lines confirming the document survived**, because these decide whether the file is
-     worth reading at all, not just what to edit in it. Line one:
-     the heading count and the paragraph count in the marked file against the text I gave
-     you, with both numbers written out. Line two: that you checked, rather than assumed,
-     that rejecting every single change would give me back my own document word for word.
-     If either fails, say so and fix the markers before you hand the file over, and tell me
-     what was wrong. These are the checks from the end of the marking section above,
-     reported here, where they are still worth something.
+   - **A few lines on the checks**, and I ask for the detail if I want it: the heading count
+     and the paragraph count in the marked file against the text I gave you, both numbers
+     written out; that you checked, rather than assumed, that rejecting every single change
+     would give me back my own document word for word; and who ran the audit. If a count
+     differs or the reject-all check fails, fix the markers before I see the file, and tell
+     me what was wrong.
 
-4. CHECKPOINT: I go through the numbers and tell you which ones I accept and which I reject,
-   and I answer whatever questions I want to answer. Nothing is settled until I do. If I say
+4. CHECKPOINT, and the question: which numbers do I accept, which do I reject, and which
+   of your questions do I want to answer? Nothing is settled until I answer. If I say
    nothing about a number, it is not accepted; ask me about it rather than assuming a yes.
    This is the only point where you wait for me.
 
 5. Build the final document from my answers: the accepted changes applied, the rejected ones
    back exactly as I wrote them, my answers to the questions applied as I gave them, and
    nothing else touched. In Word I do this myself in the Review pane, so there you confirm
-   what I accepted rather than rebuilding the file. Hand back the clean document and keep the
-   marked one, so I still have a record of what was changed.
+   what I accepted rather than rebuilding the file. Hand back the clean document first, say
+   where it is, and keep the marked one, so I still have a record of what was changed.
 
 ## Before you hand it back
 
-VERIFY, and report what you find. Two of these you already reported at step 3 on the marked
-file, the heading and paragraph count and the reject-all check; run them again here on the
-clean file, because that is a different file and it is the one I keep:
+VERIFY on the clean file, in a few lines; I ask for the detail if I want it. The heading
+and paragraph count you already ran at step 3 on the marked file; run it again here,
+because the clean file is a different file and it is the one I keep:
 
-- the edited text has the same headings and the same number of paragraphs as the text I
-  gave you, and no sentence went missing. If any count differs, say so and do not hand the
-  text over;
-- every term from my "do not touch" answer appears the same number of times as before, and
-  so does every number and every citation;
-- rejecting every change in the marked file would have returned my original document word for
-  word, which you checked rather than assumed;
-- how many changes were Correct, how many were Improve, how many I accepted, and how many I
-  rejected;
-- every sentence you could not judge because you did not know what I meant;
-- the AI-use log line for my records: tool, date, purpose ("copy-editing my own writing for
-  grammar, spelling, punctuation, and US academic style").
+- the same headings and the same number of paragraphs as the text I gave you, and no
+  sentence missing. If any count differs, say so and do not hand the text over;
+- every term from my "do not touch" answer, every number, and every citation appearing the
+  same number of times as before;
+- how many changes were Correct, how many Improve, how many I accepted, how many I
+  rejected, and how many sentences you could not judge;
+- the AI-use log line: tool, date, purpose ("copy-editing my own writing for grammar,
+  spelling, punctuation, and US academic style").
 
-State plainly what you could not check.
-
-Then stop. One last thing is mine: paste the original and the edited text into a fresh,
-empty conversation and ask that reader one question, whether the meaning, the content, or my
-terminology changed anywhere. You proposed these changes, so you would defend them; a reader
-with nothing to defend is the better check. Then read the whole thing yourself.
+State plainly what you could not check. Then stop. The last read of the whole thing is mine.

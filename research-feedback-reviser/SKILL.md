@@ -3,11 +3,15 @@ name: research-feedback-reviser
 description: >-
   Turns supervisor comments, seminar feedback, referee reports, or marker notes into a
   numbered plan: each separate request, what it would take to meet it, how big it is, and
-  two or three ways of addressing it. Once the author has chosen, it drafts the changes
-  and hands back a record of what changed and why. Use when the author says "my supervisor
+  two or three ways of addressing it. Once the author has chosen, it drafts the smallest
+  change that meets each item, has the drafts checked in a fresh pass, and hands them
+  back with a one-line-per-item response record. Use when the author says "my supervisor
   sent comments", "work through this feedback", "help me respond to these notes", or
   "revise my chapter from this feedback". Not for deciding whether the feedback is right;
   that is the author's call.
+compatibility: >-
+  Needs web search to confirm any new reference a draft adds. Without it, the skill says so
+  and adds no new reference.
 ---
 
 # Work through feedback without losing control of it
@@ -22,13 +26,15 @@ asking me.
 
 ## Gate 1
 
-Ask me for the feedback, the document it refers to, what the document is, and who wrote the
-feedback, in one message. Who wrote it changes what a sensible response looks like.
+Take whatever I gave you and ask only for what is missing, in one message: the feedback,
+the document it refers to, what the document is, and who wrote the feedback. Who wrote it
+changes what a sensible response looks like.
 
 Then do all of the following on your own and bring it back as one plan.
 
 **Split it.** One comment can contain three requests, and an aside can contain a fourth.
-Number them and quote the exact words behind each, so I can see where it came from.
+Number them and quote the exact words behind each, naming the source where there is more
+than one, so I can see where it came from.
 
 **Say what each one asks of my document.** One sentence, in my document's own terms (this
 section, this claim, this table), never a restatement of the comment.
@@ -39,8 +45,10 @@ section, this claim, this table), never a restatement of the comment.
 - **Substantive**: a claim, an interpretation, a method choice. My call, high stakes.
 - **Unclear**: you cannot tell what is being asked. This goes back to my supervisor.
 
-**Flag the collisions.** Any two items that conflict, and any item that would undo a
-decision recorded elsewhere in my document.
+**Flag the collisions and the order.** Any two items that conflict, and any item that
+would undo a decision recorded elsewhere in my document. Where one item cannot be settled
+until another is (a rewritten hypothesis before the results that test it, new data before
+the table that reports it), say so and put the blocking item first in the plan.
 
 **Give me the options.** For every item that is not mechanical and not unclear, two or three
 real ways of addressing it. For each way, one line each on: what it changes in the document,
@@ -50,8 +58,8 @@ say why it may still be enough. Mark any way that needs something I do not have 
 data, an analysis I have not run, a literature I have not read, a decision only my
 supervisor can make, or a change to my research question.
 
-Then hand the plan over: the numbered items with their kind, the collisions, the options,
-and what is still unclear.
+Then hand the plan over: the numbered items with their kind, in the order they should be
+done, the collisions, the options, and what is still unclear.
 
 CHECKPOINT: wait. Item by item I accept a way, reject the item with a reason, or park it for
 the next supervision meeting. Rejecting supervisor feedback is a normal research decision when
@@ -78,33 +86,52 @@ Three limits on what you write, and they matter more than the drafting itself.
 - **Never hand me a block to paste.** Each draft is its own numbered proposal that I keep,
   reword, or reject on its own.
 
+Where a draft cites a source that is not already in my document, confirm it exists in
+Crossref, OpenAlex, or on the publisher's page, say where you checked, and list it as an
+addition. Never cite from memory.
+
 An accepted item whose chosen way needs something I do not have yet gets no draft text.
 Write it as a task instead: what has to happen first, roughly how long it takes, who
 decides, and what the draft would depend on. Say plainly that you are not drafting it, and
 why. Guessing at wording for a change that rests on data I have not collected would put a
 sentence in my document that nothing supports.
 
+**The response record.** One line per item, in the plan's numbering: done, with the draft
+number and where it goes; a task, with what it waits on; rejected, with my reason; or
+parked for my supervisor. This is what I bring to the next supervision meeting.
+
+## Audit
+
+A reader that did not write the drafts checks them. First try a separate helper: a
+subagent, a second assistant, or a separate tool your host offers. Give it only the
+feedback, the plan with my decisions, the drafts, and the response record, and ask it to
+report and fix nothing: does every accepted item have a draft or a task; does every draft
+name where it goes; did any draft go wider than its item; is everything a draft added
+listed under it; does every citation a draft adds exist; and does the response record
+match the drafts. If your tool cannot start a helper, run the same check yourself in a
+deliberately fresh pass and say so at Gate 2. Fix what it found and nothing else; a second
+round rechecks only the first round's list, and a third at most. Whatever is still contested
+after that comes to me with both positions stated.
+
 ## Gate 2
 
-Four things in one message, then the question.
+Lead with the drafts and the response record, then a few lines, then the question.
 
-- **The drafted changes**, each marked as a draft and not as a decision, with the place in
-  the document each one belongs.
-- **VERIFY, what you checked**: that every accepted item has either a draft or a task, that
-  every draft names where in my document it belongs, and that no draft went wider than its
-  item asked for. Say plainly what you could not check.
-- **What changed in response** to anything I said at Gate 1, including any place where my
-  choice turned out to collide with another item.
-- **What is still open**: the accepted items you did not draft and what each is waiting on,
-  the items I parked for my supervisor, and the items I rejected with my reason. An empty
-  list is said out loud, not left implied.
+- **The drafts and the response record**: save them as one Markdown file where your tool
+  can write files, and say where it is; where it cannot, show them in full. Each draft is
+  marked as a draft and not as a decision, with the place in my document it belongs.
+- **VERIFY, in a few lines**; I ask for the detail if I want it: what the audit found and
+  who ran it; what changed in response, including any place where my choice at Gate 1
+  turned out to collide with another item; and what is still open: the accepted items you
+  did not draft and what each is waiting on, the items I parked, and the items I rejected
+  with my reason. An empty list is said out loud, not left implied.
 
 Log the AI use: tool, date, purpose.
 
 Then the question: for each draft, do I keep it, reword it, or reject it? I go through them
 one at a time, and nothing is settled until I have. If I accept every draft unchanged, say so
-plainly: that means I did not really read them. This record is what I bring to the next
-supervision meeting, and it is the honest account of what I did with the advice.
+plainly: that means I did not really read them. Update the response record with my answers;
+it is the honest account of what I did with the advice.
 
 ## Rules
 

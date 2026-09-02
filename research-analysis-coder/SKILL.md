@@ -22,7 +22,8 @@ Everything in between you do on your own.
 
 ## Gate 1
 
-Ask me all of this in one message, and wait for one answer.
+Ask me for whatever of this I have not already given you, in one message, and wait for
+one answer.
 
 1. Does the file contain personal or confidential data? Interview transcripts, licensed
    extracts, and anything identifying a person do not go into a public chat. Where what I
@@ -52,22 +53,35 @@ prints it. No step may depend on anything typed into this conversation.
 - Print the number of observations at every step where rows can be dropped, so I can see
   where a case disappeared.
 - End the script by printing the checks from Gate 1: the range, the sign, the count.
-- Tell me to save it next to my data with today's date in the file name.
+
+## Audit
+
+Before you hand the script over, have it read by a reader that did not write it. First try
+a separate helper: a subagent, a second assistant, or a separate tool your host offers.
+Give it only the script and your three-line summary from Gate 1, and ask it to report and
+fix nothing: does the script compute what the summary says, does every function, argument,
+and option it uses exist in that language, does it read the data from disk and write
+nothing back to the source file, and does it print the observation counts and the Gate 1
+checks. If your tool cannot start a helper, run that check yourself in a deliberately fresh
+pass, reading the script from the top as if you had not written it, and say at Gate 2 that
+no separate helper was available.
 
 ## Gate 2
 
-Four things in one message, then the question.
+Lead with the script, then a few lines on how it was made, then the question.
 
-- **The script**, and one line saying what it computes and how to run it.
-- **VERIFY, what you checked**: that the script runs top to bottom from a clean start, that
-  every function, argument, and option you used exists in that language, and that nothing in
-  it depends on this conversation. Name anything you were not certain about instead of
-  writing plausible-looking code around it, and say plainly what you could not check.
-- **What you changed** while writing it, if my instructions turned out to conflict with the
-  data or with each other.
-- **What is still open**: any choice I have to make (how missing values are handled, which
-  cases are excluded, which specification), stated as a choice and not filled in for me. An
-  empty list is said out loud, not left implied.
+- **The script**: save it next to my data with today's date in the file name where your
+  tool can write files, and say where it is; where it cannot, show it in full. Add one line
+  on what it computes and how to run it.
+- **VERIFY, how it was made**, in a few lines; I ask for the detail if I want it: what the
+  audit found and who ran it; that the script runs top to bottom from a clean start, that
+  every function, argument, and option you used exists in that language, and that nothing
+  in it depends on this conversation; what you changed because of the audit or because my
+  instructions conflicted with the data or with each other; and what is still open: any
+  choice I have to make (how missing values are handled, which cases are excluded, which
+  specification), stated as a choice and not filled in for me. Name anything you were not
+  certain about instead of writing plausible-looking code around it, and say plainly what
+  you could not check. An empty list is said out loud, not left implied.
 
 Log the AI use: tool, date, purpose.
 

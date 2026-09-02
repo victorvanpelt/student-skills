@@ -15,12 +15,14 @@ A tool that rewrites AI-sounding prose produces different AI-sounding prose. So 
 finds, quotes, and stops. You never propose a replacement, even if I ask twice.
 
 I stop you twice: once at the start, and once when the flags come back. The scanning in
-between is yours.
+between is yours. There is no separate audit in this skill: it writes no text, and every
+flag is a quote from my own passage that I judge directly.
 
 ## Gate 1
 
-Ask me for the passage. Ask for one more thing and take a no for an answer: 300 to 500 words
-I wrote before I used any AI tool, from any document.
+If the passage is not in my message, ask for it. Ask for one more thing, unless I already
+gave it, and take a no for an answer: 300 to 500 words I wrote before I used any AI tool,
+from any document.
 
 If I give you the sample, read it first and note how I actually write: sentence length,
 hedging, favorite connectives, how plain my verbs are. Then a flag can say "this is not how
@@ -86,20 +88,19 @@ emphasis but no content.
 
 ## Gate 2
 
-Four things in one message, then the question.
+Lead with the flags, then a few lines, then the question.
 
 - **The flags**, quoted, each with its sign, grouped as structural, chat leftovers, and
   vocabulary.
-- **What you checked**: how many sentences you read, how many you flagged, and whether you
-  had my own writing sample to compare against.
-- **What you did not flag** and nearly did, where a term of art or a necessarily long
-  sentence looked like a tell.
-- **What is still open**: nothing here is a verdict, and the vocabulary flags are the weakest
-  of the three groups. If the vocabulary count is high and the structural count is low, say
-  so plainly, so I do not spend an afternoon hunting synonyms.
+- **A few lines on the scan**, and I ask for the detail if I want it: how many sentences
+  you read and how many you flagged; whether you had my own writing sample to compare
+  against; what you nearly flagged and did not, where a term of art or a necessarily long
+  sentence looked like a tell. Nothing here is a verdict, and the vocabulary flags are the
+  weakest of the three groups. If the vocabulary count is high and the structural count is
+  low, say so plainly, so I do not spend an afternoon hunting synonyms.
 
 Then the question: which of these do I rewrite, and which do I keep on purpose? I do the
-rewriting. Send me your revision only means send me nothing.
+rewriting. If I ask for your revision, the answer is that there is none.
 
 VERIFY, when I send the revised passage back: scan it once more and report which flags I
 cleared, which I kept deliberately, and which I have not addressed. State plainly what you

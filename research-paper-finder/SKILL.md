@@ -3,7 +3,8 @@ name: research-paper-finder
 description: >-
   Finds real academic papers on a topic and returns them as a checked list, never from
   memory: every paper is seen in a search result, every field is copied from that result,
-  and the whole list is audited in a fresh context before the author sees it. Use when the
+  and the whole list is audited by a separate helper, or in a fresh pass where the tool
+  allows no helper, before the author sees it. Use when the
   author says "find papers on", "what has been written about", "I need literature on", or
   "find me references for". Not for writing a literature review, not for summarizing what
   the papers say, not for deciding which ones matter, and not for checking references
@@ -35,7 +36,8 @@ comes back. The searching and the checking in between are yours.
 ## Gate 1
 
 Ask me for the topic as a question rather than a keyword, plus anything that narrows it: the
-field, the years, and how many papers I want. Take it all in one message.
+field, the years, and how many papers I want. Take it all in one message, and where I
+already gave you any of it, ask only for what is missing.
 
 Then read the topic back in one sentence and say which words you will search on. Ask me for
 the list of journals you should treat as the strongest in this field.
@@ -68,41 +70,38 @@ the result you read it in. A candidate without that link is not a candidate.
 
 ## Audit
 
-The list is checked by a reader that did not build it. Use `research-paper-auditor.md` in
-this folder: give it only the candidate list, never your reasoning about why each paper was
-picked.
+The list is checked by a reader that did not build it. First try to run the audit through
+a separate helper: a subagent, a second assistant, or a separate tool your host offers.
+Give it only two things, `research-paper-auditor.md` from this folder and the candidate
+list, never your reasoning about why each paper was picked.
 
-If you cannot start a separate, context-free reader, stop here. Tell me to open a brand new
-chat and paste two things into it: the auditor file and the candidate list. The audit runs
-there, not here. Do not audit the list in this conversation. You searched for it, so you
-cannot check it independently, and a check that is not independent is worse than none,
-because it reads like reassurance.
+If your tool cannot start a helper, run the auditor file yourself in a deliberately fresh
+pass: take only the candidate list, search for every paper again as that file says, and
+say at Gate 2 that no separate helper was available. A check by the context that searched
+is a weaker check, so it is named as such rather than hidden.
 
 ## Gate 2
 
-Four things in one message, then the question.
+Lead with the list, then a few lines on how it was made, then the question.
 
-- **The findings**, grouped as confirmed, corrected, and not found, with what the candidate
-  list said and what the fresh search returned for every corrected and not-found paper.
-- **What you checked**: how many searches you ran, on which wordings, and whether a
-  scholarly index was reachable.
-- **What changed** because of the audit: fields corrected, papers dropped.
-- **What is still open**: the coverage the audit flagged as possibly missed, any angle of the
-  topic you did not search, and the gap between what I asked for and what you confirmed. An
-  empty list is said out loud, not left implied.
+- **The list**: for each paper, title, authors, venue, year, DOI or link, and one line on
+  what it is about, taken from its abstract and not from your own knowledge. Group by venue
+  strength where I gave you a ranking at Gate 1 or approved yours, and say which group each
+  paper is in. Where I settled no ranking, do not group at all. Grouping by venue is not
+  ranking by importance: it says where a paper was published, which I can check, not
+  whether it matters, which I decide. Mark each paper the audit corrected, naming the field
+  that changed. Under the list, the papers the audit did not find, with what the candidate
+  list said and what the fresh search returned for each.
+- **VERIFY, how it was made**, in a few lines; I ask for the detail if I want it: how many
+  candidates you found, how many you dropped and why, how many searches you ran and on
+  which wordings, whether a scholarly index was reachable, who ran the audit, and what the
+  search did not cover: the coverage the audit flagged as possibly missed, any angle of the
+  topic you did not search, and the gap between what I asked for and what you confirmed.
+  If the count came back thin, name one way I could broaden it: a broader term, a
+  neighboring field, or the papers that cite the strongest hit. An empty list is said out
+  loud, not left implied. Log the AI use: tool, date, purpose.
 
 Then the question: what happens to each corrected and each not-found paper?
-
-Once I have decided, give me the list, with for each paper: title, authors, venue, year, DOI
-or link, and one line on what it is about, taken from its abstract and not from your own
-knowledge. Group by venue strength where I gave you a ranking at Gate 1 or approved yours,
-and say which group each paper is in. Where I settled no ranking, do not group at all. Grouping by venue is not ranking by importance: it says where a paper was published,
-which I can check, not whether it matters, which I decide.
-
-VERIFY, in three lines: how many candidates you found, how many you dropped and why, and what
-the search did not cover. If the count came back thin, name one way I could broaden it: a
-broader term, a neighboring field, or the papers that cite the strongest hit. A list that hides
-its own limits cannot be judged. Log the AI use: tool, date, purpose.
 
 ## What you never do
 

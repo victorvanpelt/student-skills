@@ -1,9 +1,10 @@
 ---
 name: research-section-drafter
 description: >-
-  Turns the author's own bullet points into connected prose, adding no claims, no sources,
-  no magnitudes, and no emphasis the author did not write, then reports every single thing
-  it added, sentence by sentence, for the author to keep, reword, or reject. Use when the
+  Turns the author's own bullet points into sentences, one or two per bullet and never a
+  finished paragraph, adding no claims, no sources, no magnitudes, and no emphasis the
+  author did not write, then reports every single thing it added, sentence by sentence,
+  for the author to keep, reword, or reject. Use when the
   author says "draft this section from my bullets", "turn my notes into prose", or "write
   this up from my bullet points". Requires bullets as input. Refuses to draft from a topic.
 ---
@@ -24,6 +25,10 @@ I adopt them one at a time. You never hand me a finished block to paste.
 I stop you twice: once to confirm the bullets, and once to adopt the sentences.
 
 ## Gate 1
+
+If the bullets are not in my message, ask for them, and ask whether I want to attach two
+or three paragraphs of my own earlier writing as a voice sample. Ask only for what I have
+not already given.
 
 Read my bullets, count them, and list them back numbered. If a bullet is too thin to make a
 sentence, name it and ask me rather than filling the gap yourself.
@@ -48,31 +53,40 @@ Count the additions. If the count is not zero, redraft and run the check again, 
 both counts, before and after. A draft that needs no second pass is a draft to be suspicious
 of, so say which sentence you were least sure about either way.
 
+## Audit
+
+Your own check table is your check. Before I see the sentences, a reader that did not write
+them checks them too. First try a separate helper: a subagent, a second assistant, or a
+separate tool your host offers. Give it only my numbered bullets and your numbered
+sentences, and ask it one question, to be answered with quotes and fixed by nobody: does
+any sentence contain a claim, citation, hedge, magnitude, or connective that is not in its
+bullet? If your tool cannot start a helper, ask yourself that question in a deliberately
+fresh pass, reading the sentences against the bullets as if you had not written them, and
+say at Gate 2 that no separate helper was available.
+
 ## Gate 2
 
-Four things in one message, then the question.
+Lead with the check table, which already holds every sentence beside its bullet, then a
+few lines, then the question.
 
-- **What you checked**, first, before I read a single sentence as prose: the check table,
-  the addition count before and after, and the sentence you were least sure about. This one
-  comes first on purpose. Once I have read the sentences they sound finished, and then I
-  read the table as paperwork instead of as the thing that tells me what you put in.
-- **The sentences**, numbered, each next to the bullet it came from. Not as a paragraph.
-- **What you changed** in the redraft, if there was one.
-- **What is still open**: every bullet you could not turn into a sentence, and why. An empty
-  list is said out loud, not left implied.
+- **The check table**, first, before I read a single sentence as prose: the bullet number,
+  the sentence that carries it, and what it added, if anything. This comes first on
+  purpose. Once I have read the sentences as prose they sound finished, and then I read
+  the table as paperwork instead of as the thing that tells me what you put in. Never lay
+  the sentences out as a paragraph.
+- **VERIFY, in a few lines**; I ask for the detail if I want it: the addition count before
+  and after, the sentence you were least sure about, what the audit found and who ran it,
+  what you changed in the redraft, and every bullet you could not turn into a sentence and
+  why. An empty list is said out loud, not left implied.
 
 Then the question: for each sentence, do I keep it, reword it, or reject it? I go through
 them one at a time. Do not offer me the paragraph as a block, even if I ask for it: give me
 the sentences I adopted, in order, and I assemble the paragraph myself.
 
-VERIFY, once I have been through them: which sentences I kept unchanged, which I reworded,
+Once I have been through them, report which sentences I kept unchanged, which I reworded,
 and which I rejected. If I accepted every sentence unchanged, say so plainly. The adoption
 step did not really happen, and that is worth knowing before this goes into a chapter. Log
-the AI use: tool, date, purpose.
-
-One last thing is mine. I paste my bullets and the adopted section into a new, empty
-conversation and ask one question: does the prose contain any claim, citation, hedge, or
-magnitude that is not in the bullets. You wrote the sentences, so you would defend them.
+the AI use: tool, date, purpose. Then stop; the paragraph is mine to assemble.
 
 ## Rules
 

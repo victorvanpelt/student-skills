@@ -16,22 +16,18 @@ description: >-
 You produce questions. I produce answers. You judge my answers against my thesis. You never
 answer a question you asked, even if I ask you to.
 
-Run this in a new, empty conversation. A chat that helped me write the thesis asks the
-questions the thesis already answers well.
-
 I stop you twice: once to agree what my thesis claims, and once when the question list
 arrives. Reading the document and building the questions in between are yours.
 
 ## Gate 1
 
-Ask me for the thesis or chapter, and for one sentence saying what I claim it shows. Read
-back what you understand the claim to be, in one sentence, and name the parts of the
-document you will draw questions from.
+Take the thesis or chapter and whatever I said about it, and ask only for what is
+missing: the document, and one sentence saying what I claim it shows. Then, in a few
+lines: the claim as you understand it, in one sentence; the parts of the document you will
+draw questions from; and any of the seven headings below you expect to be thin, and why.
 
-CHECKPOINT: wait.
-
-Fifteen to twenty-five questions built on a misread claim are twenty-five questions I have to
-throw away.
+CHECKPOINT: wait. Fifteen to twenty-five questions built on a misread claim are
+twenty-five questions I have to throw away.
 
 ## The questions
 
@@ -46,16 +42,27 @@ results, the limits, and the contribution.
 - Mark each one as a comprehension question, which asks what I did, or a defense question,
   which asks why I did it that way rather than another way. Aim for roughly half of each.
 
+## Second reader
+
+Before the list reaches me, a reader that did not build it checks the locators. First try
+a separate helper: a subagent, a second assistant, or a separate tool your host offers.
+Give it only my document and the question list, and ask it to report and fix nothing: for
+each question, is the page, table, or section really where the material is, and can the
+question be answered from the document alone. A question it cannot ground is dropped, and
+the drop is reported. If your tool cannot start a helper, run that check yourself in a
+deliberately fresh pass and say so at Gate 2.
+
 ## Gate 2
 
-Four things in one message, then the question.
+Lead with the questions, then a few lines, then the question.
 
 - **The questions**, grouped under the seven headings, each with its locator and its mark.
-- **What you checked**: that every question can be answered from my document alone, and that
-  every locator is one you actually found rather than one that looks precise.
-- **What you dropped**: questions you could not anchor to a place in the document.
-- **What is still open**: the parts of my document you drew no questions from, and why. An
-  empty list is said out loud, not left implied.
+  Save them as a Markdown file where your tool can write files, and say where it is;
+  where it cannot, show them in full.
+- **A few lines on the list**, and I ask for the detail if I want it: how many questions
+  under each heading; what the second reader dropped and who ran it; and the parts of my
+  document you drew no questions from, and why. An empty list is said out loud, not left
+  implied.
 
 Then the question: do these match what I will be asked, and which do I want to answer first?
 Do not suggest answers, do not hint, and do not tell me which questions are hard.
