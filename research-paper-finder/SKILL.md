@@ -9,9 +9,13 @@ description: >-
   "find me references for". Not for writing a literature review, not for summarizing what
   the papers say, not for deciding which ones matter, and not for checking references
   already in a document.
+license: CC-BY-4.0
 compatibility: >-
   Needs web search or page-fetch access to find and confirm papers. Without it, the skill
   says so and stops rather than returning unverified results.
+metadata:
+  author: Victor van Pelt
+  version: 1.0.0
 ---
 
 # Paper finder
@@ -102,6 +106,8 @@ Lead with the list, then a few lines on how it was made, then the question.
   loud, not left implied. Log the AI use: tool, date, purpose.
 
 Then the question: what happens to each corrected and each not-found paper?
+
+CHECKPOINT: wait. Nothing is settled until I answer.
 
 ## What you never do
 

@@ -10,6 +10,10 @@ description: >-
   chapter", "where is my argument weak", "read this like a marker would", or "poke holes
   in this". Not for language editing, not for a grade, and not for checking references,
   facts, or numbers.
+license: CC-BY-4.0
+metadata:
+  author: Victor van Pelt
+  version: 1.0.0
 ---
 
 # Reviewer
@@ -84,15 +88,26 @@ a later paragraph, a footnote, an earlier section. If it does, drop it.
 
 ## Defender pass
 
-Before the audit, my side gets argued. First try a separate helper: a
-subagent, a second assistant, or a separate tool your host offers. Give it only the
-document and the draft review, and ask it to argue against every main and minor
-comment as my strongest defender would, giving each comment one verdict: survives,
-narrow, or kill, with the sentence in my document that supports the verdict. If your
-tool cannot start a helper, run that pass yourself in a deliberately fresh read, taking
-my side against your own draft. Apply the verdicts: drop the kills, narrow the narrows.
-If a kill hits one of the three main comments I approved at Gate 1, do not substitute a
-new one silently; redraft it narrower or say at Gate 2 that it fell and why.
+Before the audit, my side gets argued, and you argue it yourself. Do not hand this
+to a helper. Deciding whether a comment survives is a judgment with nothing fixed
+to check it against, and a helper that kills a real concern costs me the comment I
+most needed. Set your draft aside and read my document again from the top as my
+strongest defender would, using what my document actually says and not charity.
+
+Put every main and minor comment through four questions. Is there a reading of my
+document on which the comment is simply wrong? Does my document already answer it
+somewhere you did not look, in a footnote, an appendix, or a later section? Is the
+comment about the document I wrote, or about a different one? Would a second reader
+reach the opposite conclusion? Before a comment saying I failed to do something
+survives, search the footnotes, the appendices, and the limitations for the place I
+did it, and name where you looked.
+
+Give each comment one verdict, with the sentence in my document behind it: survives,
+narrow, or kill. Then apply them: drop the kills, narrow the narrows. Keep a kill
+log, one line per killed comment naming the sentence that killed it, and show it at
+Gate 2, so a timid pass that killed a real concern is visible to me. If a kill hits
+one of the three main comments I approved at Gate 1, do not substitute a new one
+silently; redraft it narrower or say at Gate 2 that it fell and why.
 
 ## Audit
 
@@ -124,6 +139,8 @@ Log the AI use: tool, date, purpose.
 Then the question: which comments do I accept, which do I reject with a reason, and
 which do I want to answer? Do not say whether the document is good, and do not estimate
 a grade.
+
+CHECKPOINT: wait. Nothing is settled until I answer.
 
 ## What you never do
 

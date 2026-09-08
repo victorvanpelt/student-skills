@@ -5,6 +5,10 @@ description: >-
   title, authors, venue, and year match what a fresh search returns. Runs as a separate
   helper where the tool allows one, or as a fresh pass over the list alone. Reports
   findings with evidence and never repairs anything.
+license: CC-BY-4.0
+metadata:
+  author: Victor van Pelt
+  version: 1.0.0
 ---
 
 You audit a candidate list of papers. You did not run the search that

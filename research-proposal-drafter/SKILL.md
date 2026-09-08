@@ -9,9 +9,13 @@ description: >-
   author says "draft my thesis proposal", "help me write my proposal", "sharpen my research
   question", or "turn my research idea into a proposal". Refuses to invent a research
   question.
+license: CC-BY-4.0
 compatibility: >-
   Needs web search to find and confirm references in phase 2. Without it, the skill says
   so, reports every reference as unchecked, and adds none.
+metadata:
+  author: Victor van Pelt
+  version: 1.0.0
 ---
 
 # Thesis proposal drafter
@@ -26,8 +30,8 @@ The work runs in four phases, in this order, and each one ends where the next be
 1. **Intake.** I give preliminary answers to the three questions in written form.
 2. **Revise and improve.** You draft, find and check the references the argument needs,
    and together we improve and steer, at most three rounds.
-3. **Audit.** A separate helper, or you in a fresh pass where no helper is available,
-   checks references, support for every claim, academic English, facts, and AI slop.
+3. **Audit.** Two passes: a separate helper checks that the references and the facts
+   hold, and you read the draft again yourself for claim support, English, and AI slop.
 4. **Final pass.** You hand me the finished proposal as a Markdown file; I check everything
    and make my final changes.
 
@@ -50,10 +54,11 @@ The work runs in four phases, in this order, and each one ends where the next be
    References as its last section. Keep the body between 700 and 1,000 words; the
    reference list does not count and is mandatory, in APA 7, each entry with its DOI link
    (https://doi.org/...) where one exists.
-7. The audit is independent wherever your tool allows it: a helper that receives only the
-   draft and the brief, never this conversation. Where no helper is available, you run it
-   yourself in a fresh pass and say so, because a check by the context that wrote the text
-   is a weaker check.
+7. The audit's first pass is independent wherever your tool allows it: a helper that
+   receives only the draft and the four checks, never this conversation. Where no helper
+   is available, you run them yourself in a fresh pass and say so, because a check by the
+   context that wrote the text is a weaker check. The audit's second pass is always yours,
+   because judging how a draft reads is not something to hand to a helper.
 
 ## Phase 1: Intake
 
@@ -135,30 +140,52 @@ silently. Do not declare the draft finished yourself, and do not ask for a fourt
 
 ## Phase 3: Audit
 
-First try to run the audit through a separate helper: a subagent, a second assistant, or a
-separate audit tool your host offers. Give it only two things, the current draft with its
-reference list and the brief below, never this conversation or your reasoning. If your
-tool cannot start a helper, run the brief yourself in a deliberately fresh pass: re-read
-the draft from the top as a reader who did not write it, and say in the findings message
-that no separate helper was available.
+This phase is two passes, and they are not the same job. A helper can check whether
+something is so. Only you can judge how something reads.
 
-The brief asks the reader to report, and to fix nothing on its own:
+**Pass 1, the helper's, and it checks facts.** First try a separate helper: a subagent,
+a second assistant, or a separate audit tool your host offers. Give it only two things,
+the current draft with its reference list and the four numbered checks below, never this
+conversation or your reasoning. If your tool cannot start a helper, run these four
+checks yourself in a deliberately fresh pass, re-reading the draft from the top as a
+reader who did not write it, and say in the findings message that no separate helper was
+available.
 
-1. **References.** Does every entry resolve to a real work, and is every entry in APA 7
-   with a working DOI link? Is every in-text citation in the list, and every list entry
-   cited in the text?
-2. **Support for every claim.** Which sentences state something that needs a source and
-   have none, and which citations do not support the sentence they are attached to?
-3. **Academic English.** US spelling, tense, hedging, and anything a reader would trip
-   over, quoted in place.
-4. **Facts.** Every checkable number, name, date, institution, and definition.
-5. **AI slop.** Filler openers, empty intensifiers, tricolons, hollow transitions, and
-   sentences that assert importance instead of showing it, quoted in place.
+The four checks report and repair nothing:
 
-For each finding the brief asks for: the quoted text, what is wrong, and the exact
-replacement text it proposes.
+1. **References resolve.** Does every entry resolve to a real work? Search for the exact
+   title plus the first author's surname and compare title, authors, venue, and year
+   against the record retrieved, never against what the draft says.
+2. **Reference form.** Every entry against APA 7, and every DOI link opened and confirmed
+   to reach that same work. A corrected entry may be written out in full, because a
+   reference has one right form and writing it out is still reporting.
+3. **Citations match the list.** Every in-text citation has an entry in the list, and
+   every entry in the list is cited in the text. Report each orphan by name.
+4. **Facts.** Every checkable number, name, date, institution, and definition, each with
+   the source it was checked against quoted. Anything it could not check is said, never
+   passed.
 
-Hand me the findings as they came back, unedited, with one line saying who ran the audit.
+Nothing else goes to the helper. It proposes no wording outside check 2, gives no
+verdict on how the draft reads, and rewrites nothing.
+
+**Pass 2, yours, and it is judgment.** Set your own draft aside and read it again as a
+reader who did not write it. Three things, and each one needs a reader rather than a
+lookup:
+
+- **Support for every claim.** Which sentences state something that needs a source and
+  have none, and which citations do not support the sentence they are attached to. A
+  reference that exists is not a reference that supports the claim, and telling the two
+  apart means reading the source.
+- **Academic English.** US spelling, tense, hedging, and anything a reader would trip
+  over, quoted in place.
+- **AI slop.** Filler openers, empty intensifiers, tricolons, hollow transitions, and
+  sentences that assert importance instead of showing it, quoted in place.
+
+For each finding from either pass: the quoted text, what is wrong, and what you propose
+instead.
+
+Hand me both passes together, the helper's findings unedited, with one line saying who
+ran pass 1.
 
 CHECKPOINT: for each finding I accept, reject, or answer; you apply only what I accept, and
 nothing else. Wait.
@@ -183,3 +210,5 @@ State plainly what you could not verify.
 Then one question. I check everything, every sentence, every claim, and every reference.
 Do I want to make final changes? Apply exactly what I ask for, hand the document back
 once more, and stop. The proposal counts as mine only after my own read.
+
+CHECKPOINT: wait. Nothing is settled until I answer.

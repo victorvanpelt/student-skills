@@ -11,9 +11,13 @@ description: >-
   "verify my references and citations", "check my APA", or "check my chapter for
   inconsistencies". Not for improving the argument, not for language editing, not for
   deciding whether the work is good, and not for searching out new papers.
+license: CC-BY-4.0
 compatibility: >-
   Needs web search to verify references and facts. Without it, the skill says so and
   reports those checks as not run rather than guessing.
+metadata:
+  author: Victor van Pelt
+  version: 1.0.0
 ---
 
 # The check before you hand it in
@@ -159,15 +163,27 @@ only, such as a comma in a citation or an inconsistent decimal place.
 
 ## Second reader
 
-Before the report reaches me, a reader that ran none of the checks confirms the findings.
-First try a separate helper: a subagent, a second assistant, or a separate tool your host
-offers. Give it only the document, the inputs I supplied, and the draft report, and ask it
-to check every finding against the document and fix nothing: is the quoted passage really
-there, is the location right, does the evidence support the finding, and is the severity
-fair. A finding it cannot ground moves to a closing list headed "worth checking yourself,
-not confirmed"; it is never deleted. If your tool cannot start a helper, run that pass
-yourself in a deliberately fresh read of the report against the document, and say so at
-Gate 2.
+Before the report reaches me, a reader that ran none of the checks confirms the
+findings. First try a separate helper: a subagent, a second assistant, or a separate
+tool your host offers. Give it only the document, the inputs I supplied, and the
+draft report, and ask it four numbered questions, answered against the document and
+fixed by nobody:
+
+1. Is the quoted passage really in my document, word for word?
+2. Is the location right: the page, section, table, or figure it names?
+3. Does the evidence written next to the finding show what the finding says it shows?
+4. Does the severity match the three definitions above? Name every finding whose
+   severity does not, and say which of the three it fits instead. Do not change it.
+
+A finding it cannot ground moves to a closing list headed "worth checking yourself,
+not confirmed"; it is never deleted. If your tool cannot start a helper, run those
+four questions yourself in a deliberately fresh read of the report against the
+document, and say so at Gate 2.
+
+**Then one call is yours, not the reader's.** For every severity it named in question
+4, you adjust it or leave it, and you say at Gate 2 which ones you moved and which you
+left. How much a finding costs me is a judgment about my thesis and my examiner, and
+the definitions above are a guide to it, not a verdict on it.
 
 ## The report
 
@@ -210,6 +226,8 @@ Lead with the report, then a few lines, then the question.
 
 Then the question: which findings do I accept, which do I reject with a reason, and does
 any check need a deeper pass?
+
+CHECKPOINT: wait. Nothing is settled until I answer.
 
 ## Rules
 

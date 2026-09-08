@@ -9,6 +9,10 @@ description: >-
   colloquium", or "check my answers against my thesis". Not for writing the defense
   presentation, not for answering the questions, and not for judging whether the thesis is
   good.
+license: CC-BY-4.0
+metadata:
+  author: Victor van Pelt
+  version: 1.0.0
 ---
 
 # Defense questions
@@ -44,13 +48,20 @@ results, the limits, and the contribution.
 
 ## Second reader
 
-Before the list reaches me, a reader that did not build it checks the locators. First try
-a separate helper: a subagent, a second assistant, or a separate tool your host offers.
-Give it only my document and the question list, and ask it to report and fix nothing: for
-each question, is the page, table, or section really where the material is, and can the
-question be answered from the document alone. A question it cannot ground is dropped, and
-the drop is reported. If your tool cannot start a helper, run that check yourself in a
-deliberately fresh pass and say so at Gate 2.
+Before the list reaches me, a reader that did not build it checks the locators. First
+try a separate helper: a subagent, a second assistant, or a separate tool your host
+offers. Give it only my document and the question list, and ask it two numbered
+questions, answered against the document and fixed by nobody:
+
+1. For each question, is the page, table, or section it names really where that material
+   is? Where it is not, say where the material actually is, or say it is nowhere.
+2. For each question, can it be answered from the document alone? Where it cannot, quote
+   what the question asks for that the document does not carry.
+
+It changes nothing and drops nothing. You do the dropping: a question the reader could
+not ground comes out of the list, and every drop is reported at Gate 2 with the reason
+the reader gave. If your tool cannot start a helper, run those two questions yourself in
+a deliberately fresh pass and say so at Gate 2.
 
 ## Gate 2
 
@@ -66,6 +77,8 @@ Lead with the questions, then a few lines, then the question.
 
 Then the question: do these match what I will be asked, and which do I want to answer first?
 Do not suggest answers, do not hint, and do not tell me which questions are hard.
+
+CHECKPOINT: wait. Nothing is settled until I answer.
 
 ## Judging my answers
 

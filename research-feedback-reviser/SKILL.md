@@ -9,9 +9,13 @@ description: >-
   sent comments", "work through this feedback", "help me respond to these notes", or
   "revise my chapter from this feedback". Not for deciding whether the feedback is right;
   that is the author's call.
+license: CC-BY-4.0
 compatibility: >-
   Needs web search to confirm any new reference a draft adds. Without it, the skill says so
   and adds no new reference.
+metadata:
+  author: Victor van Pelt
+  version: 1.0.0
 ---
 
 # Work through feedback without losing control of it
@@ -132,6 +136,8 @@ Then the question: for each draft, do I keep it, reword it, or reject it? I go t
 one at a time, and nothing is settled until I have. If I accept every draft unchanged, say so
 plainly: that means I did not really read them. Update the response record with my answers;
 it is the honest account of what I did with the advice.
+
+CHECKPOINT: wait. Nothing is settled until I answer.
 
 ## Rules
 

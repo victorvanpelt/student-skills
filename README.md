@@ -4,14 +4,14 @@ This repository contains simple skills that students writing a thesis or a resea
 
 ## Skills as workflows
 
-Each skill in this repo captures a particular workflow. It tries to automate the boring work that can be forgotten, while handing the important decisions and input to you. Every skill follows the same shape: it takes what you already gave it and asks only for what is missing, stops once for your approval before the real work starts (the proposal drafter also stops after each revision round), has its output checked by a second reader (a separate helper where your AI tool can start one, or the same assistant in a fresh pass where it cannot), and then hands you the output first, with the checks in a few lines and one question. Everything a skill needs is written in its folder; the only thing your AI tool has to do is import the folder's contents.
+Each skill in this repo captures a particular workflow. It tries to automate the boring work that can be forgotten, while handing the important decisions and input to you. Every skill follows the same shape: it takes what you already gave it and asks only for what is missing, stops for your approval before the real work starts, has its output checked by a second reader (a separate helper where your AI tool can start one, or the same assistant in a fresh pass where it cannot), and then hands you the output first, with the checks in a few lines and one question. Two skills differ, and say so in their own text. The English editor has one stop, after the edit, because you cannot approve a marked-up document before it exists. The text humanizer has no second reader, because it writes nothing: every flag is a quote from your own passage. The proposal drafter has more than two, one after each revision round. Everything a skill needs is written in its folder; the only thing your AI tool has to do is import the folder's contents.
 
 ## The skills
 
 - **research-proposal-drafter**: Asks the three Kinney questions (what you want to find out, why it matters and to whom, how you will find out), drafts a short proposal using your preliminary answers, works with you to improve it and its references over at most three rounds, runs an audit through a separate helper where your tool allows one, and hands you the proposal as a Markdown file for your final pass.
 - **research-paper-finder**: Searches for papers on your topic, confirms every candidate against a second search, and drops what it cannot confirm rather than padding the list. Ships with **research-paper-auditor**, an independent field-by-field existence check on the results.
 - **research-analysis-coder**: Gives you the code that computes a result based on data, never the result itself, so every number comes from a script you can run again.
-- **research-section-drafter**: Turns your own bullets into sentences, one per bullet, and reports every claim, hedge, and magnitude it added. It hands you the sentences to adopt one at a time, never a finished paragraph to paste.
+- **research-section-drafter**: Turns your own bullets into sentences, one or two per bullet, and reports every claim, hedge, and magnitude it added. It hands you the sentences to adopt one at a time, never a finished paragraph to paste.
 - **research-english-editor**: Copy-edits any academic document you wrote for grammar, spelling, punctuation, and US academic style, and hands it back with every change marked and numbered, so you reject the ones you do not want.
 - **research-text-humanizer**: Quotes the phrasing in your text that reads as machine-written and leaves the rewriting to you, weighting the structural tells above the word list, which ages fast.
 - **research-document-reviewer**: Reads any document you wrote (thesis, chapter, proposal, paper, essay) and writes a referee-style review, three main comments and up to ten minor ones, each anchored to a quoted sentence, without rewriting a word.
@@ -37,4 +37,14 @@ First get the files: clone the repository with git, or download it as a zip from
 
 ## If your tool does not install skills
 
-Any assistant with a custom-instructions or project field can still run a skill: paste everything below the frontmatter (the block between the two `---` lines at the top of `SKILL.md`) into that field, one skill per project. Where a skill would dispatch an auditor, run the auditor the same way in a separate, fresh chat, so the check comes from a context that did not produce the document.
+Any assistant with a custom-instructions or project field can still run a skill: paste everything below the frontmatter (the block between the two `---` lines at the top of `SKILL.md`) into that field, one skill per project. Where a skill would hand its output to a separate helper, you do nothing: the skill notices that no helper is available, runs the same check itself in a fresh pass, and tells you it did. That fallback is written into every skill, so the check still happens on the plain-text route.
+
+## Versions
+
+Each skill carries a version in its `SKILL.md` frontmatter, under `metadata: version`. What changed between versions is in [CHANGELOG.md](CHANGELOG.md) at the top of this repository. If you copied a skill folder some time ago, compare its version against the one here before you assume they still do the same thing.
+
+## License
+
+These skills are licensed under [CC BY 4.0](LICENSE). Copy them, change them, use them in your own work, including commercially. The one condition is credit: name the source, link the license, and say if you changed anything.
+
+> van Pelt, V. (2026). student-skills: starter research skills for thesis students [Agent Skills repository]. https://github.com/victorvanpelt/student-skills Licensed under CC BY 4.0.

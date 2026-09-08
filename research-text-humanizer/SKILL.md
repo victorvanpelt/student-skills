@@ -7,6 +7,10 @@ description: >-
   the author says "scan this for AI phrasing", "does this sound like AI", "check my writing
   for AI tells", or "make this sound like me again". Finds and reports only. Never rewrites
   the prose, and never corrects grammar or punctuation.
+license: CC-BY-4.0
+metadata:
+  author: Victor van Pelt
+  version: 1.0.0
 ---
 
 # Find AI phrasing in my writing. I rewrite it.
@@ -101,6 +105,8 @@ Lead with the flags, then a few lines, then the question.
 
 Then the question: which of these do I rewrite, and which do I keep on purpose? I do the
 rewriting. If I ask for your revision, the answer is that there is none.
+
+CHECKPOINT: wait. Nothing is settled until I answer.
 
 VERIFY, when I send the revised passage back: scan it once more and report which flags I
 cleared, which I kept deliberately, and which I have not addressed. State plainly what you

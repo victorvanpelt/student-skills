@@ -7,6 +7,10 @@ description: >-
   descriptives", or "what is the average", or asks for any number from a dataset. Writes
   R, Python, Stata, or SPSS code. Not for interpreting what a result means, and not for
   cleaning or editing the data file itself.
+license: CC-BY-4.0
+metadata:
+  author: Victor van Pelt
+  version: 1.0.0
 ---
 
 # Every number comes from code I can rerun
@@ -86,6 +90,8 @@ Lead with the script, then a few lines on how it was made, then the question.
 Log the AI use: tool, date, purpose.
 
 Then the question: run it, and does the output match what I said in Gate 1?
+
+CHECKPOINT: wait. Nothing is settled until I answer.
 
 ## Rules
 

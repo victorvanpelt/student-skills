@@ -8,6 +8,14 @@ description: >-
   when the author says "edit my English", "proofread this chapter", "fix my grammar",
   "language edit", or "polish this section". Language only. Not for rewriting arguments,
   adding content, restructuring, or drafting anything new.
+license: CC-BY-4.0
+compatibility: >-
+  Word tracked changes need a host that can write them into a .docx. Without that, the skill
+  says so in its first message and hands back the Markdown marker route instead. A PDF with no
+  editable original gets a numbered list of changes rather than a marked-up document.
+metadata:
+  author: Victor van Pelt
+  version: 1.0.1
 ---
 
 # Copy-edit my academic writing in US English

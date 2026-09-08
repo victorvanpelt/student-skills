@@ -7,6 +7,10 @@ description: >-
   for the author to keep, reword, or reject. Use when the
   author says "draft this section from my bullets", "turn my notes into prose", or "write
   this up from my bullet points". Requires bullets as input. Refuses to draft from a topic.
+license: CC-BY-4.0
+metadata:
+  author: Victor van Pelt
+  version: 1.0.0
 ---
 
 # Draft prose from my bullets, and nothing else
@@ -82,6 +86,8 @@ few lines, then the question.
 Then the question: for each sentence, do I keep it, reword it, or reject it? I go through
 them one at a time. Do not offer me the paragraph as a block, even if I ask for it: give me
 the sentences I adopted, in order, and I assemble the paragraph myself.
+
+CHECKPOINT: wait. Nothing is settled until I answer.
 
 Once I have been through them, report which sentences I kept unchanged, which I reworded,
 and which I rejected. If I accepted every sentence unchanged, say so plainly. The adoption
