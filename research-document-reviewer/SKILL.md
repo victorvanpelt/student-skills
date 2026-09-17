@@ -4,7 +4,7 @@ description: >-
   Writes a referee-style review of any academic document the author wrote, a thesis, a
   chapter, a research proposal, a paper, an essay, or a report: a short summary, exactly
   three main comments (argument and contribution, theory and reasoning, evidence and
-  method), and up to ten minor comments, every one anchored to a quoted sentence. Before
+  method), and up to twenty minor comments, every one anchored to a quoted sentence. Before
   the author sees it, a defender pass argues the author's side against each comment and an
   audit checks every quote. Nothing is rewritten. Use when the author says "review my
   chapter", "where is my argument weak", "read this like a marker would", or "poke holes
@@ -13,7 +13,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Reviewer
@@ -26,8 +26,25 @@ You judge the argument, not the paperwork. Whether a reference exists, a number 
 table, or a citation is in APA form is a separate check I run separately. Say in one line
 that you noticed such a problem, and keep reviewing.
 
-I stop you twice: once on the briefing, before you draft a word, and once when the audited
-review comes back. Everything between runs without asking me.
+I stop you twice: once when you say back what you think I asked, before you have read a
+word, and once when the audited review comes back. Everything between runs without asking
+me.
+
+## Gate 0: say back what you think I asked
+
+Before you plan anything, and before you read my document, write down what you think this
+job is, in five short parts:
+
+- **My words**, quoted exactly, and today's date.
+- **The problem**: what is wrong or missing, as you read it from my words.
+- **The result**: what you will hand me, and how we will know it is right.
+- **The limits**: what you must not change, and what you must not touch.
+- **The open questions**: what you assumed, and the calls only I can make.
+
+Do this yourself. Reading an instruction is judgment, so it never goes to a helper.
+
+CHECKPOINT: wait. Nothing is planned until I answer. This is the cheapest correction I will
+ever make. The same correction after a review exists is not cheap.
 
 ## Intake
 
@@ -57,13 +74,10 @@ deliberately not raising, and why, so I can put one back; the gaps from the read
 and the judgment calls that are mine alone, such as how hard a comment should press or
 where a second reading could reach the opposite conclusion.
 
-## Gate 1
-
-Show me the briefing itself, not a summary of it. Then ask one question: is this the
-right review to write? Point at the three main comments and at the not-raising list.
-
-CHECKPOINT: wait. If I redirect, amend the briefing, show what moved, and ask again. Do
-not draft until I say the briefing stands.
+Show me the briefing itself, not a summary of it, and carry it straight into the draft
+without waiting. I approved what this job is at Gate 0, so the briefing is a record of the
+review you are about to write, not a second question. If I stop you on it anyway, amend it,
+show what moved, and continue.
 
 ## Draft
 
@@ -80,8 +94,18 @@ Write the review in this fixed structure and no other:
   it rests on, with page or section, what is wrong, and the concrete step that would
   resolve it. A main comment must name what would resolve it; if it cannot, it is a
   minor comment.
-- **Other comments**, at most ten, in the order they appear in the document, one or two
-  sentences each, every one anchored to a quoted sentence with its location.
+- **Other comments**, at most twenty, in the order they appear in the document, one or two
+  sentences each, every one anchored to a quoted sentence. Twenty is a ceiling, not a
+  target: one is fine, and so is nine. If the read produced more than twenty, rank them by
+  how much each one costs the document, keep the top twenty, and list what fell with one
+  line each, so I can ask for one back.
+
+**Where a comment sits.** Anchor every comment to a quoted sentence; that is what makes it
+checkable. Naming where the sentence sits is strongly recommended on top of that, because
+it is how I find it. Give a page number only when you can pin it down. Text pulled out of a
+PDF does not carry reliable page numbers, so if you cannot confirm one against something
+visible on that page, name the section, table, or figure instead and say that is what you
+are doing. A precise-looking page number that is wrong costs me more than a section name.
 
 Before a comment goes in, check whether the document already answers it somewhere else,
 a later paragraph, a footnote, an earlier section. If it does, drop it.
@@ -106,16 +130,17 @@ Give each comment one verdict, with the sentence in my document behind it: survi
 narrow, or kill. Then apply them: drop the kills, narrow the narrows. Keep a kill
 log, one line per killed comment naming the sentence that killed it, and show it at
 Gate 2, so a timid pass that killed a real concern is visible to me. If a kill hits
-one of the three main comments I approved at Gate 1, do not substitute a new one
+one of the three main comments the briefing named, do not substitute a new one
 silently; redraft it narrower or say at Gate 2 that it fell and why.
 
 ## Audit
 
 A reader that did not write the review checks it. First try a separate helper; give it
 only the document and the review, and ask it to report and fix nothing: is every quoted
-sentence really in my document, word for word; is every page or section reference right;
-is any comment answered elsewhere in the document; are there exactly three main
-comments, at most ten minor ones, and a summary within 300 words. If your tool cannot
+sentence really in my document, word for word; does every location it names, page,
+section, table, or figure, point at the right place; is any comment answered elsewhere in
+the document; are there exactly three main comments, at most twenty minor ones, and a
+summary within 300 words. If your tool cannot
 start a helper, run the same check yourself in a deliberately fresh pass and say so at
 Gate 2. Fix what the audit found and nothing else. A second round rechecks only the
 first round's list; three rounds at most, and whatever is still contested after that
@@ -127,7 +152,7 @@ Lead with the review, then a few lines, then the question.
 
 - **The review**: save it as a Markdown file where your tool can write files, and say
   where it is; where it cannot, show it in full. Above it, the three main comments in
-  one sentence each and the number of minor comments.
+  one sentence each, the number of minor comments, and the count that fell to the cap.
 - **VERIFY, in a few lines**; I ask for the detail if I want it: what the audit found,
   who ran it, and how many rounds it took; what the defender killed or narrowed, with
   the count, and any kill you think was a real concern lost to a weak argument, named;

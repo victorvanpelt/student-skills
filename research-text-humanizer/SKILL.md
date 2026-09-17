@@ -10,7 +10,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Find AI phrasing in my writing. I rewrite it.
@@ -18,11 +18,14 @@ metadata:
 A tool that rewrites AI-sounding prose produces different AI-sounding prose. So this one
 finds, quotes, and stops. You never propose a replacement, even if I ask twice.
 
-I stop you twice: once at the start, and once when the flags come back. The scanning in
-between is yours. There is no separate audit in this skill: it writes no text, and every
-flag is a quote from my own passage that I judge directly.
+I stop you twice: once at the start, and once when the flags come back. The first is not a
+gate on the plan, it is me handing you the two things you cannot start without. There is no
+gate on the plan here, on purpose: your job is to compare my passage against the fixed list
+of signs printed below, and there is nothing about that job to misread. There is also no
+separate audit: this skill writes no text, and every flag is a quote from my own passage
+that I judge directly.
 
-## Gate 1
+## What I have to give you
 
 If the passage is not in my message, ask for it. Ask for one more thing, unless I already
 gave it, and take a no for an answer: 300 to 500 words I wrote before I used any AI tool,
@@ -33,7 +36,7 @@ hedging, favorite connectives, how plain my verbs are. Then a flag can say "this
 you write", which is the only claim this scan can honestly make. Say in one line whether you
 have that sample, because it changes what your flags are worth.
 
-CHECKPOINT: wait.
+CHECKPOINT: wait. Then run to the end without asking me anything else.
 
 ## The scan
 
@@ -42,6 +45,14 @@ the sign it matches, and nothing else.
 
 Do not flag every sentence. A scan that marks up the whole passage has stopped being useful.
 Flag what actually sounds machine-written, not everything that could be tightened.
+
+**If there is nothing, say so and stop.** Where no structural sign matches and no chat
+leftover is present, the honest answer is that my writing is not the problem this scan
+solves. Say that in one line, say what you read, and stop there. Do not reach into the
+vocabulary list for something to report. Over-marking clean writing is the way this scan
+fails, and it fails that way far more often than it misses a real tell: a student told that
+their own prose reads as machine-written will rewrite good sentences into worse ones. If I
+also want grammar and punctuation checked, that is a separate job and you say so.
 
 ### Structural signs, which carry the weight
 
@@ -69,6 +80,9 @@ Flag what actually sounds machine-written, not everything that could be tightene
 - **Empty openers**: "In today's rapidly evolving landscape", "It is important to note that",
   "This section will explore".
 - **Even rhythm**: five or more consecutive sentences of nearly the same length.
+- **Mechanical alternation**: short, long, short, long, held for a whole paragraph. This is
+  what is left after someone has cleaned a passage sign by sign, so it is worth more than it
+  looks: the cleanup itself leaves a pattern.
 - **Hedge stacking**: three or more hedges in one sentence.
 - **A shift in register**: a paragraph that does not sound like the ones around it, or like my
   own sample. Quote both and say what differs.
@@ -89,6 +103,11 @@ Flag what actually sounds machine-written, not everything that could be tightene
 pivotal, crucial, underscore, testament, delve, tapestry, landscape, intricate, showcase,
 realm, robust as decoration, "additionally" as a paragraph opener, and similar words that add
 emphasis but no content.
+
+Three words are deliberately not on this list. "Robust", "key", and "significant" are
+ordinary working words in academic writing, and "significant" is a technical term in any
+passage reporting a statistical test. Flag "robust" only where it is decoration on something
+that was never tested. Never flag the other two on their own.
 
 ## Gate 2
 

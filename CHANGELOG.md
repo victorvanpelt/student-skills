@@ -4,6 +4,64 @@ Every skill folder carries its own version in the `metadata.version` field of it
 `SKILL.md`. This file records what changed in each release, so a skill copied earlier
 can be compared against the current one.
 
+## 1.1.0, 2026-09-17
+
+**Where a skill stops changed.** Every skill used to stop once before the work, on a plan
+it had already written. That stop is gone. Five skills now stop earlier instead, on what
+they understood the request to be, before anything is planned or read:
+`research-proposal-drafter`, `research-document-reviewer`, `research-feedback-reviser`,
+`research-analysis-coder`, `research-defense-questions`. The other five have no stop before
+the work at all, and each says why in one line: their work runs against something fixed
+that already exists, so there is nothing about the job to misread.
+`research-document-auditor`, `research-english-editor`, `research-paper-finder`,
+`research-section-drafter`, `research-text-humanizer`. The stop at the end is unchanged in
+all ten. Skills that asked for an input before starting still ask for it; that ask is not
+a gate.
+
+**research-proposal-drafter**: the three-round revision loop is gone, with its four stops.
+The skill now takes one round of intake, then writes the draft, the references, and the
+three ranked comments without stopping, audits, and hands everything over at once for you
+to decide. Predictions got a standard: two or three, each stated so a result could
+contradict it, each tied to something the design actually measures. Positioning references
+got a pointer, three to six, stated as a recommendation the skill judges rather than a rule.
+
+**research-feedback-reviser**: the mid-work stop is gone. The skill now drafts the smallest
+change that meets each item itself, names a genuinely different alternative in one line
+where one exists, and you decide once at the end with the drafts in front of you instead of
+twice. Unclear items become a question for your supervisor; items waiting on data you do not
+have become a task. Choosing how to meet a comment is the skill's job; judging whether the
+comment is right stays yours.
+
+**research-document-reviewer**: the minor-comment cap is now twenty rather than ten, as a
+ceiling and not a target; over the cap the skill ranks by cost to the document and lists
+what fell. A location is now strongly recommended rather than required: page numbers pulled
+out of a PDF are unreliable, so where one cannot be confirmed the skill names the section,
+table, or figure instead and says so.
+
+**research-document-auditor**: a reference list pasted on its own now runs the reference
+check alone, with no intake and no memo, and says what did not run.
+
+**research-defense-questions**: a question your thesis cannot answer is no longer dropped.
+It moves to a closing section of its own, outside the numbered list your answers are graded
+against, because in a defense that is the question you most need to see coming.
+
+**research-paper-finder**: asks for your supervisor's or department's journal list first,
+and offers the FT50 as a named public starting point where you have none, saying what it is
+and that it is one list among several. Added a check against the obvious miss: describe two
+or three things the literature almost certainly contains and search for the descriptions,
+never for a remembered title. The auditor's coverage note is now acted on rather than only
+printed. `research-paper-auditor.md` moved to `research-paper-finder/references/`.
+
+**research-text-humanizer**: added a clean exit, so a passage with no structural tell and no
+chat leftover is reported as fine rather than mined for vocabulary flags. Added one tell,
+mechanically alternating sentence lengths. Noted that "robust", "key" and "significant" are
+ordinary words here and are not flagged alone.
+
+**research-english-editor**: the skill now builds the do-not-touch list from your document
+(construct names, condition labels, hypothesis labels, variable names, defined
+abbreviations) plus whatever you named, shows it before editing, and counts against it at
+the end.
+
 ## 1.0.1, 2026-09-08
 
 - **research-english-editor**: `compatibility` added to the frontmatter. The skill needs a host

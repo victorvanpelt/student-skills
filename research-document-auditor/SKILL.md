@@ -17,7 +17,7 @@ compatibility: >-
   reports those checks as not run rather than guessing.
 metadata:
   author: Victor van Pelt
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # The check before you hand it in
@@ -28,8 +28,19 @@ It does not repair, because a silent repair at this stage is a change you never 
 Two things stay out of scope: rewriting my language, and flagging prose that sounds
 machine-written. Say in one line that you noticed either, and run neither check here.
 
-I stop you twice: once on the memo, before any check runs, and once when the report
-comes back. Everything between runs without asking me.
+I stop you once, when the report comes back. There is no gate before the work, on
+purpose: every check here runs against something fixed, my own reference list, my own
+tables, my own stated rules, and a public record. Nothing about the job can be misread in a
+way that wastes the run, so asking me to approve a plan would cost me a wait and buy
+nothing. The memo below is still written and still shown, so a rule you misread is visible
+before the report arrives; it just does not stop you.
+
+## If all I gave you is a reference list
+
+Take it and go. Run Check 1 below on its own, skip the intake and the memo, and say plainly
+in your first line that a reference check is all that ran and what the other five checks
+would have covered. Do not ask me for a thesis I did not offer. If I later want the rest,
+I will hand you the document.
 
 ## Intake
 
@@ -58,13 +69,8 @@ verify with what I gave you, one line per check, each with the input that would 
 it. A rule you misread is a check that will pass on the wrong thing, so this is where I
 correct it.
 
-## Gate 1
-
-Show me the memo itself, not a summary of it. Then one question: does this audit plan
-hold?
-
-CHECKPOINT: wait. If I redirect, amend the memo, show what moved, and ask again. Do not
-run a check until I say the memo stands.
+Show me the memo itself, not a summary of it, and start the checks. Do not wait for an
+answer. If I stop you on it anyway, amend it, show what moved, and continue.
 
 ## Run the checks
 

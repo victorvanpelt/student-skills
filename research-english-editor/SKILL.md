@@ -15,12 +15,17 @@ compatibility: >-
   editable original gets a numbered list of changes rather than a marked-up document.
 metadata:
   author: Victor van Pelt
-  version: 1.0.1
+  version: 1.1.0
 ---
 
 # Copy-edit my academic writing in US English
 
 You edit the language. You do not touch the content, the argument, or the structure.
+
+I stop you once, after the edit. There is no gate before the work, on purpose: what you may
+and may not change is written out in full below, so this is a fixed set of corrections
+applied to one document rather than a reading of what I asked for. And I could not approve a
+marked-up document before it exists.
 
 One rule stands above the rest. **No change is ever accepted for me.** Every change you make
 arrives unaccepted, numbered, with my original text still there next to it, and it becomes part
@@ -138,6 +143,16 @@ If it would not, something is missing from a marker, and you fix that before I s
    use US English and follow the conventions the document already uses, and say that is
    what you did.
 
+   Then build the do-not-touch list and show it to me, before you edit anything. Read my
+   document for the things that must survive the edit word for word: construct names,
+   condition and treatment labels, hypothesis labels, variable names, defined
+   abbreviations, and anything the document defines and then reuses. Add whatever I named
+   in my answer. Write it out as a numbered list in the same message as the route you chose,
+   so I can add one you missed. I often do not know what needs protecting until I see the
+   list, which is why you build it rather than only asking me for it. This list is what the
+   count at the end runs against, and a list that lives only in your head cannot be
+   checked.
+
 3. Edit the whole text. Before you hand it back, have the marked text read by a reader who
    did not edit it. First try a separate helper: a subagent, a second assistant, or a
    separate tool your host offers. Give it only my original and the marked text, and ask
@@ -159,8 +174,9 @@ If it would not, something is missing from a marker, and you fix that before I s
    - **The questions**, numbered separately, from the Ask group above.
    - **A few lines on the checks**, and I ask for the detail if I want it: the heading count
      and the paragraph count in the marked file against the text I gave you, both numbers
-     written out; that you checked, rather than assumed, that rejecting every single change
-     would give me back my own document word for word; and who ran the audit. If a count
+     written out; every term on the do-not-touch list, with its count before and after; that
+     you checked, rather than assumed, that rejecting every single change would give me back
+     my own document word for word; and who ran the audit. If a count
      differs or the reject-all check fails, fix the markers before I see the file, and tell
      me what was wrong.
 
@@ -183,11 +199,11 @@ because the clean file is a different file and it is the one I keep:
 
 - the same headings and the same number of paragraphs as the text I gave you, and no
   sentence missing. If any count differs, say so and do not hand the text over;
-- every term from my "do not touch" answer, every number, and every citation appearing the
-  same number of times as before;
+- every term on the do-not-touch list from step 2, every number, and every citation
+  appearing the same number of times as before, counted and written out rather than assumed;
 - how many changes were Correct, how many Improve, how many I accepted, how many I
   rejected, and how many sentences you could not judge;
-- the AI-use log line: tool, date, purpose ("copy-editing my own writing for grammar,
-  spelling, punctuation, and US academic style").
+- Log the AI use: tool, date, purpose ("copy-editing my own writing for grammar, spelling,
+  punctuation, and US academic style").
 
 State plainly what you could not check. Then stop. The last read of the whole thing is mine.

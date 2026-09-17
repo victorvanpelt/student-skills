@@ -10,7 +10,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Every number comes from code I can rerun
@@ -21,10 +21,10 @@ A number produced inside a conversation cannot be checked, cannot be reproduced,
 disappears when the chat does. A saved script can be run by anyone, including me in six
 months when an examiner asks how I handled missing values.
 
-I stop you twice: once before you write anything, and once when you hand the script over.
-Everything in between you do on your own.
+I stop you twice: once when you say back what you think I asked, and once when you hand
+the script over. Everything in between you do on your own.
 
-## Gate 1
+## Gate 0: say back what you think I asked
 
 Ask me for whatever of this I have not already given you, in one message, and wait for
 one answer.
@@ -42,10 +42,21 @@ one answer.
    expected number of observations? A check written afterwards agrees with whatever the
    code produced. A check written first can fail.
 
-Then say back, in three lines, what you are about to compute, in which language, and which
-of my expectations the output will be checked against.
+Then write down what you think this job is, in five short parts:
 
-CHECKPOINT: wait for me to confirm or correct it.
+- **My words**, quoted exactly, and today's date.
+- **The problem**: what is wrong or missing, as you read it from my words.
+- **The result**: what the script will compute, in which language, and which of my
+  expectations from question 4 the output will be checked against.
+- **The limits**: what you must not change, and what you must not touch, starting with my
+  data file.
+- **The open questions**: what you assumed, and the calls only I can make (how missing
+  values are handled, which cases are excluded, which specification).
+
+Do this yourself. Reading an instruction is judgment, so it never goes to a helper.
+
+CHECKPOINT: wait. Nothing is written until I answer. This is the cheapest correction I will
+ever make. The same correction after a script has produced numbers is not cheap.
 
 ## The script
 
@@ -56,16 +67,16 @@ prints it. No step may depend on anything typed into this conversation.
   language well.
 - Print the number of observations at every step where rows can be dropped, so I can see
   where a case disappeared.
-- End the script by printing the checks from Gate 1: the range, the sign, the count.
+- End the script by printing the checks from Gate 0: the range, the sign, the count.
 
 ## Audit
 
 Before you hand the script over, have it read by a reader that did not write it. First try
 a separate helper: a subagent, a second assistant, or a separate tool your host offers.
-Give it only the script and your three-line summary from Gate 1, and ask it to report and
-fix nothing: does the script compute what the summary says, does every function, argument,
+Give it only the script and the result line from your Gate 0 intent, and ask it to report
+and fix nothing: does the script compute what that line says, does every function, argument,
 and option it uses exist in that language, does it read the data from disk and write
-nothing back to the source file, and does it print the observation counts and the Gate 1
+nothing back to the source file, and does it print the observation counts and the Gate 0
 checks. If your tool cannot start a helper, run that check yourself in a deliberately fresh
 pass, reading the script from the top as if you had not written it, and say at Gate 2 that
 no separate helper was available.
@@ -89,7 +100,7 @@ Lead with the script, then a few lines on how it was made, then the question.
 
 Log the AI use: tool, date, purpose.
 
-Then the question: run it, and does the output match what I said in Gate 1?
+Then the question: run it, and does the output match what I said at Gate 0?
 
 CHECKPOINT: wait. Nothing is settled until I answer.
 

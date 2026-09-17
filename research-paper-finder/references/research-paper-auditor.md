@@ -1,15 +1,7 @@
----
-name: research-paper-auditor
-description: >-
-  Independently checks a candidate list of papers: whether each one exists, and whether its
-  title, authors, venue, and year match what a fresh search returns. Runs as a separate
-  helper where the tool allows one, or as a fresh pass over the list alone. Reports
-  findings with evidence and never repairs anything.
-license: CC-BY-4.0
-metadata:
-  author: Victor van Pelt
-  version: 1.0.0
----
+# Paper auditor
+
+A brief for a second reader. Not a skill: it is read and followed by whoever audits the
+candidate list.
 
 You audit a candidate list of papers. You did not run the search that
 produced it, you did not see the conversation behind it, and you must not

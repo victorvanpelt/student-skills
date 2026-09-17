@@ -12,7 +12,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Defense questions
@@ -20,18 +20,29 @@ metadata:
 You produce questions. I produce answers. You judge my answers against my thesis. You never
 answer a question you asked, even if I ask you to.
 
-I stop you twice: once to agree what my thesis claims, and once when the question list
-arrives. Reading the document and building the questions in between are yours.
+I stop you twice: once when you say back what you think I asked, and once when the
+question list arrives. Reading the document and building the questions in between are
+yours.
 
-## Gate 1
+## Gate 0: say back what you think I asked
 
-Take the thesis or chapter and whatever I said about it, and ask only for what is
-missing: the document, and one sentence saying what I claim it shows. Then, in a few
-lines: the claim as you understand it, in one sentence; the parts of the document you will
-draw questions from; and any of the seven headings below you expect to be thin, and why.
+Take the thesis or chapter and whatever I said about it, and ask only for what is missing:
+the document, and one sentence saying what I claim it shows. Then, before you build a
+single question, write down what you think this job is, in five short parts:
 
-CHECKPOINT: wait. Fifteen to twenty-five questions built on a misread claim are
-twenty-five questions I have to throw away.
+- **My words**, quoted exactly, and today's date.
+- **The problem**: what is wrong or missing, as you read it from my words. Include the
+  claim my document makes, as you understand it, in one sentence.
+- **The result**: what you will hand me, and how we will know it is right.
+- **The limits**: what you must not change, and what you must not touch.
+- **The open questions**: what you assumed, which parts of the document you will draw
+  questions from, any of the seven headings below you expect to be thin and why, and the
+  calls only I can make.
+
+Do this yourself. Reading an instruction is judgment, so it never goes to a helper.
+
+CHECKPOINT: wait. Nothing is built until I answer. Twenty-five questions built on a misread
+claim are twenty-five questions I have to throw away.
 
 ## The questions
 
@@ -58,10 +69,18 @@ questions, answered against the document and fixed by nobody:
 2. For each question, can it be answered from the document alone? Where it cannot, quote
    what the question asks for that the document does not carry.
 
-It changes nothing and drops nothing. You do the dropping: a question the reader could
-not ground comes out of the list, and every drop is reported at Gate 2 with the reason
-the reader gave. If your tool cannot start a helper, run those two questions yourself in
-a deliberately fresh pass and say so at Gate 2.
+It changes nothing and moves nothing. You do that. A question whose locator is simply
+wrong gets the right locator, or comes off the list if there is none. A question the
+document cannot answer does **not** come off the list: it moves to a closing section headed
+"questions my thesis does not answer", with the reader's line saying what the document does
+not carry. That section is the most useful thing in this file. In a defense, the question
+your thesis cannot answer is the one the examiner will ask, and deleting it would hide the
+exposure rather than prepare you for it. It sits outside the numbered list on purpose, so
+it never reaches the answer-judging below, which would only ever return ungrounded and
+teach me nothing.
+
+If your tool cannot start a helper, run those two questions yourself in a deliberately
+fresh pass and say so at Gate 2.
 
 ## Gate 2
 
@@ -70,10 +89,15 @@ Lead with the questions, then a few lines, then the question.
 - **The questions**, grouped under the seven headings, each with its locator and its mark.
   Save them as a Markdown file where your tool can write files, and say where it is;
   where it cannot, show them in full.
+- **Questions my thesis does not answer**, in their own closing section, unnumbered and
+  outside the seven headings, each with the line saying what the document does not carry.
+  Say plainly that these are not failures of the list; they are where I am exposed. If the
+  section is empty, say so out loud.
 - **A few lines on the list**, and I ask for the detail if I want it: how many questions
-  under each heading; what the second reader dropped and who ran it; and the parts of my
-  document you drew no questions from, and why. An empty list is said out loud, not left
-  implied.
+  under each heading; how many locators the second reader corrected, how many questions it
+  moved to the closing section, how many came off entirely for want of any locator, and who
+  ran it; and the parts of my document you drew no questions from, and why. An empty list is
+  said out loud, not left implied.
 
 Then the question: do these match what I will be asked, and which do I want to answer first?
 Do not suggest answers, do not hint, and do not tell me which questions are hard.

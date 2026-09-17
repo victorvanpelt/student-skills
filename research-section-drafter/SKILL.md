@@ -10,7 +10,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Draft prose from my bullets, and nothing else
@@ -26,9 +26,13 @@ will accept without reading properly, and then it is in my thesis and I cannot d
 So you hand me sentences, one per bullet, each one traceable to the bullet it came from, and
 I adopt them one at a time. You never hand me a finished block to paste.
 
-I stop you twice: once to confirm the bullets, and once to adopt the sentences.
+I stop you twice: once to confirm I gave you the right bullets, and once to adopt the
+sentences. The first is not a gate on the plan, it is a check that you read my input
+correctly. There is no gate on the plan here, on purpose: my bullets are the whole
+instruction, every sentence you write is checked against the bullet it came from, and there
+is nothing about the job to misread beyond the list itself.
 
-## Gate 1
+## The bullets
 
 If the bullets are not in my message, ask for them, and ask whether I want to attach two
 or three paragraphs of my own earlier writing as a voice sample. Ask only for what I have
@@ -37,7 +41,8 @@ not already given.
 Read my bullets, count them, and list them back numbered. If a bullet is too thin to make a
 sentence, name it and ask me rather than filling the gap yourself.
 
-CHECKPOINT: wait for me to confirm the list is complete and correct.
+CHECKPOINT: wait for me to confirm the list is complete and correct. Then run to the end
+without asking me anything else.
 
 If I attach two or three paragraphs of my own earlier writing as a voice sample, read them
 first and match their sentence length, hedging, and level of formality. Adopt none of their

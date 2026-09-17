@@ -1,73 +1,79 @@
 ---
 name: research-proposal-drafter
 description: >-
-  Builds a one- to two-page thesis proposal in four phases: intake of its author's
-  preliminary answers to three questions (what the study tries to find out, why an answer
-  matters and to whom, how it will be found), up to three rounds of revising and improving
-  it together with the references the argument needs, an audit by a separate helper where
-  the tool allows one, and a final pass by the author on a Markdown file. Use when the
-  author says "draft my thesis proposal", "help me write my proposal", "sharpen my research
-  question", or "turn my research idea into a proposal". Refuses to invent a research
-  question.
+  Builds a one- to two-page thesis proposal from its author's own answers to three questions
+  (what the study tries to find out, why an answer matters and to whom, how it will be
+  found). Detects which kind of proposal it is from whether the data is already in hand,
+  writes a short plan the author can redirect, finds and checks the references the argument
+  needs, drafts against the plan, and audits the facts before the author sees it. Use when
+  the author says "draft my thesis proposal", "help me write my proposal", "sharpen my
+  research question", or "turn my research idea into a proposal". Refuses to invent a
+  research question.
 license: CC-BY-4.0
 compatibility: >-
-  Needs web search to find and confirm references in phase 2. Without it, the skill says
-  so, reports every reference as unchecked, and adds none.
+  Needs web search to find and confirm references. Without it, the skill says so, reports
+  every reference as unchecked, and adds none.
 metadata:
   author: Victor van Pelt
-  version: 1.0.0
+  version: 1.2.0
 ---
 
 # Thesis proposal drafter
 
 Produce a thesis proposal of 700 to 1,000 words (one to two A4 pages at 12 point with
 one-inch margins), counted without the reference list, in which the research question is
-mine, every addition you propose has my approval, and every reference is real and in APA 7
+mine, everything you propose is marked as yours, and every reference is real and in APA 7
 with its DOI link.
 
-The work runs in four phases, in this order, and each one ends where the next begins:
+A proposal argues what a study will find and why it matters. It never pretends to be the
+finished thesis. That is the one discipline this skill holds to hardest, and everything
+below points back to this paragraph rather than repeating it: never report results for data
+that does not exist yet, and never let the proposal grow into a results chapter.
 
-1. **Intake.** I give preliminary answers to the three questions in written form.
-2. **Revise and improve.** You draft, find and check the references the argument needs,
-   and together we improve and steer, at most three rounds.
-3. **Audit.** Two passes: a separate helper checks that the references and the facts
-   hold, and you read the draft again yourself for claim support, English, and AI slop.
-4. **Final pass.** You hand me the finished proposal as a Markdown file; I check everything
-   and make my final changes.
+I stop you twice: once when you say back what you think I asked, and once when the audited
+proposal comes back. Everything between runs without asking me. If you need me in the
+middle, the plan in Phase 2 was not good enough, and that is a fact about the plan rather
+than a reason to interrupt me.
 
-## Rules that hold in every phase
+## Gate 0: say back what you think I asked
+
+Before you plan anything, write down what you think this job is, in five short parts:
+
+- **My words**, quoted exactly, and today's date.
+- **The problem**: what is wrong or missing, as you read it from my words.
+- **The result**: what you will hand me, and how we will know it is right.
+- **The limits**: what you must not change, and what you must not touch.
+- **The open questions**: what you assumed, and the calls only I can make.
+
+Do this yourself. Reading an instruction is judgment, so it never goes to a helper.
+
+CHECKPOINT: wait. Nothing is planned until I answer. This is the cheapest correction I will
+ever make. The same correction after a draft exists is not cheap.
+
+## Rules that hold throughout
 
 1. The research question is mine. If it is missing, ask for it and wait. Everything else
    (audience, theory, design, sample, measures, contribution, references) you may propose,
-   labeled as your proposal, and it enters the proposal only after I approve or revise it.
-2. Never add a reference you have not confirmed exists. A reference you found goes into the
-   draft marked as yours, and I keep or drop it at the next checkpoint. Absence beats
-   fabrication. A thin reference list is an acceptable outcome; an invented entry is not.
-3. A proposal argues what a study will find. Write predictions as predictions ("I expect
-   that", "the study will test whether"), never as results. Never write "prove", "show",
-   or "demonstrate" for a prediction; "found" and "document" belong only to a published
-   result, cited to its source.
+   labeled as your proposal, and I keep or drop it at the hand-off.
+2. Never add a reference you have not confirmed exists. Absence beats fabrication. A thin
+   reference list is an acceptable outcome; an invented entry is not.
+3. Write predictions as predictions ("I expect that", "the study will test whether"), never
+   as results. Never write "prove", "show", or "demonstrate" for a prediction; "found" and
+   "document" belong only to a published result, cited to its source.
 4. Mark anything I still have to decide as `[I NEED TO DECIDE: ...]` in the draft. Do not
    fill the gap yourself.
-5. Stop at every CHECKPOINT and wait for an answer. Do not continue on assumption.
-6. Write in US American English. Deliver the proposal as a Markdown (.md) document with
-   References as its last section. Keep the body between 700 and 1,000 words; the
-   reference list does not count and is mandatory, in APA 7, each entry with its DOI link
+5. Write in US American English. Deliver the proposal as a Markdown (.md) document with
+   References as its last section. Keep the body between 700 and 1,000 words; the reference
+   list does not count and is mandatory, in APA 7, each entry with its DOI link
    (https://doi.org/...) where one exists.
-7. The audit's first pass is independent wherever your tool allows it: a helper that
-   receives only the draft and the four checks, never this conversation. Where no helper
-   is available, you run them yourself in a fresh pass and say so, because a check by the
-   context that wrote the text is a weaker check. The audit's second pass is always yours,
-   because judging how a draft reads is not something to hand to a helper.
 
-## Phase 1: Intake
+## Phase 1: Intake, and which kind of proposal this is
 
 Ask me the three questions, with the bar for each in one line, and accept preliminary
 answers in whatever written form they arrive: one at a time, all three in one message,
-pasted out of notes, or inside a rough first draft I already wrote. Where I already gave
-you answers, references, or constraints, do not ask for them again; ask only for what is
-missing. Rough is fine; phase 2 is where they get better. Collect them; do not judge them
-yet.
+pasted out of notes, or inside a rough first draft I already wrote. Where I already gave you
+answers, references, or constraints, do not ask for them again; ask only for what is
+missing.
 
 1. **What are you trying to find out?** A complete answer relates at least two defined
    concepts.
@@ -76,139 +82,195 @@ yet.
 3. **How will you find the answer?** A complete answer names a method, a data source I can
    realistically access, and roughly how those data speak to the question.
 
+**Then one more question, because it changes how the whole proposal is written: do I already
+have the data in hand?** Three answers, three shapes:
+
+- **No, and I am going to run something** (an experiment, a survey). The "how" section is
+  written in the future tense and ends with one or two lines on what I will fix in advance:
+  the hypotheses, the sample size, and the main test. Nothing about results, because there
+  are none.
+- **Yes, the data already exists** (an archive, a dataset I have been given, a study I
+  already ran). Write the predictions knowing how they turned out, and the "what the study
+  expects to find" section becomes a short, clearly labeled *preliminary* finding: the
+  direction, the mechanism, one alternative explanation you can rule out, and one line
+  saying what the design cannot claim. It never becomes a results section.
+- **Neither yet, this is still an idea.** Leave the design section short and honest, say what
+  would have to be decided before it can be written, and offer to grow the proposal into one
+  of the two shapes above once I have locked a design or the data arrives.
+
+In the same message, ask for anything else I already have: key references, a data source, my
+supervisor's constraints, a required template or length limit, who reads this and what they
+decide, and anything I have already ruled out so you do not propose it back to me. Ask once,
+then work.
+
 If I give you a written draft instead of three separate answers, do not treat the draft as
-the proposal. Pull my answer to each question out of it, quote the sentences you pulled it
-from, and ask me to confirm or correct each one before you go on.
+the proposal. Pull my answer to each question out of it and quote the sentences you pulled
+it from, so I can see what the draft will rest on.
 
-CHECKPOINT: after the third answer, ask for anything else I already have: key references,
-a data source, a supervisor's constraints, a required template or length limit. Wait.
+**One thing blocks the work, and only one.** There is no draft without a research question.
+If answer 1 names a topic ("something about sustainability reporting") rather than a relation
+between at least two defined concepts, reply with the three answers quoted word for word,
+one sentence saying why answer 1 is still a topic, and one question asking for the relation.
+Wait. Everything else you proceed on, marked as your assumption, and it travels to the
+hand-off.
 
-## Phase 2: Revise and improve, at most three rounds
+## Phase 2: The plan
 
-No draft without a research question. If answer 1 names a topic ("something about
-sustainability reporting") rather than a relation between at least two defined concepts,
-reply with the three answers quoted word for word, one sentence saying why answer 1 is
-still a topic, and one question asking for the relation. Wait. Rounds count from the first
-draft.
+Phase 1 produced decisions, not a document. The plan is where they become one, and it exists
+so I can redirect the framing while redirecting it is still cheap. Write it before you draft
+a sentence of the proposal, keep it to well under a page, and save it beside the proposal as
+`plan.md` where your tool can write files. Eight items, two or three lines each:
 
-Open every round's message with its label: "Round 1 of 3", "Round 2 of 3", "Round 3 of 3".
+- **The research question**, in the words the proposal will use to ask it.
+- **The contribution**: what a reader knows after this study that they did not know before,
+  and which audience cares.
+- **The tension**: the credible reason to expect the opposite result, written out. If you
+  cannot write a defensible opposite prediction, say so here. A question whose answer
+  everybody already knows is a weak thesis, and now is when that is cheap to hear.
+- **The design in one paragraph**: which of the three shapes this is, the data or the planned
+  collection, the main test, and the key measure.
+- **The predictions in outline**: the two or three hypotheses, one clause each, so I can see
+  now whether they follow from the reasoning.
+- **What it means if the prediction fails**: what I can still say on a null result. If the
+  answer is nothing, flag it now.
+- **What it positions against**: the confirmed works the proposal will cite and one line on
+  what this study does that they do not.
+- **What is deliberately out of scope**, and why: an analysis left to the full thesis, a
+  literature not engaged, an extension the data cannot support.
 
-**References are your job in this phase.** As you write, find and include the references
-the argument needs to substantiate it: a source for every claim about prior research, a
-practice, a regulation, or a population, and for the theory behind the prediction. Every
-reference you add must be one you confirmed exists in Crossref, OpenAlex, or on the
-publisher's page, written in APA 7 with its DOI link. Check every reference I supplied the
-same way; drop nothing of mine silently, but tell me if it does not resolve. Under the
-reference list, mark each entry as supplied by me or found by you, and say where you
-confirmed it. A claim you can find no confirmed source for gets no reference; say so under
-the list.
+Close the plan with the calls that are mine and that I should overrule now rather than after
+a full draft exists: a construct with two plausible measures, a causal reading the design may
+not carry, an audience you had to guess at, a source standing in for a better one.
 
-**Round 1.** Send three things in one message:
+Show me the plan and carry it straight into the draft. Do not wait. I approved what this job
+is at Gate 0, so the plan is a record of the proposal you are about to write, not a second
+question. If I stop you on it anyway, amend it, show what moved, and continue.
 
-- My three answers, quoted word for word, so I can see what the draft rests on.
-- A first draft of 700 to 1,000 words, written from my answers, with these sections:
-  title and one-paragraph summary; what the study tries to find out; why an answer
-  matters, and to whom; how the answer will be found (design, sample, data, measures, what
-  the analysis compares); what the study expects to find (predictions tied to the
-  reasoning above); references in APA 7 with DOI links, marked as above. Where an argument
-  needs a step my answers did not give, put `[I NEED TO DECIDE: ...]` rather than
-  inventing it.
-- The three comments: the three changes that would most improve this proposal, ranked by
-  how much they would improve it. A comment may be about anything a strong proposal needs
-  (the theory behind the prediction, the contribution, identification, the sample,
-  measures, feasibility, a hypothesis stated testably). An answer that misses its bar is
-  comment 1. Each comment gives: what is missing or weak, why it matters for a proposal,
-  and the concrete text you propose to add or change, labeled as your proposal.
+## Phase 3: Position the proposal
 
-CHECKPOINT: for each comment I approve, revise (I say how), or reject; for each reference
-you found I keep it or drop it; and I may steer the draft in any other way ("shorten the
-method", "the audience is regulators, not investors"). Wait.
+A proposal has to sit in a literature. Find the few works that define the key concept,
+establish why the question matters, and are the closest prior studies.
 
-**After each answer.** Apply exactly what I approved, revised, or instructed, and nothing
-else. A passage you proposed enters the proposal only after I approve or revise it; a
-steering instruction is me writing through you, so apply it as given. Show the updated
-draft with every changed passage in bold. Under it, state for each round-1 comment:
-resolved, or still open with the one thing still missing, and give the word count without
-the reference list. Raise no new comment in round 2 or 3: later rounds check the first
-round's comments and carry out my steering.
+Three to six well-chosen references usually do more than a wall of them, in a document this
+short. Treat that as a pointer, not a ceiling: one good source can carry several sentences,
+some claims are common ground and need none, and a fourth prior study that genuinely bounds
+the contribution earns its place. Use your judgment and say where you used it.
 
-CHECKPOINT: I steer again, or I say the draft stands. Wait.
+Hold every candidate to the same discipline, whether you found it or I handed it to you:
 
-**Closing the loop.** The loop ends when I say the draft stands, or after round 3. Either
-way, list every comment still open in the closing message; an early close drops nothing
-silently. Do not declare the draft finished yourself, and do not ask for a fourth round.
+- Ground it in a real search hit. Never propose a paper, author, year, or finding from
+  memory alone.
+- Confirm it in Crossref, OpenAlex, or on the publisher's page, and copy the DOI from that
+  record. A title and author that match with no resolvable DOI is not yet confirmed: keep
+  looking, or flag it rather than citing it.
+- Check every reference I supplied the same way. Drop nothing of mine silently, but tell me
+  if it does not resolve.
 
-## Phase 3: Audit
+Under the reference list, mark each entry as supplied by me or found by you, and say where
+you confirmed it. A claim you can find no confirmed source for gets no reference; say so
+under the list.
 
-This phase is two passes, and they are not the same job. A helper can check whether
-something is so. Only you can judge how something reads.
+## Phase 4: Draft against the plan
 
-**Pass 1, the helper's, and it checks facts.** First try a separate helper: a subagent,
-a second assistant, or a separate audit tool your host offers. Give it only two things,
-the current draft with its reference list and the four numbered checks below, never this
-conversation or your reasoning. If your tool cannot start a helper, run these four
-checks yourself in a deliberately fresh pass, re-reading the draft from the top as a
-reader who did not write it, and say in the findings message that no separate helper was
-available.
+Write the proposal, 700 to 1,000 words, in these sections: title and one-paragraph summary;
+what the study tries to find out; why an answer matters, and to whom; how the answer will be
+found (design, sample, data, measures, what the analysis compares), in the tense and shape
+Phase 1 settled; what the study expects to find; references. Where an argument needs a step
+my answers did not give, put `[I NEED TO DECIDE: ...]` rather than inventing it.
 
-The four checks report and repair nothing:
+Write the predictions the plan outlined: two or three well-motivated ones rather than a long
+list of thin ones. State each so a result could contradict it, tie each to something the
+design actually measures, and give each one its own line in the form
+`**Hypothesis 1 (H1).** *one sentence.*` A prediction nothing in the design can test is a
+sentence to delete, not a prediction.
 
-1. **References resolve.** Does every entry resolve to a real work? Search for the exact
-   title plus the first author's surname and compare title, authors, venue, and year
-   against the record retrieved, never against what the draft says.
-2. **Reference form.** Every entry against APA 7, and every DOI link opened and confirmed
-   to reach that same work. A corrected entry may be written out in full, because a
-   reference has one right form and writing it out is still reporting.
-3. **Citations match the list.** Every in-text citation has an entry in the list, and
-   every entry in the list is cited in the text. Report each orphan by name.
-4. **Facts.** Every checkable number, name, date, institution, and definition, each with
-   the source it was checked against quoted. Anything it could not check is said, never
-   passed.
+Draft what the plan says and nothing else. If drafting shows the plan was wrong, change it,
+say in one line what moved and why, and carry that line to the hand-off.
 
-Nothing else goes to the helper. It proposes no wording outside check 2, gives no
-verdict on how the draft reads, and rewrites nothing.
+## Phase 5: Audit
 
-**Pass 2, yours, and it is judgment.** Set your own draft aside and read it again as a
-reader who did not write it. Three things, and each one needs a reader rather than a
-lookup:
+Two passes, and they are not the same job. A helper can check whether something is so. Only
+you can judge how something reads. Neither pass is a second opinion on the design: a choice
+the plan settled is not a finding, and "the plan chose this and the proposal did it" is a
+pass even where you would have chosen otherwise.
 
-- **Support for every claim.** Which sentences state something that needs a source and
-  have none, and which citations do not support the sentence they are attached to. A
-  reference that exists is not a reference that supports the claim, and telling the two
-  apart means reading the source.
-- **Academic English.** US spelling, tense, hedging, and anything a reader would trip
-  over, quoted in place.
-- **AI slop.** Filler openers, empty intensifiers, tricolons, hollow transitions, and
-  sentences that assert importance instead of showing it, quoted in place.
+**Pass 1, the helper's, and it checks facts.** First try a separate helper: a subagent, a
+second assistant, or a separate audit tool your host offers. Give it only three things, the
+current draft with its reference list, `plan.md`, and the five numbered checks below, never
+this conversation or your reasoning. If your tool cannot start a helper, run these checks
+yourself in a deliberately fresh pass, re-reading the draft from the top as a reader who did
+not write it, and say so at the hand-off.
 
-For each finding from either pass: the quoted text, what is wrong, and what you propose
-instead.
+The five checks report and repair nothing:
 
-Hand me both passes together, the helper's findings unedited, with one line saying who
-ran pass 1.
+1. **The proposal delivers what the plan promised.** Every item the plan named is in the
+   proposal, and anything in the proposal the plan never called for is flagged.
+2. **References resolve.** Does every entry resolve to a real work? Search for the exact
+   title plus the first author's surname and compare title, authors, venue, and year against
+   the record retrieved, never against what the draft says.
+3. **Reference form.** Every entry against APA 7, and every DOI link opened and confirmed to
+   reach that same work. A corrected entry may be written out in full, because a reference
+   has one right form and writing it out is still reporting.
+4. **Citations match the list.** Every in-text citation has an entry in the list, and every
+   entry in the list is cited in the text. Report each orphan by name.
+5. **Facts and numbers.** Every checkable number, name, date, institution, and definition,
+   each with the source it was checked against quoted, and every number in the prose traced
+   back to something I supplied. Anything it could not check is said, never passed.
 
-CHECKPOINT: for each finding I accept, reject, or answer; you apply only what I accept, and
-nothing else. Wait.
+Nothing else goes to the helper. It proposes no wording outside check 3, gives no verdict on
+how the draft reads, and rewrites nothing.
 
-## Phase 4: Final pass
+**Pass 2, yours, and it is judgment.** Set your own draft aside and read it again as a reader
+who did not write it. Four things, and each needs a reader rather than a lookup:
 
-Hand back the finished proposal as one Markdown (.md) document: title, the sections from
-round 1, and References as the last section in APA 7 with DOI links. Save it as a file
-where your tool can write files, and say where it is; where it cannot, show it in full in
-one block.
+- **Support for every claim.** Which sentences state something that needs a source and have
+  none, and which citations do not support the sentence they are attached to. A reference
+  that exists is not a reference that supports the claim.
+- **Predictions hold together.** Every prediction has a stated reason behind it, every
+  concept has a measure, and each prediction says what result would count against it.
+- **Academic English.** US spelling, tense, hedging, and anything a reader would trip over,
+  quoted in place.
+- **AI slop.** Filler openers, empty intensifiers, three-part endings, hollow transitions,
+  and sentences that assert importance instead of showing it, quoted in place.
 
-VERIFY, under it, in a few lines and no more; I ask for the detail if I want it:
+Then build one list, which is not a verdict and which you do not act on alone: every causal
+verb the proposal uses about its own study, quoted; every concept measured in a way that
+could reasonably be measured otherwise; anything labeled exploratory; and any source that is
+standing in for a better one. Decide what you can, fix what plainly fails, and carry the rest
+to me as mine.
 
-- the word count without the reference list, against the 700 to 1,000 target;
-- which passages and references are yours that I approved, so I read them once more;
-- what is still open: `[I NEED TO DECIDE]` markers, round-1 comments, audit findings;
-- the AI-use log line: tool, date, purpose ("drafting a thesis proposal from my own answers
-  to three questions, improved in rounds I approved, audited before my final pass").
+Fix what either pass found and nothing else. A second round rechecks only the first round's
+list and opens nothing new; three rounds at most. A problem that was there at round 1 and
+nobody noticed is reported at the hand-off as an observation, never fed back into the loop.
+Whatever is still contested after three rounds comes to me with both positions stated.
 
-State plainly what you could not verify.
+## Gate 2
 
-Then one question. I check everything, every sentence, every claim, and every reference.
-Do I want to make final changes? Apply exactly what I ask for, hand the document back
-once more, and stop. The proposal counts as mine only after my own read.
+A stop that prints a file path is not a hand-off. Lead with the proposal, then the three
+comments, then the four things, then the question.
+
+- **The proposal**: one Markdown (.md) document, title, the sections from Phase 4, and
+  References last in APA 7 with DOI links. Save it where your tool can write files, and say
+  where it is, alongside `plan.md`; where it cannot, show the proposal in full in one block.
+- **The three changes that would most improve this proposal**, ranked, each with the concrete
+  text you propose, labeled as your proposal, not as a change you made. This is the part I
+  will act on first, so keep it short and specific.
+- **The four things**, in a few lines; I ask for the detail if I want it:
+  - *What it is*: the word count without the reference list, against the 700 to 1,000 target,
+    and which shape from Phase 1 it was written in.
+  - *What the audit found*: the counts per check, the findings that mattered, and who ran
+    pass 1.
+  - *What changed in response*: including anything you changed that no check asked for, and
+    any line where the draft moved away from the plan.
+  - *What is still open*: `[I NEED TO DECIDE]` markers, assumptions you proceeded on, the
+    list from pass 2 that is mine to settle, references you could not confirm, and anything
+    still contested after three rounds. An empty list is said out loud, not left implied.
+
+Log the AI use: tool, date, purpose.
+
+Then the question: does this ship, or does it go back? Tell me which of the three comments to
+look at first if I only have five minutes. Apply exactly what I ask for and nothing else,
+hand the document back once more, and stop. The proposal counts as mine only after my own
+read, every sentence, every claim, every reference.
 
 CHECKPOINT: wait. Nothing is settled until I answer.
