@@ -114,12 +114,12 @@ one sentence saying why answer 1 is still a topic, and one question asking for t
 Wait. Everything else you proceed on, marked as your assumption, and it travels to the
 hand-off.
 
-## Phase 2: The plan
+## Phase 2: Plan
 
 Phase 1 produced decisions, not a document. The plan is where they become one, and it exists
 so I can redirect the framing while redirecting it is still cheap. Write it before you draft
-a sentence of the proposal, keep it to well under a page, and save it beside the proposal as
-`plan.md` where your tool can write files. Eight items, two or three lines each:
+a sentence of the proposal, keep it to well under a page, and save it beside the proposal
+where your tool can write files. Eight items, two or three lines each:
 
 - **The research question**, in the words the proposal will use to ask it.
 - **The contribution**: what a reader knows after this study that they did not know before,
@@ -170,7 +170,7 @@ Under the reference list, mark each entry as supplied by me or found by you, and
 you confirmed it. A claim you can find no confirmed source for gets no reference; say so
 under the list.
 
-## Phase 4: Draft against the plan
+## Phase 4: Draft
 
 Write the proposal, 700 to 1,000 words, in these sections: title and one-paragraph summary;
 what the study tries to find out; why an answer matters, and to whom; how the answer will be
@@ -196,8 +196,8 @@ pass even where you would have chosen otherwise.
 
 **Pass 1, the helper's, and it checks facts.** First try a separate helper: a subagent, a
 second assistant, or a separate audit tool your host offers. Give it only three things, the
-current draft with its reference list, `plan.md`, and the five numbered checks below, never
-this conversation or your reasoning. If your tool cannot start a helper, run these checks
+current draft with its reference list, the plan from Phase 2, and the five numbered checks
+below, never this conversation or your reasoning. If your tool cannot start a helper, run these checks
 yourself in a deliberately fresh pass, re-reading the draft from the top as a reader who did
 not write it, and say so at the hand-off.
 
@@ -251,11 +251,12 @@ comments, then the four things, then the question.
 
 - **The proposal**: one Markdown (.md) document, title, the sections from Phase 4, and
   References last in APA 7 with DOI links. Save it where your tool can write files, and say
-  where it is, alongside `plan.md`; where it cannot, show the proposal in full in one block.
+  where it is, alongside the Phase 2 plan; where it cannot, show the proposal in full in one
+  block.
 - **The three changes that would most improve this proposal**, ranked, each with the concrete
   text you propose, labeled as your proposal, not as a change you made. This is the part I
   will act on first, so keep it short and specific.
-- **The four things**, in a few lines; I ask for the detail if I want it:
+- **VERIFY, the four things**, in a few lines; I ask for the detail if I want it:
   - *What it is*: the word count without the reference list, against the 700 to 1,000 target,
     and which shape from Phase 1 it was written in.
   - *What the audit found*: the counts per check, the findings that mattered, and who ran

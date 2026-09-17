@@ -4,6 +4,38 @@ Every skill folder carries its own version in the `metadata.version` field of it
 `SKILL.md`. This file records what changed in each release, so a skill copied earlier
 can be compared against the current one.
 
+## 1.2.0, 2026-09-17
+
+**research-proposal-drafter only.** The 1.1.0 rewrite removed the three-round loop but left
+the skill without a plan step, so it went from three intake answers straight to a full draft
+and its three comments dangled with nothing to attach to. Rebuilt on the shape its academic
+counterpart uses:
+
+- **Phase 1 now asks a fourth question**, because it changes everything downstream: is the
+  data already in hand? No and a study will be run gives a future-tense design section ending
+  in what will be fixed in advance. Yes gives predictions written knowing how they turned out
+  and a short, clearly labeled preliminary finding with a line on what the design cannot
+  claim. Neither gives a short honest design section and an offer to grow into one of the
+  other two later.
+- **Phase 2 is a plan**, written before a sentence of the proposal, shown and carried forward
+  without waiting. Eight items: the research question, the contribution, the tension (the
+  credible reason to expect the opposite result, written out), the design, the predictions in
+  outline, what a null result still says, what it positions against, and what is out of
+  scope. It closes with the calls that are the author's to overrule now rather than after a
+  full draft exists.
+- **Phase 3 positions the proposal** with the reference discipline stated in one place:
+  never from memory, confirmed in Crossref, OpenAlex, or on the publisher's page, DOI copied
+  from that record, unconfirmed flagged rather than cited.
+- **Phase 4 drafts against the plan**, with the hypothesis format fixed and a rule for what to
+  do when drafting shows the plan was wrong.
+- **Phase 5 audits for fidelity, not design.** A choice the plan settled is not a finding. Five
+  fact checks for a helper, including whether the proposal delivers what the plan promised, and
+  a judgment pass that ends in a list the skill does not act on alone: causal verbs about its
+  own study, concepts that could be measured otherwise, exploratory labels, and a source
+  standing in for a better one. Closed ledger, three rounds at most.
+- **Gate 2** leads with the proposal and the three ranked comments, then the four things, then
+  the ship question, and says which comment to read first on five minutes.
+
 ## 1.1.0, 2026-09-17
 
 **Where a skill stops changed.** Every skill used to stop once before the work, on a plan
