@@ -4,6 +4,9 @@ Every skill folder carries its own version in the `metadata.version` field of it
 `SKILL.md`. This file records what changed in each release, so a skill copied earlier
 can be compared against the current one.
 
+`research-defense-questions`, named in the 1.1.0 and 1.0.0 entries below, is no longer part
+of this repository.
+
 ## 1.2.0, 2026-09-17
 
 **research-proposal-drafter only.** The 1.1.0 rewrite removed the three-round loop but left

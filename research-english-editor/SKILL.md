@@ -147,8 +147,9 @@ If it would not, something is missing from a marker, and you fix that before I s
    document for the things that must survive the edit word for word: construct names,
    condition and treatment labels, hypothesis labels, variable names, defined
    abbreviations, and anything the document defines and then reuses. Add whatever I named
-   in my answer. Write it out as a numbered list in the same message as the route you chose,
-   so I can add one you missed. I often do not know what needs protecting until I see the
+   in my answer. Write it out as a numbered list in the same message as the two questions,
+   so I can add one you missed in your answer, and add whatever I name in that answer
+   before you edit. I often do not know what needs protecting until I see the
    list, which is why you build it rather than only asking me for it. This list is what the
    count at the end runs against, and a list that lives only in your head cannot be
    checked.
